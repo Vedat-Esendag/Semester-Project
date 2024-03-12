@@ -5,46 +5,50 @@ using System.IO;
 using ExcelDataReader; 
 using System;
 using System.Text;
-public class ExcelReader
+namespace ConsoleApp
 {
-    public static List<string> ImportColumn(string filePath, int columnIndex)
+    public class ExcelReader
     {
-        List<string> columnData = new List<string>();
-
-        using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
+        public static List<string> ImportColumn(string filePath, int columnIndex)
         {
-            using (var reader = ExcelReaderFactory.CreateReader(stream))
-            {
-                var result = reader.AsDataSet(new ExcelDataSetConfiguration()
-                {
-                    ConfigureDataTable = (_) => new ExcelDataTableConfiguration()
-                    {
-                        UseHeaderRow = true // Set this to false if your column does not have a header
-                    }
-                });
+            List<string> columnData = new List<string>();
 
-                var dataTable = result.Tables[0];
-                foreach (DataRow row in dataTable.Rows)
+            using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
+            {
+                using (var reader = ExcelReaderFactory.CreateReader(stream))
                 {
-                    columnData.Add(row[columnIndex].ToString());
+                    var result = reader.AsDataSet(new ExcelDataSetConfiguration()
+                    {
+                        ConfigureDataTable = (_) => new ExcelDataTableConfiguration()
+                        {
+                            UseHeaderRow = true // Set this to false if your column does not have a header
+                        }
+                    });
+
+                    var dataTable = result.Tables[0];
+                    foreach (DataRow row in dataTable.Rows)
+                    {
+                        columnData.Add(row[columnIndex].ToString());
+                    }
                 }
             }
+
+            return columnData;
         }
-
-        return columnData;
     }
-}
 
-class Program
-{
-    static void Main(string[] args)
+    class Program
     {
-        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-
-        var columnData = ExcelReader.ImportColumn(@"/Users/frederikhandberg/Downloads/2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 3);
-        foreach (var cellValue in columnData)
+        static void Main(string[] args)
         {
-            Console.WriteLine(cellValue);
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+
+            var columnData = ExcelReader.ImportColumn(@"/Users/frederikhandberg/Downloads/2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 3);
+            foreach (var cellValue in columnData)
+            {
+                Console.WriteLine(cellValue);
+            }
         }
     }
 }
+
