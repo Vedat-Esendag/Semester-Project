@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KwhP9STnpPawgoA858uw77kwmhynWb3xVJ3A0wqllxKHn0dqahV3/ZZpWEArUAGWBmHqvSVZp9wV5nzvB5lRJw==",
+  "dgSpecHash": "PNCEEWmzqmPz7hWdKLw4+pFz59lkp798OD5ejtH3zb3g1S7RG9dmSo02IY+ZkL3qch/d7vMzubPML3I1t3nX2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vesen\\Documents\\GitHub\\Semester-Project\\Container\\Container.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Container\\Container.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512"
+  ],
   "logs": []
 }
