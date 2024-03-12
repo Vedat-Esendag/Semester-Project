@@ -1,0 +1,15 @@
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\bin\Debug\net8.0\Container.exe
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\bin\Debug\net8.0\Container.deps.json
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\bin\Debug\net8.0\Container.runtimeconfig.json
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\bin\Debug\net8.0\Container.dll
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\bin\Debug\net8.0\Container.pdb
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\Container.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\Container.AssemblyInfoInputs.cache
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\Container.AssemblyInfo.cs
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\Container.csproj.CoreCompileInputs.cache
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\Container.sourcelink.json
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\Container.dll
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\refint\Container.dll
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\Container.pdb
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\Container.genruntimeconfig.cache
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\ref\Container.dll
