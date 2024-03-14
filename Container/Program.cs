@@ -5,6 +5,9 @@ using System.IO;
 using ExcelDataReader; 
 using System;
 using System.Text;
+using ExcelDataReader.DataSet;
+
+
 namespace ConsoleApp
 {
     public class ExcelReader
@@ -43,7 +46,7 @@ namespace ConsoleApp
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
-            var columnData = ExcelReader.ImportColumn(@"/Users/frederikhandberg/Downloads/2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 3);
+            var columnData = ExcelReader.ImportColumn(@"Data\2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 3);
             foreach (var cellValue in columnData)
             {
                 Console.WriteLine(cellValue);

@@ -13,3 +13,4 @@ C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\refi
 C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\Container.pdb
 C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\Container.genruntimeconfig.cache
 C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\ref\Container.dll
+C:\Users\vesen\Documents\GitHub\Semester-Project\Container\obj\Debug\net8.0\Container.csproj.AssemblyReference.cache
