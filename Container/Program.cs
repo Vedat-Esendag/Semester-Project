@@ -47,10 +47,10 @@ class Program
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
         // Guys! Adjust the columnIndex and rowIndex as needed
-        var winter_Time_from = ExcelReader.ImportColumn(@"2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 2, 3);
-        var winter_Time_to = ExcelReader.ImportColumn(@"2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 3, 3);
-        var winter_HeatDemand = ExcelReader.ImportColumn(@"2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 4, 3);
-        var winter_ElectricityPrice = ExcelReader.ImportColumn(@"2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 5, 3);
+        var winter_Time_from = ExcelReader.ImportColumn(@"./Data/2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 2, 3);
+        var winter_Time_to = ExcelReader.ImportColumn(@"./Data/2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 3, 3);
+        var winter_HeatDemand = ExcelReader.ImportColumn(@"./Data/2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 4, 3);
+        var winter_ElectricityPrice = ExcelReader.ImportColumn(@"./Data/2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 5, 3);
 
         foreach (var cellValue in winter_Time_from)
         {
