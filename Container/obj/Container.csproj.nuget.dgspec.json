@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vesen\\Documents\\GitHub\\Semester-Project\\Container\\Container.csproj": {}
+    "/Users/lajoskariko/RiderProjects/Semester-Project/Container/Container.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vesen\\Documents\\GitHub\\Semester-Project\\Container\\Container.csproj": {
+    "/Users/lajoskariko/RiderProjects/Semester-Project/Container/Container.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vesen\\Documents\\GitHub\\Semester-Project\\Container\\Container.csproj",
+        "projectUniqueName": "/Users/lajoskariko/RiderProjects/Semester-Project/Container/Container.csproj",
         "projectName": "Container",
-        "projectPath": "C:\\Users\\vesen\\Documents\\GitHub\\Semester-Project\\Container\\Container.csproj",
-        "packagesPath": "C:\\Users\\vesen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vesen\\Documents\\GitHub\\Semester-Project\\Container\\obj\\",
+        "projectPath": "/Users/lajoskariko/RiderProjects/Semester-Project/Container/Container.csproj",
+        "packagesPath": "/Users/lajoskariko/.nuget/packages/",
+        "outputPath": "/Users/lajoskariko/RiderProjects/Semester-Project/Container/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vesen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -46,6 +39,10 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "ExcelDataReader.DataSet": {
               "target": "Package",
               "version": "[3.6.0, )"
             }
@@ -66,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

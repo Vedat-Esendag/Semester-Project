@@ -6,6 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ExcelDataReader" Version="3.6.0"/>
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Data\~$~$2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx" />
+    <None Remove="Data\~$2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx" />
   </ItemGroup>
 </Project>

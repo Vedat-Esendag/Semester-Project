@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using System.Data; 
 using System.IO;
 using ExcelDataReader; 
-using System;
 using System.Text;
-using ExcelDataReader.DataSet;
-
 
 namespace ConsoleApp
 {
@@ -14,7 +11,7 @@ namespace ConsoleApp
     {
         public static List<string> ImportColumn(string filePath, int columnIndex)
         {
-            List<string> columnData = new List<string>();
+            var columnData = new List<string>();
 
             using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
             {
@@ -46,7 +43,7 @@ namespace ConsoleApp
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
-            var columnData = ExcelReader.ImportColumn(@"Data\2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 3);
+            var columnData = ExcelReader.ImportColumn(@"/Users/lajoskariko/RiderProjects/Semester-Project/Container/Data/2024 Heat Production Optimization - Danfoss Deliveries - Source Data Manager.xlsx", 4);
             foreach (var cellValue in columnData)
             {
                 Console.WriteLine(cellValue);
