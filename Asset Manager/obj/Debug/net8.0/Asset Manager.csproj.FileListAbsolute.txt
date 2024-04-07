@@ -1,0 +1,5 @@
+C:\Users\admin\Desktop\SDU\S2\Semester Project 2\Semester Project Code\Semester-Project\Asset Manager\obj\Debug\net8.0\Asset Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\SDU\S2\Semester Project 2\Semester Project Code\Semester-Project\Asset Manager\obj\Debug\net8.0\Asset Manager.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\SDU\S2\Semester Project 2\Semester Project Code\Semester-Project\Asset Manager\obj\Debug\net8.0\Asset Manager.AssemblyInfo.cs
+C:\Users\admin\Desktop\SDU\S2\Semester Project 2\Semester Project Code\Semester-Project\Asset Manager\obj\Debug\net8.0\Asset Manager.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\SDU\S2\Semester Project 2\Semester Project Code\Semester-Project\Asset Manager\obj\Debug\net8.0\Asset Manager.sourcelink.json

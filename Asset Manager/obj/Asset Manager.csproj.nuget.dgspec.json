@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\user-interface\\user-interface.csproj": {}
+    "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset Manager\\Asset Manager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\user-interface\\user-interface.csproj": {
+    "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset Manager\\Asset Manager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\user-interface\\user-interface.csproj",
-        "projectName": "user-interface",
-        "projectPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\user-interface\\user-interface.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset Manager\\Asset Manager.csproj",
+        "projectName": "Asset Manager",
+        "projectPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset Manager\\Asset Manager.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\user-interface\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset Manager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,32 +49,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Avalonia": {
-              "target": "Package",
-              "version": "[11.0.10, )"
-            },
-            "Avalonia.Desktop": {
-              "target": "Package",
-              "version": "[11.0.10, )"
-            },
-            "Avalonia.Diagnostics": {
-              "target": "Package",
-              "version": "[11.0.10, )"
-            },
-            "Avalonia.Fonts.Inter": {
-              "target": "Package",
-              "version": "[11.0.10, )"
-            },
-            "Avalonia.ReactiveUI": {
-              "target": "Package",
-              "version": "[11.0.10, )"
-            },
-            "Avalonia.Themes.Fluent": {
-              "target": "Package",
-              "version": "[11.0.10, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
