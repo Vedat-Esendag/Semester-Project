@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,7 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CsvHelper" Version="31.0.3" />
+    <PackageReference Include="Avalonia" Version="11.0.10" />
+    <PackageReference Include="CsvHelper" Version="31.0.4" />
+    <PackageReference Include="OxyPlot.Avalonia" Version="2.1.0" />
+    <PackageReference Include="OxyPlot.Core" Version="2014.1.546" />
   </ItemGroup>
 
 </Project>

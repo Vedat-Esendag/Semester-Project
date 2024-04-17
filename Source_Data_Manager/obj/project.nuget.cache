@@ -1,10 +1,28 @@
 {
   "version": 2,
-  "dgSpecHash": "1Ujw+nO/OrjuGRRk2EX4PcFQFMvjevy6mhRj/K7BUz0sr3VP4iRhxQXuFTT93UjP/8mRD5k5YLvrb5RarLGEvA==",
+  "dgSpecHash": "E4OBDqE2Fpd54CswpiQJahr6kWZwu+vWCVqxZHbhFUeswwgaZJJTDnIO3YvURQdU2e7SBEC7bB9qIKa4TWPrkw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vesen\\Documents\\GitHub\\Semester-Project\\Source_Data_Manager\\Source_Data_Manager.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\Source_Data_Manager.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vesen\\.nuget\\packages\\csvhelper\\31.0.3\\csvhelper.31.0.3.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\avalonia\\11.0.10\\avalonia.11.0.10.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\avalonia.buildservices\\0.0.29\\avalonia.buildservices.0.0.29.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\avalonia.remote.protocol\\11.0.10\\avalonia.remote.protocol.11.0.10.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\csvhelper\\31.0.4\\csvhelper.31.0.4.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\oxyplot.avalonia\\2.1.0\\oxyplot.avalonia.2.1.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\oxyplot.core\\2014.1.546\\oxyplot.core.2014.1.546.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OxyPlot.Core 2014.1.546' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OxyPlot.Core",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
