@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1Ujw+nO/OrjuGRRk2EX4PcFQFMvjevy6mhRj/K7BUz0sr3VP4iRhxQXuFTT93UjP/8mRD5k5YLvrb5RarLGEvA==",
+  "dgSpecHash": "ekyUpCjo9bqp66VI4Iy3vfs5a7B3AsiHsNHASdlcHTqZCbzHIiY5EhXEBHr9yLxOxidY3eR0HPEsmwxj9WA3nw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vesen\\Documents\\GitHub\\Semester-Project\\Source_Data_Manager\\Source_Data_Manager.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\Source_Data_Manager.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vesen\\.nuget\\packages\\csvhelper\\31.0.3\\csvhelper.31.0.3.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\csvhelper\\31.0.3\\csvhelper.31.0.3.nupkg.sha512"
   ],
   "logs": []
 }
