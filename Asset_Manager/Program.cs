@@ -7,7 +7,7 @@ namespace AM
     {
         public static void Main()
         {
-            string filePath = "/Users/lajoskariko/Documents/AssetManager"; // It's a local file, you can change it to yours.
+            string filePath = "./SavedData";
             AssetManager AM = new AssetManager();
             AM.AddBoilersAndSaveState(filePath);
         }
