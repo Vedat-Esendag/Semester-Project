@@ -5,7 +5,7 @@ namespace AM
     {
         GasBoiler gasBoiler = new GasBoiler();
         OilBoiler oilBoiler = new OilBoiler();
-        GasMotor gasMotor= new GasMotor();
+        GasMotor gasMotor = new GasMotor();
         ElectricBoiler electricBoiler= new ElectricBoiler();
         List<ProductionUnit> productionUnits1= new List<ProductionUnit>();
         List<ProductionUnit> productionUnits2= new List<ProductionUnit>();
