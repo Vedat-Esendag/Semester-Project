@@ -1,4 +1,5 @@
-﻿namespace AM
+﻿using Newtonsoft.Json;
+namespace AM
 {
     public class AssetManager
     {
@@ -8,6 +9,11 @@
         ElectricBoiler electricBoiler= new ElectricBoiler();
         List<ProductionUnit> productionUnits1= new List<ProductionUnit>();
         List<ProductionUnit> productionUnits2= new List<ProductionUnit>();
+        public void AddBoilersAndSaveState(string filePath)
+        {
+            AddBoilers();
+            SaveBoilers(filePath);
+        }
         public void AddBoilers()
         {
             if(productionUnits1.Count==0)
@@ -23,20 +29,26 @@
                 productionUnits2.Add(electricBoiler);
             }
         }
-        public void SaveBoilers()
+        public void SaveBoilers(string filePath)
         {
+            string json1 = JsonConvert.SerializeObject(productionUnits1, Formatting.Indented);
+            string json2 = JsonConvert.SerializeObject(productionUnits2, Formatting.Indented);
 
+            if (!filePath.EndsWith("/"))
+                filePath += "/";
+            File.WriteAllText(filePath + "json1.json", json1);
+            File.WriteAllText(filePath + "json2.json", json2);
         }
         class ProductionUnit
         {
         public string Name { get; set; }
-        public string Image { get; set; }
         public double MaxHeat { get; set; }
-        public double GasConsumption { get; set; }
         public decimal ProductionCost { get; set; }
         public decimal CO2Emissions { get; set; }
+        public double GasConsumption { get; set; }
+        public string Image { get; set; }
         }
-
+        
         class GasBoiler : ProductionUnit
         {
             public GasBoiler()
