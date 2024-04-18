@@ -65,6 +65,14 @@
             "OxyPlot.Core": {
               "target": "Package",
               "version": "[2014.1.546, )"
+            },
+            "OxyPlot.WindowsForms": {
+              "target": "Package",
+              "version": "[2014.1.546, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             }
           },
           "imports": [

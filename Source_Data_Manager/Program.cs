@@ -15,10 +15,10 @@ namespace SourceDataManager
             ElectrictyPrice electrictyPrice = new();
             Console.WriteLine("Starting CSV reading...");
             csvRead.ReadCSV();
-            Console.WriteLine("Ara beni yala beni :)");
+            /*Console.WriteLine("Ara beni yala beni :)");
             heatDemand.ReadHeatDemandOnly();
             Console.WriteLine("HAM HAM");
-            ElectrictyPrice.ReadElectricityPriceOnly();
+            ElectrictyPrice.ReadElectricityPriceOnly();*/
         }
     }
 }

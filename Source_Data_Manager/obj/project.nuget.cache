@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E4OBDqE2Fpd54CswpiQJahr6kWZwu+vWCVqxZHbhFUeswwgaZJJTDnIO3YvURQdU2e7SBEC7bB9qIKa4TWPrkw==",
+  "dgSpecHash": "mAIWw3F2+OZmMK5/XgIAD/329qKgoGfGFUM6xTXWc8QyrSEPtQPrlwTXKZAkLwVrr4OizkSp5wrwsV/rQW83Bw==",
   "success": true,
   "projectFilePath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\Source_Data_Manager.csproj",
   "expectedPackageFiles": [
@@ -9,9 +9,12 @@
     "C:\\Users\\admin\\.nuget\\packages\\avalonia.remote.protocol\\11.0.10\\avalonia.remote.protocol.11.0.10.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\csvhelper\\31.0.4\\csvhelper.31.0.4.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\oxyplot.avalonia\\2.1.0\\oxyplot.avalonia.2.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\oxyplot.core\\2014.1.546\\oxyplot.core.2014.1.546.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\oxyplot.windowsforms\\2014.1.546\\oxyplot.windowsforms.2014.1.546.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.drawing.common\\8.0.4\\system.drawing.common.8.0.4.nupkg.sha512"
   ],
   "logs": [
     {
@@ -20,6 +23,16 @@
       "warningLevel": 1,
       "message": "Package 'OxyPlot.Core 2014.1.546' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
       "libraryId": "OxyPlot.Core",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OxyPlot.WindowsForms 2014.1.546' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OxyPlot.WindowsForms",
       "targetGraphs": [
         "net8.0"
       ]
