@@ -49,6 +49,32 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[11.0.10, )"
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[31.0.4, )"
+            },
+            "OxyPlot.Avalonia": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "OxyPlot.Core": {
+              "target": "Package",
+              "version": "[2014.1.546, )"
+            },
+            "OxyPlot.WindowsForms": {
+              "target": "Package",
+              "version": "[2014.1.546, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
