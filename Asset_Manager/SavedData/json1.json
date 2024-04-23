@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "GB",
+    "MaxHeat": 5.0,
+    "ProductionCost": 500.0,
+    "CO2Emissions": 215.0,
+    "GasConsumption": 1.1,
+    "Image": null
+  },
+  {
+    "Name": "OB",
+    "MaxHeat": 5.0,
+    "ProductionCost": 700.0,
+    "CO2Emissions": 265.0,
+    "GasConsumption": 1.2,
+    "Image": null
+  }
+]
