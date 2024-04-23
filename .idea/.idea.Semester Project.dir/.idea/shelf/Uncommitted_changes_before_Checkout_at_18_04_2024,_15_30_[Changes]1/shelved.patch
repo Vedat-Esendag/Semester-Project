@@ -1,0 +1,128 @@
+Index: Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\n<Project ToolsVersion=\"14.0\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\n  <PropertyGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\n    <RestoreSuccess Condition=\" '$(RestoreSuccess)' == '' \">True</RestoreSuccess>\n    <RestoreTool Condition=\" '$(RestoreTool)' == '' \">NuGet</RestoreTool>\n    <ProjectAssetsFile Condition=\" '$(ProjectAssetsFile)' == '' \">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>\n    <NuGetPackageRoot Condition=\" '$(NuGetPackageRoot)' == '' \">/Users/frederikhandberg/.nuget/packages/</NuGetPackageRoot>\n    <NuGetPackageFolders Condition=\" '$(NuGetPackageFolders)' == '' \">/Users/frederikhandberg/.nuget/packages/</NuGetPackageFolders>\n    <NuGetProjectStyle Condition=\" '$(NuGetProjectStyle)' == '' \">PackageReference</NuGetProjectStyle>\n    <NuGetToolVersion Condition=\" '$(NuGetToolVersion)' == '' \">6.9.1</NuGetToolVersion>\n  </PropertyGroup>\n  <ItemGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\n    <SourceRoot Include=\"/Users/frederikhandberg/.nuget/packages/\" />\n  </ItemGroup>\n</Project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props b/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props
+--- a/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props	
++++ b/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props	
+@@ -4,12 +4,12 @@
+     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/frederikhandberg/.nuget/packages/</NuGetPackageRoot>
+-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/frederikhandberg/.nuget/packages/</NuGetPackageFolders>
++    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/lajoskariko/.nuget/packages/</NuGetPackageRoot>
++    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/lajoskariko/.nuget/packages/</NuGetPackageFolders>
+     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.9.1</NuGetToolVersion>
+   </PropertyGroup>
+   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+-    <SourceRoot Include="/Users/frederikhandberg/.nuget/packages/" />
++    <SourceRoot Include="/Users/lajoskariko/.nuget/packages/" />
+   </ItemGroup>
+ </Project>
+\ No newline at end of file
+Index: Asset_Manager/obj/project.assets.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"version\": 3,\n  \"targets\": {\n    \"net8.0\": {}\n  },\n  \"libraries\": {},\n  \"projectFileDependencyGroups\": {\n    \"net8.0\": []\n  },\n  \"packageFolders\": {\n    \"/Users/frederikhandberg/.nuget/packages/\": {}\n  },\n  \"project\": {\n    \"version\": \"1.0.0\",\n    \"restore\": {\n      \"projectUniqueName\": \"/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/Asset_Manager.csproj\",\n      \"projectName\": \"Asset_Manager\",\n      \"projectPath\": \"/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/Asset_Manager.csproj\",\n      \"packagesPath\": \"/Users/frederikhandberg/.nuget/packages/\",\n      \"outputPath\": \"/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/obj/\",\n      \"projectStyle\": \"PackageReference\",\n      \"configFilePaths\": [\n        \"/Users/frederikhandberg/.nuget/NuGet/NuGet.Config\"\n      ],\n      \"originalTargetFrameworks\": [\n        \"net8.0\"\n      ],\n      \"sources\": {\n        \"https://api.nuget.org/v3/index.json\": {}\n      },\n      \"frameworks\": {\n        \"net8.0\": {\n          \"targetAlias\": \"net8.0\",\n          \"projectReferences\": {}\n        }\n      },\n      \"warningProperties\": {\n        \"warnAsError\": [\n          \"NU1605\"\n        ]\n      },\n      \"restoreAuditProperties\": {\n        \"enableAudit\": \"true\",\n        \"auditLevel\": \"low\",\n        \"auditMode\": \"direct\"\n      }\n    },\n    \"frameworks\": {\n      \"net8.0\": {\n        \"targetAlias\": \"net8.0\",\n        \"imports\": [\n          \"net461\",\n          \"net462\",\n          \"net47\",\n          \"net471\",\n          \"net472\",\n          \"net48\",\n          \"net481\"\n        ],\n        \"assetTargetFallback\": true,\n        \"warn\": true,\n        \"frameworkReferences\": {\n          \"Microsoft.NETCore.App\": {\n            \"privateAssets\": \"all\"\n          }\n        },\n        \"runtimeIdentifierGraphPath\": \"/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json\"\n      }\n    }\n  }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Asset_Manager/obj/project.assets.json b/Asset_Manager/obj/project.assets.json
+--- a/Asset_Manager/obj/project.assets.json	
++++ b/Asset_Manager/obj/project.assets.json	
+@@ -8,19 +8,19 @@
+     "net8.0": []
+   },
+   "packageFolders": {
+-    "/Users/frederikhandberg/.nuget/packages/": {}
++    "/Users/lajoskariko/.nuget/packages/": {}
+   },
+   "project": {
+     "version": "1.0.0",
+     "restore": {
+-      "projectUniqueName": "/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/Asset_Manager.csproj",
++      "projectUniqueName": "/Users/lajoskariko/RiderProjects/Semester Project/Asset_Manager/Asset_Manager.csproj",
+       "projectName": "Asset_Manager",
+-      "projectPath": "/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/Asset_Manager.csproj",
+-      "packagesPath": "/Users/frederikhandberg/.nuget/packages/",
+-      "outputPath": "/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/obj/",
++      "projectPath": "/Users/lajoskariko/RiderProjects/Semester Project/Asset_Manager/Asset_Manager.csproj",
++      "packagesPath": "/Users/lajoskariko/.nuget/packages/",
++      "outputPath": "/Users/lajoskariko/RiderProjects/Semester Project/Asset_Manager/obj/",
+       "projectStyle": "PackageReference",
+       "configFilePaths": [
+-        "/Users/frederikhandberg/.nuget/NuGet/NuGet.Config"
++        "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
+       ],
+       "originalTargetFrameworks": [
+         "net8.0"
+Index: Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\n<Project ToolsVersion=\"14.0\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\n  <PropertyGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\n    <RestoreSuccess Condition=\" '$(RestoreSuccess)' == '' \">True</RestoreSuccess>\n    <RestoreTool Condition=\" '$(RestoreTool)' == '' \">NuGet</RestoreTool>\n    <ProjectAssetsFile Condition=\" '$(ProjectAssetsFile)' == '' \">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>\n    <NuGetPackageRoot Condition=\" '$(NuGetPackageRoot)' == '' \">/Users/frederikhandberg/.nuget/packages/</NuGetPackageRoot>\n    <NuGetPackageFolders Condition=\" '$(NuGetPackageFolders)' == '' \">/Users/frederikhandberg/.nuget/packages/</NuGetPackageFolders>\n    <NuGetProjectStyle Condition=\" '$(NuGetProjectStyle)' == '' \">PackageReference</NuGetProjectStyle>\n    <NuGetToolVersion Condition=\" '$(NuGetToolVersion)' == '' \">6.9.1</NuGetToolVersion>\n  </PropertyGroup>\n  <ItemGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\n    <SourceRoot Include=\"/Users/frederikhandberg/.nuget/packages/\" />\n  </ItemGroup>\n</Project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props b/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props
+--- a/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props	
++++ b/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props	
+@@ -4,12 +4,12 @@
+     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/frederikhandberg/.nuget/packages/</NuGetPackageRoot>
+-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/frederikhandberg/.nuget/packages/</NuGetPackageFolders>
++    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/lajoskariko/.nuget/packages/</NuGetPackageRoot>
++    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/lajoskariko/.nuget/packages/</NuGetPackageFolders>
+     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.9.1</NuGetToolVersion>
+   </PropertyGroup>
+   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+-    <SourceRoot Include="/Users/frederikhandberg/.nuget/packages/" />
++    <SourceRoot Include="/Users/lajoskariko/.nuget/packages/" />
+   </ItemGroup>
+ </Project>
+\ No newline at end of file
+Index: Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"format\": 1,\n  \"restore\": {\n    \"/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/Asset_Manager.csproj\": {}\n  },\n  \"projects\": {\n    \"/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/Asset_Manager.csproj\": {\n      \"version\": \"1.0.0\",\n      \"restore\": {\n        \"projectUniqueName\": \"/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/Asset_Manager.csproj\",\n        \"projectName\": \"Asset_Manager\",\n        \"projectPath\": \"/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/Asset_Manager.csproj\",\n        \"packagesPath\": \"/Users/frederikhandberg/.nuget/packages/\",\n        \"outputPath\": \"/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/obj/\",\n        \"projectStyle\": \"PackageReference\",\n        \"configFilePaths\": [\n          \"/Users/frederikhandberg/.nuget/NuGet/NuGet.Config\"\n        ],\n        \"originalTargetFrameworks\": [\n          \"net8.0\"\n        ],\n        \"sources\": {\n          \"https://api.nuget.org/v3/index.json\": {}\n        },\n        \"frameworks\": {\n          \"net8.0\": {\n            \"targetAlias\": \"net8.0\",\n            \"projectReferences\": {}\n          }\n        },\n        \"warningProperties\": {\n          \"warnAsError\": [\n            \"NU1605\"\n          ]\n        },\n        \"restoreAuditProperties\": {\n          \"enableAudit\": \"true\",\n          \"auditLevel\": \"low\",\n          \"auditMode\": \"direct\"\n        }\n      },\n      \"frameworks\": {\n        \"net8.0\": {\n          \"targetAlias\": \"net8.0\",\n          \"imports\": [\n            \"net461\",\n            \"net462\",\n            \"net47\",\n            \"net471\",\n            \"net472\",\n            \"net48\",\n            \"net481\"\n          ],\n          \"assetTargetFallback\": true,\n          \"warn\": true,\n          \"frameworkReferences\": {\n            \"Microsoft.NETCore.App\": {\n              \"privateAssets\": \"all\"\n            }\n          },\n          \"runtimeIdentifierGraphPath\": \"/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json\"\n        }\n      }\n    }\n  }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json b/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json
+--- a/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json	
++++ b/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json	
+@@ -1,20 +1,20 @@
+ {
+   "format": 1,
+   "restore": {
+-    "/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/Asset_Manager.csproj": {}
++    "/Users/lajoskariko/RiderProjects/Semester Project/Asset_Manager/Asset_Manager.csproj": {}
+   },
+   "projects": {
+-    "/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/Asset_Manager.csproj": {
++    "/Users/lajoskariko/RiderProjects/Semester Project/Asset_Manager/Asset_Manager.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/Asset_Manager.csproj",
++        "projectUniqueName": "/Users/lajoskariko/RiderProjects/Semester Project/Asset_Manager/Asset_Manager.csproj",
+         "projectName": "Asset_Manager",
+-        "projectPath": "/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/Asset_Manager.csproj",
+-        "packagesPath": "/Users/frederikhandberg/.nuget/packages/",
+-        "outputPath": "/Users/frederikhandberg/CsharpProjects/Semester-Project/Asset_Manager/obj/",
++        "projectPath": "/Users/lajoskariko/RiderProjects/Semester Project/Asset_Manager/Asset_Manager.csproj",
++        "packagesPath": "/Users/lajoskariko/.nuget/packages/",
++        "outputPath": "/Users/lajoskariko/RiderProjects/Semester Project/Asset_Manager/obj/",
+         "projectStyle": "PackageReference",
+         "configFilePaths": [
+-          "/Users/frederikhandberg/.nuget/NuGet/NuGet.Config"
++          "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
+         ],
+         "originalTargetFrameworks": [
+           "net8.0"

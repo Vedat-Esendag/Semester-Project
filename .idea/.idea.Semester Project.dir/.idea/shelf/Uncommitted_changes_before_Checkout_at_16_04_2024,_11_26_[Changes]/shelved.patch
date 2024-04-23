@@ -1,0 +1,12 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Semester Project Group 4\n
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	
++++ b/README.md	
+@@ -1,1 +1,2 @@
+ # Semester Project Group 4
++# yeaah
+\ No newline at end of file
