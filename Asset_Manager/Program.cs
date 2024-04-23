@@ -7,8 +7,9 @@ namespace AM
     {
         public static void Main()
         {
+            System.Console.WriteLine("Asset manager results.");
             string filePath = "./SavedData";
-            AssetManager AM = new AssetManager();
+            AssetManager AM = new();
             AM.AddBoilersAndSaveState(filePath);
         }
     }
