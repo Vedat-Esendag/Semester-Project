@@ -9,12 +9,27 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="MyProject">
 
-    <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainWindowViewModel/>
-    </Design.DataContext>
+    <Grid ColumnDefinitions="0.2*,*">
+        <Rectangle Grid.Column="0" Fill="rgb(25, 132, 197)"/>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <StackPanel Grid.Column="0" Orientation="Vertical">
+            <TextBox Margin="4,35,4,-8" Text="Semester Project" FontSize="13" TextAlignment="Center" IsReadOnly="True" Background="Transparent" BorderThickness="0" Foreground="White"/>
+            <TextBox Margin="4,-8,4,4" Text="Group 4" FontSize="10" TextAlignment="Center" IsReadOnly="True" Background="Transparent" BorderThickness="0" Foreground="White"/>
+            <TextBlock Height="40"/>
+            <Button Content="DashBoard" Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Electricity" Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Heat" Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Time" Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+            <TextBlock Height="55"/>
+            <Button Content="Settings" Margin="4" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Log-out" Margin="4" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+        </StackPanel>
+        
+        <Grid Grid.Column="1" RowDefinitions="0.2*,*">
+            <Rectangle Grid.Row="0" Fill="White"/>
+            <Rectangle Grid.Row="1" Fill="rgb(218, 235, 244)"/>
+        </Grid>
+    </Grid>
+
 
 </Window>
