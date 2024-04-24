@@ -4,8 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba5f516b-a985-42f9-97e4-e9e2c3a696b6" name="Changes" comment="Avalonia-based application structure">
-      <change beforePath="$PROJECT_DIR$/Data_Visualization/MyProject/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Visualization/MyProject/Views/MainWindow.axaml" afterDir="false" />
+    <list default="true" id="ba5f516b-a985-42f9-97e4-e9e2c3a696b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Data_Visualization/MainWindow.axaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Result_Data_Manager/Install-Package" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Result_Data_Manager/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Visualization/MyProject/App.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Visualization/App.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Visualization/MyProject/App.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Visualization/App.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Visualization/MyProject/Assets/avalonia-logo.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Visualization/MyProject/MyProject.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Visualization/Data_Visualization.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Visualization/MyProject/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Visualization/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Visualization/MyProject/ViewLocator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Visualization/MyProject/ViewModels/MainWindowViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Visualization/MyProject/ViewModels/ViewModelBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Visualization/MyProject/Views/MainWindow.axaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Visualization/MyProject/Views/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Visualization/MainWindow.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Visualization/MyProject/app.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Visualization/app.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/Result_Data_Manager.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/Result_Data_Manager.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/project.nuget.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,46 +57,49 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/Downloads/Semester-Project-main/user-interface/ViewLocator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/Semester-Project-main/user-interface/Views/MainWindow.axaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Asset_Manager/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asset_Manager/ProductionUnit.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asset_Manager/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data_Visualization/MyProject/App.axaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data_Visualization/MyProject/ViewModels/MainWindowViewModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data_Visualization/MyProject/ViewModels/ViewModelBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data_Visualization/MyProject/Views/MainWindow.axaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Optimizer/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Result_Data_Manager/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source_Data_Manager/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data_Visualization/App.axaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data_Visualization/MainWindow.axaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data_Visualization/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Optimizer/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Result_Data_Manager/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source_Data_Manager/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2fB0FZLFETPCq8UpSRYJkTDokxs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/lajoskariko/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/lajoskariko/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
-      &quot;/Users/lajoskariko/Library/Application Support/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/lajoskariko/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
+      "/Users/lajoskariko/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
+      "/Users/lajoskariko/Library/Application Support/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -86,6 +111,7 @@
       <workItem from="1710445729848" duration="144000" />
       <workItem from="1713259061906" duration="6204000" />
       <workItem from="1713431834632" duration="21946000" />
+      <workItem from="1713957178564" duration="2505000" />
     </task>
     <task id="LOCAL-00001" summary="Implementing SaveBoilers method">
       <option name="closed" value="true" />
@@ -147,6 +173,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Implementing SaveBoilers method" />
     <MESSAGE value="Added SavedData file" />
@@ -154,6 +181,7 @@
     <MESSAGE value="Create new Optimizer project" />
     <MESSAGE value="Add basic project structure for Mypo " />
     <MESSAGE value="Avalonia-based application structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Avalonia-based application structure" />
+    <MESSAGE value="home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

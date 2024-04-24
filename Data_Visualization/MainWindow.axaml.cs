@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace MyProject.Views;
+namespace Data_Visualization;
 
 public partial class MainWindow : Window
 {
