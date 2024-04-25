@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_18_04_2024,_15_43_[Changes]" date="1713447823952" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.Semester Project.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_04_2024,_15_43_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 18/04/2024, 15.43 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.assets.cache" />
+    <option name="AFTER_PATH" value="Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Semester Project.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_04_2024,_15_43_[Changes]/Source_Data_Manager.assets.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Semester Project.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_04_2024,_15_43_[Changes]/Source_Data_Manager.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Source_Data_Manager/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="Source_Data_Manager/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Semester Project.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_04_2024,_15_43_[Changes]/project.nuget.cache" />
+  </binary>
+</changelist>
