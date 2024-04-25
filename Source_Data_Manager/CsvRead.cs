@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -12,12 +11,12 @@ namespace SourceDataManager
     {
         public void ReadCSV()
         {
-            string filePath = "data.csv"; // Correct file path
+            string filePath = "data.csv";
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
-                HasHeaderRecord = true, // Enable header record processing
-                HeaderValidated = null, // Optional: ignore header mismatches during validation
-                MissingFieldFound = null, // Optional: handle missing fields gracefully
+                HasHeaderRecord = true,
+                HeaderValidated = null,
+                MissingFieldFound = null,
             };
 
             try
@@ -32,81 +31,56 @@ namespace SourceDataManager
                     csv.ReadHeader();
 
                     string[] headers = csv.HeaderRecord;
-
                     int winterStartIndex = Array.IndexOf(headers, "Winter period");
                     int summerStartIndex = Array.IndexOf(headers, "Summer period");
 
                     while (csv.Read())
                     {
-                        // Read winter periods
-                        for (int i = winterStartIndex; i < summerStartIndex; i += 4)
-                        {
-                            var timeFrom = csv.GetField(i);
-                            var timeTo = csv.GetField(i + 1);
-                            var heatDemand = csv.GetField(i + 2);
-                            var electricityPrice = csv.GetField(i + 3);
-
-                            if (!string.IsNullOrWhiteSpace(timeFrom) && !string.IsNullOrWhiteSpace(timeTo))
-                            {
-                                DateTime fromDateTime, toDateTime;
-                                if (DateTime.TryParse(timeFrom, out fromDateTime) && DateTime.TryParse(timeTo, out toDateTime))
-                                {
-                                    var data = new PeriodData
-                                    {
-                                        TimeFrom = fromDateTime,
-                                        TimeTo = toDateTime,
-                                        HeatDemand = double.Parse(heatDemand),
-                                        ElectricityPrice = double.Parse(electricityPrice)
-                                    };
-                                    winterPeriods.Add(data);
-                                }
-                            }
-                        }
-
-                        // Read summer periods
-                        for (int i = summerStartIndex; i < headers.Length - 3; i += 4)
-                        {
-                            var timeFrom = csv.GetField(i);
-                            var timeTo = csv.GetField(i + 1);
-                            var heatDemand = csv.GetField(i + 2);
-                            var electricityPrice = csv.GetField(i + 3);
-
-                            if (!string.IsNullOrWhiteSpace(timeFrom) && !string.IsNullOrWhiteSpace(timeTo))
-                            {
-                                DateTime fromDateTime, toDateTime;
-                                if (DateTime.TryParse(timeFrom, out fromDateTime) && DateTime.TryParse(timeTo, out toDateTime))
-                                {
-                                    var data = new PeriodData
-                                    {
-                                        TimeFrom = fromDateTime,
-                                        TimeTo = toDateTime,
-                                        HeatDemand = double.Parse(heatDemand),
-                                        ElectricityPrice = double.Parse(electricityPrice)
-                                    };
-                                    summerPeriods.Add(data);
-                                }
-                            }
-                        }
+                        ReadPeriods(csv, winterPeriods, winterStartIndex, summerStartIndex);
+                        ReadPeriods(csv, summerPeriods, summerStartIndex, headers.Length);
                     }
                 }
 
-                Console.WriteLine("Winter Period Data:");
-                foreach (var data in winterPeriods)
-                {
-                    Console.WriteLine($"Time: {data.TimeFrom} - {data.TimeTo}, Heat Demand: {data.HeatDemand}, Electricity Price: {data.ElectricityPrice}");
-                }
-
-                Console.WriteLine();
-                
-                Console.WriteLine("Summer Period Data:");
-                foreach (var data in summerPeriods)
-                {
-                    Console.WriteLine($"Time: {data.TimeFrom} - {data.TimeTo}, Heat Demand: {data.HeatDemand}, Electricity Price: {data.ElectricityPrice}");
-                }
+                PrintPeriodData("Winter Period Data:", winterPeriods);
+                PrintPeriodData("Summer Period Data:", summerPeriods);
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error reading CSV file: {ex.Message}");
+            }
+        }
+
+        private void ReadPeriods(CsvReader csv, List<PeriodData> periods, int startIndex, int endIndex)
+        {
+            for (int i = startIndex; i < endIndex; i += 4)
+            {
+                var timeFrom = csv.GetField(i);
+                var timeTo = csv.GetField(i + 1);
+                var heatDemand = csv.GetField(i + 2);
+                var electricityPrice = csv.GetField(i + 3);
+
+                if (DateTime.TryParse(timeFrom, out var fromDateTime) &&
+                    DateTime.TryParse(timeTo, out var toDateTime) &&
+                    double.TryParse(heatDemand, out var heatDemandParsed) &&
+                    double.TryParse(electricityPrice, out var electricityPriceParsed))
+                {
+                    periods.Add(new PeriodData
+                    {
+                        TimeFrom = fromDateTime,
+                        TimeTo = toDateTime,
+                        HeatDemand = heatDemandParsed,
+                        ElectricityPrice = electricityPriceParsed
+                    });
+                }
+            }
+        }
+
+        private void PrintPeriodData(string title, List<PeriodData> periods)
+        {
+            Console.WriteLine(title);
+            foreach (var data in periods)
+            {
+                Console.WriteLine($"Time: {data.TimeFrom} - {data.TimeTo}, Heat Demand: {data.HeatDemand}, Electricity Price: {data.ElectricityPrice}");
             }
         }
     }
