@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Result_Data_Manager", "Resu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Source_Data_Manager", "Source_Data_Manager\Source_Data_Manager.csproj", "{63F0A0FC-23C7-4DD7-9BA2-8B20759E9977}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimizer", "Optimizer\Optimizer.csproj", "{9E5E0424-167B-4664-8367-DE71D518F173}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data_Visualization", "Data_Visualization\Data_Visualization.csproj", "{430FEAE7-C527-46D7-BBBE-7E4C553B5B98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{63F0A0FC-23C7-4DD7-9BA2-8B20759E9977}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63F0A0FC-23C7-4DD7-9BA2-8B20759E9977}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63F0A0FC-23C7-4DD7-9BA2-8B20759E9977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E5E0424-167B-4664-8367-DE71D518F173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E5E0424-167B-4664-8367-DE71D518F173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E5E0424-167B-4664-8367-DE71D518F173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E5E0424-167B-4664-8367-DE71D518F173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{430FEAE7-C527-46D7-BBBE-7E4C553B5B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{430FEAE7-C527-46D7-BBBE-7E4C553B5B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{430FEAE7-C527-46D7-BBBE-7E4C553B5B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{430FEAE7-C527-46D7-BBBE-7E4C553B5B98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
