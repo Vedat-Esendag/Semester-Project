@@ -1,28 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "yXbiKNibqeeuHKXvfAStiyP7xyJOu7Y9CYbqVqGaXry9s3oO8VDhXSSSgS8I04PmGrRge9jQUvJiupnaFSBS3A==",
+  "dgSpecHash": "mAIWw3F2+OZmMK5/XgIAD/329qKgoGfGFUM6xTXWc8QyrSEPtQPrlwTXKZAkLwVrr4OizkSp5wrwsV/rQW83Bw==",
   "success": true,
-  "projectFilePath": "/Users/lajoskariko/RiderProjects/Semester Project/Source_Data_Manager/Source_Data_Manager.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\Source_Data_Manager.csproj",
   "expectedPackageFiles": [
-    "/Users/lajoskariko/.nuget/packages/avalonia/11.0.10/avalonia.11.0.10.nupkg.sha512",
-    "/Users/lajoskariko/.nuget/packages/avalonia.buildservices/0.0.29/avalonia.buildservices.0.0.29.nupkg.sha512",
-    "/Users/lajoskariko/.nuget/packages/avalonia.remote.protocol/11.0.10/avalonia.remote.protocol.11.0.10.nupkg.sha512",
-    "/Users/lajoskariko/.nuget/packages/csvhelper/31.0.4/csvhelper.31.0.4.nupkg.sha512",
-    "/Users/lajoskariko/.nuget/packages/microcom.runtime/0.11.0/microcom.runtime.0.11.0.nupkg.sha512",
-    "/Users/lajoskariko/.nuget/packages/microsoft.win32.systemevents/8.0.0/microsoft.win32.systemevents.8.0.0.nupkg.sha512",
-    "/Users/lajoskariko/.nuget/packages/oxyplot.avalonia/2.1.0/oxyplot.avalonia.2.1.0.nupkg.sha512",
-    "/Users/lajoskariko/.nuget/packages/oxyplot.core/2014.1.546/oxyplot.core.2014.1.546.nupkg.sha512",
-    "/Users/lajoskariko/.nuget/packages/oxyplot.windowsforms/2014.1.546/oxyplot.windowsforms.2014.1.546.nupkg.sha512",
-    "/Users/lajoskariko/.nuget/packages/system.componentmodel.annotations/4.5.0/system.componentmodel.annotations.4.5.0.nupkg.sha512",
-    "/Users/lajoskariko/.nuget/packages/system.drawing.common/8.0.4/system.drawing.common.8.0.4.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\avalonia\\11.0.10\\avalonia.11.0.10.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\avalonia.buildservices\\0.0.29\\avalonia.buildservices.0.0.29.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\avalonia.remote.protocol\\11.0.10\\avalonia.remote.protocol.11.0.10.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\csvhelper\\31.0.4\\csvhelper.31.0.4.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\oxyplot.avalonia\\2.1.0\\oxyplot.avalonia.2.1.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\oxyplot.core\\2014.1.546\\oxyplot.core.2014.1.546.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\oxyplot.windowsforms\\2014.1.546\\oxyplot.windowsforms.2014.1.546.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.drawing.common\\8.0.4\\system.drawing.common.8.0.4.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

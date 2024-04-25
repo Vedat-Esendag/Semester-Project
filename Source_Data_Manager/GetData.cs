@@ -3,7 +3,7 @@ using System.IO;
 
 namespace SourceDataManager
 {
-    class GetData
+    public class GetData
     {
         public static void WinterHeatDemand()
         {

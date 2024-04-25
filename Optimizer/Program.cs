@@ -1,10 +1,12 @@
 ﻿using System;
+using SourceDataManager;
 namespace Optimizer
 {
     class Program
     {
         public static void Main()
         {
+            GetData getData = new();
             Analyze analyze = new();
         }
     }
