@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba5f516b-a985-42f9-97e4-e9e2c3a696b6" name="Changes" comment="">
+    <list default="true" id="ba5f516b-a985-42f9-97e4-e9e2c3a696b6" name="Changes" comment="project path">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester Project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester Project.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +42,7 @@
     <setting file="file://$PROJECT_DIR$/Data_Visualization/App.axaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data_Visualization/MainWindow.axaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data_Visualization/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Optimizer/Analyze.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Optimizer/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Result_Data_Manager/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source_Data_Manager/Program.cs" root0="SKIP_HIGHLIGHTING" />
@@ -107,7 +108,7 @@
       <workItem from="1713431834632" duration="21946000" />
       <workItem from="1713957178564" duration="2505000" />
       <workItem from="1713959700359" duration="1975000" />
-      <workItem from="1714048121636" duration="774000" />
+      <workItem from="1714048121636" duration="7357000" />
     </task>
     <task id="LOCAL-00001" summary="Implementing SaveBoilers method">
       <option name="closed" value="true" />
@@ -157,7 +158,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713959894014</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="workspace settings">
+      <option name="closed" value="true" />
+      <created>1714048936805</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714048936805</updated>
+    </task>
+    <task id="LOCAL-00008" summary="project path">
+      <option name="closed" value="true" />
+      <created>1714054100127</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714054100127</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +204,8 @@
     <MESSAGE value="Avalonia-based application structure" />
     <MESSAGE value="home page" />
     <MESSAGE value="Data_Visualization what we have sofar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data_Visualization what we have sofar" />
+    <MESSAGE value="workspace settings" />
+    <MESSAGE value="project path" />
+    <option name="LAST_COMMIT_MESSAGE" value="project path" />
   </component>
 </project>
