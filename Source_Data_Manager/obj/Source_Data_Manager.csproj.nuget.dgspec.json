@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lajoskariko/RiderProjects/Semester Project/Source_Data_Manager/Source_Data_Manager.csproj": {}
+    "/Users/lajoskariko/RiderProjects/Semester_Project2/Source_Data_Manager/Source_Data_Manager.csproj": {}
   },
   "projects": {
-    "/Users/lajoskariko/RiderProjects/Semester Project/Source_Data_Manager/Source_Data_Manager.csproj": {
+    "/Users/lajoskariko/RiderProjects/Semester_Project2/Source_Data_Manager/Source_Data_Manager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lajoskariko/RiderProjects/Semester Project/Source_Data_Manager/Source_Data_Manager.csproj",
+        "projectUniqueName": "/Users/lajoskariko/RiderProjects/Semester_Project2/Source_Data_Manager/Source_Data_Manager.csproj",
         "projectName": "Source_Data_Manager",
-        "projectPath": "/Users/lajoskariko/RiderProjects/Semester Project/Source_Data_Manager/Source_Data_Manager.csproj",
+        "projectPath": "/Users/lajoskariko/RiderProjects/Semester_Project2/Source_Data_Manager/Source_Data_Manager.csproj",
         "packagesPath": "/Users/lajoskariko/.nuget/packages/",
-        "outputPath": "/Users/lajoskariko/RiderProjects/Semester Project/Source_Data_Manager/obj/",
+        "outputPath": "/Users/lajoskariko/RiderProjects/Semester_Project2/Source_Data_Manager/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {

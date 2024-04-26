@@ -53,26 +53,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vesen\\.nuget\\packages\\": {}
+    "/Users/lajoskariko/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vesen\\Documents\\GitHub\\Semester-Project\\Result_Data_Manager\\Result_Data_Manager.csproj",
+      "projectUniqueName": "/Users/lajoskariko/RiderProjects/Semester_Project2/Result_Data_Manager/Result_Data_Manager.csproj",
       "projectName": "Result_Data_Manager",
-      "projectPath": "C:\\Users\\vesen\\Documents\\GitHub\\Semester-Project\\Result_Data_Manager\\Result_Data_Manager.csproj",
-      "packagesPath": "C:\\Users\\vesen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vesen\\Documents\\GitHub\\Semester-Project\\Result_Data_Manager\\obj\\",
+      "projectPath": "/Users/lajoskariko/RiderProjects/Semester_Project2/Result_Data_Manager/Result_Data_Manager.csproj",
+      "packagesPath": "/Users/lajoskariko/.nuget/packages/",
+      "outputPath": "/Users/lajoskariko/RiderProjects/Semester_Project2/Result_Data_Manager/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vesen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -85,11 +83,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -117,8 +110,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /Users/lajoskariko/RiderProjects/Semester_Project2/Result_Data_Manager/obj/project.nuget.cache : Invalid property identifier character: <. Path 'expectedPackageFiles', line 9, position 0."
+    }
+  ]
 }

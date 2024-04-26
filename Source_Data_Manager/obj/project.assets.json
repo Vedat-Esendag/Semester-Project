@@ -711,11 +711,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lajoskariko/RiderProjects/Semester Project/Source_Data_Manager/Source_Data_Manager.csproj",
+      "projectUniqueName": "/Users/lajoskariko/RiderProjects/Semester_Project2/Source_Data_Manager/Source_Data_Manager.csproj",
       "projectName": "Source_Data_Manager",
-      "projectPath": "/Users/lajoskariko/RiderProjects/Semester Project/Source_Data_Manager/Source_Data_Manager.csproj",
+      "projectPath": "/Users/lajoskariko/RiderProjects/Semester_Project2/Source_Data_Manager/Source_Data_Manager.csproj",
       "packagesPath": "/Users/lajoskariko/.nuget/packages/",
-      "outputPath": "/Users/lajoskariko/RiderProjects/Semester Project/Source_Data_Manager/obj/",
+      "outputPath": "/Users/lajoskariko/RiderProjects/Semester_Project2/Source_Data_Manager/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
@@ -736,11 +736,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -793,12 +788,6 @@
     }
   },
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

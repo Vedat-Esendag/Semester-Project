@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "URDOXyqKVrb3NmRGeLGIytGTSxYbVo+bWJlwG1UrnGom2oCTHmSH4EvTkyMViOMesfuZh/nKKtulsli6D5fh7g==",
+  "dgSpecHash": "HdyT2ciqZuZgcxHWIR2QubDr7PWrBZRL+rqQP3ySuILOrXL9BShFd1nMcuOEUWvtu3C4oMIk+WM7cjUTJC1l3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vesen\\Documents\\GitHub\\Semester-Project\\Asset_Manager\\Asset_Manager.csproj",
+  "projectFilePath": "/Users/lajoskariko/RiderProjects/Semester_Project2/Asset_Manager/Asset_Manager.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vesen\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "/Users/lajoskariko/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -12,19 +12,30 @@
         <StackPanel Grid.Column="0" Orientation="Vertical">
             <TextBox Margin="4,35,4,-8" Text="Semester Project" FontSize="13" TextAlignment="Center" IsReadOnly="True" Background="Transparent" BorderThickness="0" Foreground="White"/>
             <TextBox Margin="4,-8,4,4" Text="Group 4" FontSize="10" TextAlignment="Center" IsReadOnly="True" Background="Transparent" BorderThickness="0" Foreground="White"/>
-            <TextBlock Height="40"/>
             <Button Content="DashBoard" Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
             <Button Content="Electricity" Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
             <Button Content="Heat" Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
             <Button Content="Time" Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
-            <TextBlock Height="55"/>
+            <TextBlock Height="25"/>
+            <Button Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <TextBlock TextAlignment="Center">Advanced</TextBlock>
+                    <TextBlock TextAlignment="Center">Details</TextBlock>
+                </StackPanel>
+            </Button>
+            <TextBlock Height="25"/>
             <Button Content="Settings" Margin="4" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
             <Button Content="Log-out" Margin="4" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
         </StackPanel>
         
         <Grid Grid.Column="1" RowDefinitions="0.2*,*">
             <Rectangle Grid.Row="0" Fill="White"/>
+            <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Vertical">
+                <TextBlock FontSize="15" FontWeight="Bold" Margin="10,10,10,0" Text="User_1" VerticalAlignment="Center"/>
+                <TextBlock FontSize="10" Margin="10,0,10,0" Text="email@gmail.com" VerticalAlignment="Center"/>
+            </StackPanel>
             <Rectangle Grid.Row="1" Fill="rgb(218, 235, 244)"/>
+            <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="28" FontWeight="Bold" Text="Navigation"/>
         </Grid>
     </Grid>
 
