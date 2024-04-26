@@ -11,14 +11,15 @@ namespace SourceDataManager
         public static void Main()
         {
             CsvRead csvRead = new();
-            HeatDemand heatDemand = new();
-            ElectrictyPrice electrictyPrice = new();
+            GetData getData = new GetData();
             Console.WriteLine("Starting CSV reading...");
             csvRead.ReadCSV();
-            /*Console.WriteLine("Ara beni yala beni :)");
-            heatDemand.ReadHeatDemandOnly();
-            Console.WriteLine("HAM HAM");
-            ElectrictyPrice.ReadElectricityPriceOnly();*/
+            Console.WriteLine("Heat demand:");
+            GetData.WinterHeatDemand();
+            GetData.SummerHeatDemand();
+            Console.WriteLine("Electricity price:");
+            GetData.WinterElectricityPrice();
+            GetData.SummerElectricityPrice();
         }
     }
 }
