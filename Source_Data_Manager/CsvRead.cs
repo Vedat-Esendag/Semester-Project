@@ -7,8 +7,10 @@ using CsvHelper.Configuration;
 
 namespace SourceDataManager
 {
-    class CsvRead
+    public class CsvRead
     {
+        public List<PeriodData> winterPeriods = new List<PeriodData>();
+        public List<PeriodData> summerPeriods = new List<PeriodData>();
         public void ReadCSV()
         {
             string filePath = "data.csv";
@@ -21,8 +23,6 @@ namespace SourceDataManager
 
             try
             {
-                List<PeriodData> winterPeriods = new List<PeriodData>();
-                List<PeriodData> summerPeriods = new List<PeriodData>();
 
                 using (var reader = new StreamReader(filePath))
                 using (var csv = new CsvReader(reader, config))
