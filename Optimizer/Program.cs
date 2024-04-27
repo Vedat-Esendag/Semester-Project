@@ -8,6 +8,7 @@ namespace Optimizer
         {
             GetData getData = new();
             Analyze analyze = new();
+            analyze.CalculateProductionPrices();
         }
     }
 

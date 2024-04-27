@@ -1,4 +1,6 @@
 using System;
+using OxyPlot.Series;
+using SourceDataManager;
 namespace Optimizer
 {
     interface IAnalyze
@@ -10,9 +12,12 @@ namespace Optimizer
 
     public class Analyze : IAnalyze
     {
+        CsvRead csvRead = new CsvRead();
         public void CalculateProductionPrices()
         {
-            throw new NotImplementedException();
+            csvRead.ReadCSV();
+            double heat = csvRead.winterPeriods[0].HeatDemand;
+            Console.WriteLine(heat);
         }
 
         public void CheckMaxHeat()
