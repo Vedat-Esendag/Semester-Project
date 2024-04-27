@@ -1,17 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vzqJ6SPAYf+nUEOyx4J2wj0E3i+oDSGxEZtqRK+7qeBpDH6jiD3loCLT+CyZse+VOLQE8fL4SaAID229VP7M2g==",
+  "dgSpecHash": "ZkvjiKL8AbdfAPgVYacrNYdTzcLAR8aldChcMFz5XijtAZRyzf/g5P4v+J1JiMxDDbXSWvUHYBb0xu3RYsu/rw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Result_Data_Manager\\Result_Data_Manager.csproj",
+  "projectFilePath": "/Users/lajoskariko/RiderProjects/Semester_Project2/Result_Data_Manager/Result_Data_Manager.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\admin\\.nuget\\packages\\csvhelper\\31.0.4\\csvhelper.31.0.4.nupkg.sha512"
+    "/Users/lajoskariko/.nuget/packages/csvhelper/31.0.4/csvhelper.31.0.4.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Result_Data_Manager\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'expectedPackageFiles', line 9, position 0."
-    }
-  ]
+  "logs": []
 }
