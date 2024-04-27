@@ -6,12 +6,5 @@
   "expectedPackageFiles": [
     "/Users/lajoskariko/.nuget/packages/csvhelper/31.0.4/csvhelper.31.0.4.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /Users/lajoskariko/RiderProjects/Semester_Project2/Result_Data_Manager/obj/project.nuget.cache : Invalid property identifier character: <. Path 'expectedPackageFiles', line 9, position 0."
-    }
-  ]
+  "logs": []
 }

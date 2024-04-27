@@ -10,22 +10,31 @@
         <Rectangle Grid.Column="0" Fill="rgb(25, 132, 197)"/>
 
         <StackPanel Grid.Column="0" Orientation="Vertical">
-            <TextBox Margin="4,35,4,-8" Text="Semester Project" FontSize="13" TextAlignment="Center" IsReadOnly="True" Background="Transparent" BorderThickness="0" Foreground="White"/>
-            <TextBox Margin="4,-8,4,4" Text="Group 4" FontSize="10" TextAlignment="Center" IsReadOnly="True" Background="Transparent" BorderThickness="0" Foreground="White"/>
-            <Button Content="DashBoard" Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
-            <Button Content="Electricity" Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
-            <Button Content="Heat" Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
-            <Button Content="Time" Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+            <TextBox Margin="4,35,4,-8" Text="Semester Project" FontSize="13" TextAlignment="Center"
+                     IsReadOnly="True" Background="Transparent" BorderThickness="0" Foreground="White"/>
+            <TextBox Margin="4,-8,4,4" Text="Group 4" FontSize="10" TextAlignment="Center" IsReadOnly="True"
+                     Background="Transparent" BorderThickness="0" Foreground="White"/>
+            <Button Content="DashBoard" Margin="7" HorizontalAlignment="Center" Background="Transparent"
+                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Electricity" Margin="7" HorizontalAlignment="Center" Background="Transparent"
+                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Heat" Margin="7" HorizontalAlignment="Center" Background="Transparent"
+                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Time" Margin="7" HorizontalAlignment="Center" Background="Transparent"
+                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
             <TextBlock Height="25"/>
-            <Button Margin="7" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold">
+            <Button Margin="7" HorizontalAlignment="Center" Background="Transparent"
+                    BorderThickness="0" Foreground="White" FontWeight="Bold">
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                     <TextBlock TextAlignment="Center">Advanced</TextBlock>
                     <TextBlock TextAlignment="Center">Details</TextBlock>
                 </StackPanel>
             </Button>
             <TextBlock Height="25"/>
-            <Button Content="Settings" Margin="4" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
-            <Button Content="Log-out" Margin="4" HorizontalAlignment="Center" Background="Transparent" BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Settings" Margin="4" HorizontalAlignment="Center" Background="Transparent"
+                    BorderThickness="0" Foreground="White" FontWeight="Bold" Click="OpenSettingsWindow"/>
+            <Button Content="Log-out" Margin="4" HorizontalAlignment="Center" Background="Transparent"
+                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
         </StackPanel>
         
         <Grid Grid.Column="1" RowDefinitions="0.2*,*">
