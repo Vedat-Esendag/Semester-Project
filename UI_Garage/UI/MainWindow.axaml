@@ -1,0 +1,51 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="UI.MainWindow"
+        Title="UI">
+    <StackPanel>
+        <!-- Profile Bar -->
+        <Grid Background="Orange" Height="50" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
+            <Rectangle Grid.Column="0" Fill="Red" Width="100"></Rectangle>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2">
+                <Label FontWeight="Black" FontSize="25">Navigation</Label>
+            </StackPanel>
+
+            <Rectangle Grid.Column="4" Fill="Blue" Width="80"></Rectangle>
+            
+        </Grid>
+        <DockPanel LastChildFill="False">
+        <!-- Option Bar -->
+            <Grid Background="Green" Width="150" Height="400" DockPanel.Dock="Left">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Stretch">
+                    <Button Content="Electricity" Margin="5" HorizontalAlignment="Center" Background="Transparent"
+                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+
+                    <Button Content="Heat" Margin="20" HorizontalAlignment="Center" Background="Transparent"
+                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+
+                    <Button Content="Time" Margin="30" HorizontalAlignment="Center" Background="Transparent"
+                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+
+                    <Button Content="Advanced Details" Margin="5" HorizontalAlignment="Center" Background="Transparent"
+                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+
+                    <Button Content="Settings" Margin="30" HorizontalAlignment="Center" Background="Transparent"
+                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+
+                    <Button Content="Sign Out" Margin="20" HorizontalAlignment="Center" Background="Transparent"
+                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+                    
+                </StackPanel>
+            </Grid>
+        </DockPanel>
+        <!-- Main Section -->
+        <Grid Background="White">
+            
+        </Grid> 
+
+    </StackPanel>
+</Window>

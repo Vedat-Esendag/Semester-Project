@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimizer", "Optimizer\Opti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data_Visualization", "Data_Visualization\Data_Visualization.csproj", "{430FEAE7-C527-46D7-BBBE-7E4C553B5B98}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI_Garage", "UI_Garage", "{A17D7181-0627-44AF-9E50-98E2B3855CA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI_Garage\UI\UI.csproj", "{AE7110A6-43EC-49A4-930D-473274D60CF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,11 +43,18 @@ Global
 		{430FEAE7-C527-46D7-BBBE-7E4C553B5B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{430FEAE7-C527-46D7-BBBE-7E4C553B5B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{430FEAE7-C527-46D7-BBBE-7E4C553B5B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE7110A6-43EC-49A4-930D-473274D60CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7110A6-43EC-49A4-930D-473274D60CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7110A6-43EC-49A4-930D-473274D60CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE7110A6-43EC-49A4-930D-473274D60CF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {823F5A9D-D611-4DA8-A348-DCA5CD091A99}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE7110A6-43EC-49A4-930D-473274D60CF2} = {A17D7181-0627-44AF-9E50-98E2B3855CA5}
 	EndGlobalSection
 EndGlobal
