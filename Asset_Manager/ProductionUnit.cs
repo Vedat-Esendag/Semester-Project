@@ -101,7 +101,7 @@ namespace AM
             {
                 Name = "GM";
                 MaxHeat = 3.6;
-                MaxElectricity = 2.7;
+                MaxElectricity = -2.7;
                 ProductionCost = 1100;
                 CO2Emissions = 640;
                 GasConsumption = 1.9;
@@ -114,7 +114,7 @@ namespace AM
             {
                 Name = "EK";
                 MaxHeat = 8;
-                MaxElectricity = -8;
+                MaxElectricity = 8;
                 ProductionCost = 50;
             }
         }
