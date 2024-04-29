@@ -8,8 +8,8 @@ namespace Optimizer
         {
             GetData getData = new();
             Analyze analyze = new();
-            //analyze.CalculatePricesWinterElectric();
-            analyze.CalculatePricesSummerMotor();
+            analyze.CalculatePricesSummerElectric();
+            //analyze.CalculatePricesSummerMotor();
         }
     }
 

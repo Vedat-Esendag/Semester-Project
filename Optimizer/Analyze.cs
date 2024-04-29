@@ -124,11 +124,6 @@ namespace Optimizer
                 double price = (csvRead.winterPeriods[i].HeatDemand*electricBoiler.ProductionCost)+(csvRead.winterPeriods[i].ElectricityPrice*electricBoiler.MaxElectricity*efficiencyRate);
                 electricWinterProductionPrices.Add(price);
             }
-
-            for (int i = 0; i<electricWinterProductionPrices.Count;i++)
-            {
-                Console.WriteLine("Electric"+electricWinterProductionPrices[i]);
-            }
         }
 
         public void CalculatePricesSummerElectric()
@@ -139,6 +134,12 @@ namespace Optimizer
                 double efficiencyRate = csvRead.summerPeriods[i].HeatDemand / electricBoiler.MaxHeat;
                 double price = (csvRead.summerPeriods[i].HeatDemand*electricBoiler.ProductionCost)+(csvRead.summerPeriods[i].ElectricityPrice*electricBoiler.MaxElectricity*efficiencyRate);
                 electricSummerProductionPrices.Add(price);
+            }
+
+            
+            for (int i = 0; i<electricSummerProductionPrices.Count;i++)
+            {
+                Console.WriteLine("Electric"+electricSummerProductionPrices[i]);
             }
         }
 
