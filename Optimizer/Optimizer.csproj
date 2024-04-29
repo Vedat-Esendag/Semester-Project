@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Source_Data_Manager\Source_Data_Manager.csproj" />
+    <ProjectReference Include="..\Asset_Manager\Asset_Manager.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

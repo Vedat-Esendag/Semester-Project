@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
+using System.Globalization;
 
 namespace AM
 {
@@ -56,7 +57,7 @@ namespace AM
             File.WriteAllText(filePath + "json2.json", json2);
         }
 
-        class ProductionUnit : IProductionUnit
+        public class ProductionUnit : IProductionUnit
         {
             public string Name { get; set; }
             public double MaxHeat { get; set; }
@@ -66,7 +67,7 @@ namespace AM
             public string Image { get; set; }
         }
 
-        class GasBoiler : ProductionUnit
+        public class GasBoiler : ProductionUnit
         {
             public GasBoiler()
             {
@@ -79,7 +80,7 @@ namespace AM
             }
         }
 
-        class OilBoiler : ProductionUnit
+        public class OilBoiler : ProductionUnit
         {
             public OilBoiler()
             {
@@ -91,7 +92,7 @@ namespace AM
             }
         }
 
-        class GasMotor : ProductionUnit
+        public class GasMotor : ProductionUnit
         {
             public double MaxElectricity { get; set; }
             public GasMotor()
@@ -105,7 +106,7 @@ namespace AM
             }
         }
 
-        class ElectricBoiler : ProductionUnit
+        public class ElectricBoiler : ProductionUnit
         {
             public decimal MaxElectricity { get; set; }
             public ElectricBoiler()
