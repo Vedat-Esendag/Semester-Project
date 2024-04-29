@@ -84,7 +84,7 @@ namespace AM
             public OilBoiler()
             {
                 Name = "OB";
-                MaxHeat = 5;
+                MaxHeat = 4;
                 ProductionCost = 700;
                 CO2Emissions = 265;
                 GasConsumption = 1.2;
