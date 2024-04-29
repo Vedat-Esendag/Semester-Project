@@ -44,20 +44,14 @@ namespace Optimizer
         GasMotor gasMotor = new GasMotor();
         ElectricBoiler electricBoiler= new ElectricBoiler();
 
-
-
-        double efficiencyRate;
         public void CalculatePricesWinterOil()
         {
             csvRead.ReadCSV();
             for (int i = 0; i < csvRead.winterPeriods.Count(); i++)
             {
-                efficiencyRate = csvRead.winterPeriods[i].HeatDemand / oilBoiler.MaxHeat;
-                if(efficiencyRate <= 1)
-                {
-                    double price = (csvRead.winterPeriods[i].HeatDemand*oilBoiler.ProductionCost)+(csvRead.winterPeriods[i].ElectricityPrice*oilBoiler.MaxElectricity*efficiencyRate);
-                    oilWinterProductionPrices.Add(price);
-                }
+                double efficiencyRate = csvRead.winterPeriods[i].HeatDemand / oilBoiler.MaxHeat;
+                double price = (csvRead.winterPeriods[i].HeatDemand*oilBoiler.ProductionCost)+(csvRead.winterPeriods[i].ElectricityPrice*oilBoiler.MaxElectricity*efficiencyRate);
+                oilWinterProductionPrices.Add(price);
             }
         }
 
@@ -66,7 +60,8 @@ namespace Optimizer
             csvRead.ReadCSV();
             for (int i = 0; i < csvRead.summerPeriods.Count(); i++)
             {
-                double price = (csvRead.summerPeriods[i].HeatDemand*oilBoiler.ProductionCost)+(csvRead.summerPeriods[i].ElectricityPrice*oilBoiler.MaxElectricity);
+                double efficiencyRate = csvRead.summerPeriods[i].HeatDemand / oilBoiler.MaxHeat;
+                double price = (csvRead.summerPeriods[i].HeatDemand*oilBoiler.ProductionCost)+(csvRead.summerPeriods[i].ElectricityPrice*oilBoiler.MaxElectricity*efficiencyRate);
                 oilSummerProductionPrices.Add(price);
             }
         }
@@ -76,7 +71,8 @@ namespace Optimizer
             csvRead.ReadCSV();
             for (int i = 0; i < csvRead.winterPeriods.Count(); i++)
             {
-                double price = (csvRead.winterPeriods[i].HeatDemand*gasBoiler.ProductionCost)+(csvRead.winterPeriods[i].ElectricityPrice*gasBoiler.MaxElectricity);
+                double efficiencyRate = csvRead.winterPeriods[i].HeatDemand / gasBoiler.MaxHeat;
+                double price = (csvRead.winterPeriods[i].HeatDemand*gasBoiler.ProductionCost)+(csvRead.winterPeriods[i].ElectricityPrice*gasBoiler.MaxElectricity*efficiencyRate);
                 gasWinterProductionPrices.Add(price);
             }
         }
@@ -86,7 +82,8 @@ namespace Optimizer
             csvRead.ReadCSV();
             for (int i = 0; i < csvRead.summerPeriods.Count(); i++)
             {
-                double price = (csvRead.summerPeriods[i].HeatDemand*gasBoiler.ProductionCost)+(csvRead.summerPeriods[i].ElectricityPrice*gasBoiler.MaxElectricity);
+                double efficiencyRate = csvRead.summerPeriods[i].HeatDemand / gasBoiler.MaxHeat;
+                double price = (csvRead.summerPeriods[i].HeatDemand*gasBoiler.ProductionCost)+(csvRead.summerPeriods[i].ElectricityPrice*gasBoiler.MaxElectricity*efficiencyRate);
                 gasSummerProductionPrices.Add(price);
             }
         }
@@ -96,7 +93,8 @@ namespace Optimizer
             csvRead.ReadCSV();
             for (int i = 0; i < csvRead.winterPeriods.Count(); i++)
             {
-                double price = (csvRead.winterPeriods[i].HeatDemand*gasMotor.ProductionCost)+(csvRead.winterPeriods[i].ElectricityPrice*gasMotor.MaxElectricity);
+                double efficiencyRate = csvRead.winterPeriods[i].HeatDemand / gasMotor.MaxHeat;
+                double price = (csvRead.winterPeriods[i].HeatDemand*gasMotor.ProductionCost)+(csvRead.winterPeriods[i].ElectricityPrice*gasMotor.MaxElectricity*efficiencyRate);
                 motorWinterProductionPrices.Add(price);
             }
         }
@@ -106,7 +104,8 @@ namespace Optimizer
             csvRead.ReadCSV();
             for (int i = 0; i < csvRead.summerPeriods.Count(); i++)
             {
-                double price = (csvRead.summerPeriods[i].HeatDemand*gasMotor.ProductionCost)+(csvRead.summerPeriods[i].ElectricityPrice*gasMotor.MaxElectricity);
+                double efficiencyRate = csvRead.summerPeriods[i].HeatDemand / gasMotor.MaxHeat;
+                double price = (csvRead.summerPeriods[i].HeatDemand*gasMotor.ProductionCost)+(csvRead.summerPeriods[i].ElectricityPrice*gasMotor.MaxElectricity*efficiencyRate);
                 motorSummerProductionPrices.Add(price);
             }
 
@@ -121,7 +120,8 @@ namespace Optimizer
             csvRead.ReadCSV();
             for (int i = 0; i < csvRead.winterPeriods.Count(); i++)
             {
-                double price = (csvRead.winterPeriods[i].HeatDemand*electricBoiler.ProductionCost)+(csvRead.winterPeriods[i].ElectricityPrice*electricBoiler.MaxElectricity);
+                double efficiencyRate = csvRead.winterPeriods[i].HeatDemand / electricBoiler.MaxHeat;
+                double price = (csvRead.winterPeriods[i].HeatDemand*electricBoiler.ProductionCost)+(csvRead.winterPeriods[i].ElectricityPrice*electricBoiler.MaxElectricity*efficiencyRate);
                 electricWinterProductionPrices.Add(price);
             }
 
@@ -136,7 +136,8 @@ namespace Optimizer
             csvRead.ReadCSV();
             for (int i = 0; i < csvRead.summerPeriods.Count(); i++)
             {
-                double price = (csvRead.summerPeriods[i].HeatDemand*electricBoiler.ProductionCost)+(csvRead.summerPeriods[i].ElectricityPrice*electricBoiler.MaxElectricity);
+                double efficiencyRate = csvRead.summerPeriods[i].HeatDemand / electricBoiler.MaxHeat;
+                double price = (csvRead.summerPeriods[i].HeatDemand*electricBoiler.ProductionCost)+(csvRead.summerPeriods[i].ElectricityPrice*electricBoiler.MaxElectricity*efficiencyRate);
                 electricSummerProductionPrices.Add(price);
             }
         }
