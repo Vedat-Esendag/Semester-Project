@@ -9,8 +9,8 @@ namespace AM
     {
         string Name { get; set; }
         double MaxHeat { get; set; }
-        decimal ProductionCost { get; set; }
-        decimal CO2Emissions { get; set; }
+        double ProductionCost { get; set; }
+        double CO2Emissions { get; set; }
         double GasConsumption { get; set; }
         string Image { get; set; }
     }
@@ -62,8 +62,8 @@ namespace AM
         {
             public string Name { get; set; }
             public double MaxHeat { get; set; }
-            public decimal ProductionCost { get; set; }
-            public decimal CO2Emissions { get; set; }
+            public double ProductionCost { get; set; }
+            public double CO2Emissions { get; set; }
             public double GasConsumption { get; set; }
             public string Image { get; set; }
         }

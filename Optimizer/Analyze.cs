@@ -16,7 +16,7 @@ namespace Optimizer
     {
         List<double> productionPrices = new List<double>();
         CsvRead csvRead = new CsvRead();
-        AssetManager assetManager = new AssetManager();
+        AssetManager assetManager = new AssetManager();//Dolma
 
         OilBoiler oilBoiler = new OilBoiler();
         GasBoiler gasBoiler = new GasBoiler();
