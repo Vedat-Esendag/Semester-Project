@@ -66,6 +66,7 @@ namespace AM
             public double CO2Emissions { get; set; }
             public double GasConsumption { get; set; }
             public string Image { get; set; }
+            public double MaxElectricity { get; set; }
         }
 
         public class GasBoiler : ProductionUnit
@@ -77,7 +78,7 @@ namespace AM
                 ProductionCost = 500;
                 CO2Emissions = 215;
                 GasConsumption = 1.1;
-
+                MaxElectricity = 0;
             }
         }
 
@@ -90,12 +91,12 @@ namespace AM
                 ProductionCost = 700;
                 CO2Emissions = 265;
                 GasConsumption = 1.2;
+                MaxElectricity = 0;
             }
         }
 
         public class GasMotor : ProductionUnit
         {
-            public double MaxElectricity { get; set; }
             public GasMotor()
             {
                 Name = "GM";
@@ -109,7 +110,6 @@ namespace AM
 
         public class ElectricBoiler : ProductionUnit
         {
-            public decimal MaxElectricity { get; set; }
             public ElectricBoiler()
             {
                 Name = "EK";
