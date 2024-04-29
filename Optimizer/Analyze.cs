@@ -44,13 +44,20 @@ namespace Optimizer
         GasMotor gasMotor = new GasMotor();
         ElectricBoiler electricBoiler= new ElectricBoiler();
 
+
+
+        double efficiencyRate;
         public void CalculatePricesWinterOil()
         {
             csvRead.ReadCSV();
             for (int i = 0; i < csvRead.winterPeriods.Count(); i++)
             {
-                double price = (csvRead.winterPeriods[i].HeatDemand*oilBoiler.ProductionCost)+(csvRead.winterPeriods[i].ElectricityPrice*oilBoiler.MaxElectricity);
-                oilWinterProductionPrices.Add(price);
+                efficiencyRate = csvRead.winterPeriods[i].HeatDemand / oilBoiler.MaxHeat;
+                if(efficiencyRate <= 1)
+                {
+                    double price = (csvRead.winterPeriods[i].HeatDemand*oilBoiler.ProductionCost)+(csvRead.winterPeriods[i].ElectricityPrice*oilBoiler.MaxElectricity*efficiencyRate);
+                    oilWinterProductionPrices.Add(price);
+                }
             }
         }
 
