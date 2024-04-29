@@ -56,6 +56,7 @@ namespace AM
             File.WriteAllText(filePath + "json1.json", json1);
             File.WriteAllText(filePath + "json2.json", json2);
         }
+    }
 
         public class ProductionUnit : IProductionUnit
         {
@@ -117,5 +118,4 @@ namespace AM
                 ProductionCost = 50;
             }
         }
-    }
 }

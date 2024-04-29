@@ -1,6 +1,8 @@
 using System;
 using OxyPlot.Series;
 using SourceDataManager;
+using AM;
+
 namespace Optimizer
 {
     interface IAnalyze
@@ -12,12 +14,23 @@ namespace Optimizer
 
     public class Analyze : IAnalyze
     {
+        List<double> productionPrices = new List<double>();
         CsvRead csvRead = new CsvRead();
-        public void CalculateProductionPrices()
+        AssetManager assetManager = new AssetManager();
+
+        OilBoiler oilBoiler = new OilBoiler();
+        GasBoiler gasBoiler = new GasBoiler();
+
+        GasMotor gasMotor = new GasMotor();
+        ElectricBoiler electricBoiler= new ElectricBoiler();
+
+        public void CalculateProductionPricesWinter()
         {
             csvRead.ReadCSV();
-            double heat = csvRead.winterPeriods[0].HeatDemand;
-            Console.WriteLine(heat);
+            for (int i = 0; i < csvRead.winterPeriods.Count(); i++)
+            {
+                double price = (csvRead.winterPeriods[0].HeatDemand*assetManager.OilBoiler.ProductionCost)+(csvRead.winterPeriods[0].ElectricityPrice);
+            }
         }
 
         public void CheckMaxHeat()
