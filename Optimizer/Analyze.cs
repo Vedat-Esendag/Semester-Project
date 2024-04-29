@@ -7,7 +7,14 @@ namespace Optimizer
 {
     interface IAnalyze
     {
-        void CalculateProductionPrices();
+        void CalculatePricesWinterElectric();
+        void CalculatePricesWinterOil();
+        void CalculatePricesWinterMotor();
+        void CalculatePricesWinterGas();
+        void CalculatePricesSummerElectric();
+        void CalculatePricesSummerOil();
+        void CalculatePricesSummerMotor();
+        void CalculatePricesSummerGas();
         void CreateOrder();
         void CheckMaxHeat();
     }
