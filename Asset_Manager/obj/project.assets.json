@@ -55,24 +55,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/frederikhandberg/.nuget/packages/": {}
+    "C:\\Users\\Fefe\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/frederikhandberg/CsharpProjects/Semester-Project/Semester-Project/Asset_Manager/Asset_Manager.csproj",
+      "projectUniqueName": "C:\\Users\\Fefe\\Documents\\Semester-Project-04-24\\Asset_Manager\\Asset_Manager.csproj",
       "projectName": "Asset_Manager",
-      "projectPath": "/Users/frederikhandberg/CsharpProjects/Semester-Project/Semester-Project/Asset_Manager/Asset_Manager.csproj",
-      "packagesPath": "/Users/frederikhandberg/.nuget/packages/",
-      "outputPath": "/Users/frederikhandberg/CsharpProjects/Semester-Project/Semester-Project/Asset_Manager/obj/",
+      "projectPath": "C:\\Users\\Fefe\\Documents\\Semester-Project-04-24\\Asset_Manager\\Asset_Manager.csproj",
+      "packagesPath": "C:\\Users\\Fefe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Fefe\\Documents\\Semester-Project-04-24\\Asset_Manager\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/frederikhandberg/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Fefe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -117,7 +124,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

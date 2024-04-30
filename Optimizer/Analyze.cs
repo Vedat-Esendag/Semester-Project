@@ -152,7 +152,10 @@ namespace Optimizer
 
         public void CreateOrderSummer()
         {
-
+            for (int i =0; i<oilSummerProductionPrices.Count() ; i ++)
+            {
+                
+            }
         }
     }
 }
