@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "qxkiwwcr/IE2jzMGpoBrkRBLQ6V4RzR6ErExM1y+udPd265nxYlsgGEFq0/mj888xsZP+YexjOmDnW1drF0kjA==",
+  "dgSpecHash": "uOozXiC0M9dDhM95PRGUwJbQisHFdkrw6JyooJrNNPvUymBrAaDunX9VfastoiGXEg174bN9VCo1+3MUacfvuA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fefe\\Documents\\Semester-Project-04-24\\Source_Data_Manager\\Source_Data_Manager.csproj",
+  "projectFilePath": "/Users/frederikhandberg/CsharpProjects/Semester-Project/Semester-Project/Source_Data_Manager/Source_Data_Manager.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Fefe\\.nuget\\packages\\avalonia\\11.0.10\\avalonia.11.0.10.nupkg.sha512",
-    "C:\\Users\\Fefe\\.nuget\\packages\\avalonia.buildservices\\0.0.29\\avalonia.buildservices.0.0.29.nupkg.sha512",
-    "C:\\Users\\Fefe\\.nuget\\packages\\avalonia.remote.protocol\\11.0.10\\avalonia.remote.protocol.11.0.10.nupkg.sha512",
-    "C:\\Users\\Fefe\\.nuget\\packages\\csvhelper\\31.0.4\\csvhelper.31.0.4.nupkg.sha512",
-    "C:\\Users\\Fefe\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
-    "C:\\Users\\Fefe\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
-    "C:\\Users\\Fefe\\.nuget\\packages\\oxyplot.avalonia\\2.1.0\\oxyplot.avalonia.2.1.0.nupkg.sha512",
-    "C:\\Users\\Fefe\\.nuget\\packages\\oxyplot.core\\2014.1.546\\oxyplot.core.2014.1.546.nupkg.sha512",
-    "C:\\Users\\Fefe\\.nuget\\packages\\oxyplot.windowsforms\\2014.1.546\\oxyplot.windowsforms.2014.1.546.nupkg.sha512",
-    "C:\\Users\\Fefe\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
-    "C:\\Users\\Fefe\\.nuget\\packages\\system.drawing.common\\8.0.4\\system.drawing.common.8.0.4.nupkg.sha512"
+    "/Users/frederikhandberg/.nuget/packages/avalonia/11.0.10/avalonia.11.0.10.nupkg.sha512",
+    "/Users/frederikhandberg/.nuget/packages/avalonia.buildservices/0.0.29/avalonia.buildservices.0.0.29.nupkg.sha512",
+    "/Users/frederikhandberg/.nuget/packages/avalonia.remote.protocol/11.0.10/avalonia.remote.protocol.11.0.10.nupkg.sha512",
+    "/Users/frederikhandberg/.nuget/packages/csvhelper/32.0.1/csvhelper.32.0.1.nupkg.sha512",
+    "/Users/frederikhandberg/.nuget/packages/microcom.runtime/0.11.0/microcom.runtime.0.11.0.nupkg.sha512",
+    "/Users/frederikhandberg/.nuget/packages/microsoft.win32.systemevents/8.0.0/microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "/Users/frederikhandberg/.nuget/packages/oxyplot.avalonia/2.1.0/oxyplot.avalonia.2.1.0.nupkg.sha512",
+    "/Users/frederikhandberg/.nuget/packages/oxyplot.core/2014.1.546/oxyplot.core.2014.1.546.nupkg.sha512",
+    "/Users/frederikhandberg/.nuget/packages/oxyplot.windowsforms/2014.1.546/oxyplot.windowsforms.2014.1.546.nupkg.sha512",
+    "/Users/frederikhandberg/.nuget/packages/system.componentmodel.annotations/4.5.0/system.componentmodel.annotations.4.5.0.nupkg.sha512",
+    "/Users/frederikhandberg/.nuget/packages/system.drawing.common/8.0.4/system.drawing.common.8.0.4.nupkg.sha512"
   ],
   "logs": [
     {
