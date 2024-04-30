@@ -5,47 +5,59 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="UI.MainWindow"
         Title="UI">
-    <StackPanel>
-        <!-- Profile Bar -->
-        <Grid Background="Orange" Height="50" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
-            <Rectangle Grid.Column="0" Fill="Red" Width="100"></Rectangle>
+        
+       
+        
+        <Grid RowDefinitions="Auto, *, Auto">
+                <!-- Title Bar -->
+                <Grid Grid.Row="0" Background="Orange" Height="60" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
+                        <Grid Grid.Column="0" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="100">
+                                <Label Content="Group 4"
+                                       HorizontalAlignment="Center" 
+                                       VerticalAlignment="Center" 
+                                       Foreground="White"
+                                       />
+                        </Grid>
+                        <StackPanel 
+                                Orientation="Horizontal" 
+                                VerticalAlignment="Center" 
+                                HorizontalAlignment="Center"
+                                Grid.Column="2">
+                                <Label FontWeight="Black" FontSize="28">Navigation</Label>
+                        </StackPanel>
+                        <Rectangle Grid.Column="4" Fill="Green" Width="80"></Rectangle>
+                </Grid>
+                
+                <!-- Main Area -->
+                <Grid Grid.Row="1" ColumnDefinitions="Auto, Auto, Auto Auto" Background="Black">
+                        <!-- Side Bar -->
+                        <StackPanel Orientation="Vertical" VerticalAlignment="Stretch">
+                                <Button Content="Advanced" Margin="5,80,10,0" 
+                                        HorizontalAlignment="Center" 
+                                        Background="Transparent"
+                                        BorderThickness="0" 
+                                        Foreground="White" FontWeight="Bold"/>
 
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2">
-                <Label FontWeight="Black" FontSize="25">Navigation</Label>
-            </StackPanel>
+                                <Button Content="Settings" Margin="10,80,10,0" 
+                                        HorizontalAlignment="Center" 
+                                        Background="Transparent"
+                                        BorderThickness="0" 
+                                        Foreground="White" FontWeight="Bold"/>
 
-            <Rectangle Grid.Column="4" Fill="Blue" Width="80"></Rectangle>
-            
-        </Grid>
-        <DockPanel LastChildFill="False">
-        <!-- Option Bar -->
-            <Grid Background="Green" Width="150" Height="400" DockPanel.Dock="Left">
-                <StackPanel Orientation="Vertical" VerticalAlignment="Stretch">
-                    <Button Content="Electricity" Margin="5" HorizontalAlignment="Center" Background="Transparent"
-                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
-
-                    <Button Content="Heat" Margin="20" HorizontalAlignment="Center" Background="Transparent"
-                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
-
-                    <Button Content="Time" Margin="30" HorizontalAlignment="Center" Background="Transparent"
-                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
-
-                    <Button Content="Advanced Details" Margin="5" HorizontalAlignment="Center" Background="Transparent"
-                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
-
-                    <Button Content="Settings" Margin="30" HorizontalAlignment="Center" Background="Transparent"
-                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
-
-                    <Button Content="Sign Out" Margin="20" HorizontalAlignment="Center" Background="Transparent"
-                    BorderThickness="0" Foreground="White" FontWeight="Bold"/>
+                                <Button Content="Sign Out" Margin="5,80,5,0" 
+                                        HorizontalAlignment="Center" 
+                                        Background="Transparent"
+                                        BorderThickness="0" 
+                                        Foreground="White" FontWeight="Bold"/>
                     
-                </StackPanel>
-            </Grid>
-        </DockPanel>
-        <!-- Main Section -->
-        <Grid Background="White">
-            
-        </Grid> 
+                        </StackPanel>
 
-    </StackPanel>
+                        <!-- Graph 1 -->
+                        <Rectangle Grid.Column="1" Fill="#ccc" Width="200"></Rectangle>
+                        <!-- Graph 2 -->
+                        <Rectangle Grid.Column="2" Fill="Yellow" Width="200"></Rectangle>
+                        <!-- Time Panel -->
+                        <Rectangle Grid.Column="3" Fill="White" Width="300"></Rectangle>
+                </Grid>
+        </Grid>
 </Window>
