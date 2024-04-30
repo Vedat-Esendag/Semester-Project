@@ -12,7 +12,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3874f28a-2d5d-4e98-a8ec-fe8f288633b5" name="Changes" comment="Rider commit1" />
+    <list default="true" id="3874f28a-2d5d-4e98-a8ec-fe8f288633b5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/MainWindow.axaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,18 +33,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AltanEsmer"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AltanEsmer&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Vedat-Esendag/Semester-Project.git",
-    "accountId": "09d6aa07-960d-48bb-b7ed-ba29e642e482"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Vedat-Esendag/Semester-Project.git&quot;,
+    &quot;accountId&quot;: &quot;09d6aa07-960d-48bb-b7ed-ba29e642e482&quot;
   }
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/admin/Desktop/SDU/S2/Semester Project 2/Semester Project Code/Semester-Project/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/admin/Desktop/SDU/S2/Semester Project 2/Semester Project Code/Semester-Project/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -52,7 +65,7 @@
     &quot;.NET Project.UI.executor&quot;: &quot;Run&quot;,
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;UI-Backgorund-Work&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#8 on UI-Backgorund-Work&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -189,7 +202,8 @@
       <workItem from="1714318748834" duration="164000" />
       <workItem from="1714388816284" duration="7470000" />
       <workItem from="1714408519500" duration="7009000" />
-      <workItem from="1714472784135" duration="3928000" />
+      <workItem from="1714472784135" duration="6254000" />
+      <workItem from="1714487752284" duration="6431000" />
     </task>
     <task id="LOCAL-00001" summary="Rider commit1">
       <option name="closed" value="true" />
@@ -199,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714476069203</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Rider commit 2">
+      <option name="closed" value="true" />
+      <created>1714476769675</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714476769675</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +270,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Rider commit1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rider commit1" />
+    <MESSAGE value="Rider commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rider commit 2" />
   </component>
 </project>
