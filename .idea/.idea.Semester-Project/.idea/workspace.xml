@@ -12,16 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3874f28a-2d5d-4e98-a8ec-fe8f288633b5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/MainWindow.axaml" afterDir="false" />
-    </list>
+    <list default="true" id="3874f28a-2d5d-4e98-a8ec-fe8f288633b5" name="Changes" comment="Rider commit1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +24,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AltanEsmer"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Vedat-Esendag/Semester-Project.git",
+    "accountId": "09d6aa07-960d-48bb-b7ed-ba29e642e482"
+  }
+}]]></component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -185,13 +189,23 @@
       <workItem from="1714318748834" duration="164000" />
       <workItem from="1714388816284" duration="7470000" />
       <workItem from="1714408519500" duration="7009000" />
-      <workItem from="1714472784135" duration="3252000" />
+      <workItem from="1714472784135" duration="3928000" />
     </task>
+    <task id="LOCAL-00001" summary="Rider commit1">
+      <option name="closed" value="true" />
+      <created>1714476069203</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714476069203</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="RECENT_FILTERS">
@@ -233,5 +247,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Rider commit1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rider commit1" />
   </component>
 </project>
