@@ -15,8 +15,8 @@ namespace Optimizer
         void CalculatePricesSummerOil();
         void CalculatePricesSummerMotor();
         void CalculatePricesSummerGas();
-        void CreateOrder();
-        void CheckMaxHeat();
+        void CreateOrderWinter();
+        void CreateOrderSummer();
     }
 
     public class Analyze : IAnalyze
@@ -142,17 +142,17 @@ namespace Optimizer
                 Console.WriteLine("Electric"+electricSummerProductionPrices[i]);
             }
         }
-
-
-
-        public void CheckMaxHeat()
+        public void CreateOrderWinter()
         {
-           
+            for (int i =0; i < oilWinterProductionPrices.Count(); i ++) 
+            {
+                
+            }                    
         }
 
-        public void CreateOrder()
+        public void CreateOrderSummer()
         {
-            
+
         }
     }
 }
