@@ -13,7 +13,7 @@ namespace SourceDataManager
         public List<PeriodData> summerPeriods = new List<PeriodData>();
         public void ReadCSV()
         {
-            string filePath = "C:\\Users\\Fefe\\Documents\\Semester-Project-04-24\\Source_Data_Manager\\data.csv";
+            string filePath = "data.csv";
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 HasHeaderRecord = true,
@@ -41,8 +41,8 @@ namespace SourceDataManager
                     }
                 }
 
-                PrintPeriodData("Winter Period Data:", winterPeriods);
-                PrintPeriodData("Summer Period Data:", summerPeriods);
+                //PrintPeriodData("Winter Period Data:", winterPeriods);
+                //PrintPeriodData("Summer Period Data:", summerPeriods);
             }
             catch (Exception ex)
             {
@@ -72,15 +72,6 @@ namespace SourceDataManager
                         ElectricityPrice = electricityPriceParsed
                     });
                 }
-            }
-        }
-
-        private void PrintPeriodData(string title, List<PeriodData> periods)
-        {
-            Console.WriteLine(title);
-            foreach (var data in periods)
-            {
-                Console.WriteLine($"Time: {data.TimeFrom} - {data.TimeTo}, Heat Demand: {data.HeatDemand}, Electricity Price: {data.ElectricityPrice}");
             }
         }
     }
