@@ -9,7 +9,7 @@ namespace Optimizer
         void CalculateNetProductionSummer(); //List optimize data class, nested for loop
 
         void ChooseCheapestWinter(); //foreach loop
-        void ChooseCheapestSUmmer(); //argument pricelists
+        void ChooseCheapestSummer(); //argument pricelists
         void OptimizeWinter(); //while loop heatdemandel, cheapest gets removed, efficieny rate, ResultData class
         void OptimizeSummer();
     }
@@ -17,14 +17,18 @@ namespace Optimizer
     public class Optimize : IOptimize 
     {
         AssetManager assetManager = new AssetManager();
-        public void MethodTest()
+        CsvRead csvRead= new CsvRead();
+
+        public void CalculateNetProductionWinter(List<PeriodData> winterData, List<ProductionUnit> productionUnits)
         {
-            assetManager.AddBoilers();
-            for (int i = 0; i < assetManager.productionUnits2.Count(); i++)
+            for (int i = 0; i<csvRead.winterPeriods.Count(); i++)
             {
-                Console.WriteLine("Object:" + assetManager.productionUnits2[i]);
-                Console.WriteLine("" + assetManager.productionUnits2[i].ProductionCost);
+                foreach (var unit in assetManager.productionUnits2)
+                {
+                    
+                }
             }
         }
+
     }
 }
