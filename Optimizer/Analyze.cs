@@ -46,14 +46,14 @@ namespace Optimizer
         List<double> electricSummerProductionPrices = new List<double>();
 
 
-        List <int> placeWinterGas = new List<int>();
-        List <int> placeSummerGas = new List<int>();
-        List <int> placeWinterOil = new List<int>();
-        List <int> placeSummerOil = new List<int>();
-        List <int> placeWinterMotor = new List<int>();
-        List <int> placeSummerMotor = new List<int>();
-        List <int> placeWinterElectric = new List<int>();
-        List <int> placeSummerElectric = new List<int>();
+        List <int> placesWinterGas = new List<int>();
+        List <int> placesSummerGas = new List<int>();
+        List <int> placesWinterOil = new List<int>();
+        List <int> placesSummerOil = new List<int>();
+        List <int> placesWinterMotor = new List<int>();
+        List <int> placesSummerMotor = new List<int>();
+        List <int> placesWinterElectric = new List<int>();
+        List <int> placesSummerElectric = new List<int>();
 
         CsvRead csvRead = new CsvRead();
         AssetManager assetManager = new AssetManager();
@@ -178,11 +178,13 @@ namespace Optimizer
                     {
                         if(gasWinterProductionPrices[i] > electricWinterProductionPrices[i])
                         {
-
+                            placeWinterGas =4;
+                            placesWinterGas.Add(placeWinterGas);
                         }
                         else 
                         {
-
+                            placeWinterGas = 3;
+                            placesWinterGas.Add(placeWinterGas);
                         }
                     }
 
@@ -190,11 +192,13 @@ namespace Optimizer
                     {
                         if(gasWinterProductionPrices[i] > electricWinterProductionPrices[i]) 
                         {
-
+                            placeWinterGas=3;
+                            placesWinterGas.Add(placeWinterGas);
                         }
                         else
                         {
-
+                            placeWinterGas=2;
+                            placesWinterGas.Add(placeWinterGas);
                         }
 
                     }
@@ -206,11 +210,13 @@ namespace Optimizer
                     {
                         if (gasWinterProductionPrices[i] > electricWinterProductionPrices[i])
                         {
-
+                            placeWinterGas= 3;
+                            placesWinterGas.Add(placeWinterGas);
                         }
                         else
                         {
-
+                            placeWinterGas=2;
+                            placesWinterGas.Add(placeWinterGas);
                         }
 
                     }
@@ -218,11 +224,13 @@ namespace Optimizer
                     {
                         if (gasWinterProductionPrices[i] > electricWinterProductionPrices[i])
                         {
-
+                            placeWinterGas=2;
+                            placesWinterGas.Add(placeWinterGas);
                         }
                         else
                         {
-
+                            placeWinterGas=1;
+                            placesWinterGas.Add(placeWinterGas);
                         }
 
                     }
