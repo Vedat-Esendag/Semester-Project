@@ -15,8 +15,20 @@ namespace Optimizer
         void CalculatePricesSummerOil();
         void CalculatePricesSummerMotor();
         void CalculatePricesSummerGas();
-        void CreateOrderWinter();
-        void CreateOrderSummer();
+
+
+        void CreatePlaceWinterGas();
+        void CreatePlaceSummerGas();
+        void CreatePlaceWinterOil();
+        void CreatePlaceSummerOil();
+        void CreatePlaceWinterMotor();
+        void CreatePlaceSummerMotor();
+        void CreatePlaceWinterElectric();
+        void CreatePlaceSummerElectric();
+
+
+        void OptimizeSummer();
+        void OptimizeWinter();
     }
 
     public class Analyze : IAnalyze
@@ -142,7 +154,28 @@ namespace Optimizer
                 Console.WriteLine("Electric"+electricSummerProductionPrices[i]);
             }
         }
-        public void CreateOrderWinter()
+
+
+
+        //Creating order, calculating places for each production unit.
+
+        public void CreatePlaceWinterGas()
+        {
+            for (int i =0; i < gasWinterProductionPrices.Count(); i ++) 
+            {
+                
+            }                    
+        }
+
+        public void CreatePlaceSummerGas()
+        {
+            for (int i =0; i<gasSummerProductionPrices.Count() ; i ++)
+            {
+                
+            }
+        }
+
+        public void CreatePlaceWinterOil()
         {
             for (int i =0; i < oilWinterProductionPrices.Count(); i ++) 
             {
@@ -150,12 +183,57 @@ namespace Optimizer
             }                    
         }
 
-        public void CreateOrderSummer()
+        public void CreatePlaceSummerOil()
         {
             for (int i =0; i<oilSummerProductionPrices.Count() ; i ++)
             {
                 
             }
+        }
+
+        public void CreatePlaceWinterMotor()
+        {
+            for (int i =0; i < motorWinterProductionPrices.Count(); i ++) 
+            {
+                
+            }                    
+        }
+
+        public void CreatePlaceSummerMotor()
+        {
+            for (int i =0; i<motorSummerProductionPrices.Count() ; i ++)
+            {
+                
+            }
+        }
+
+        public void CreatePlaceWinterElectric()
+        {
+            for (int i =0; i < electricWinterProductionPrices.Count(); i ++) 
+            {
+                
+            }                    
+        }
+
+        public void CreatePlaceSummerElectric()
+        {
+            for (int i =0; i<electricSummerProductionPrices.Count() ; i ++)
+            {
+                
+            }
+        }
+
+
+        //Optimizing based on places in order.
+
+        public void OptimizeSummer()
+        {
+
+        }
+
+        public void OptimizeWinter()
+        {
+
         }
     }
 }
