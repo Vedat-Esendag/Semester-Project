@@ -64,6 +64,18 @@ namespace Optimizer
         GasMotor gasMotor = new GasMotor();
         ElectricBoiler electricBoiler= new ElectricBoiler();
 
+        public void CalculatePrices(ProductionUnit unit, bool mode)
+        {
+            csvRead.ReadCSV();
+
+            for (int i = 0; i < csvRead.winterPeriods.Count(); i++)
+            {
+                double efficiencyRate = csvRead.winterPeriods[i].HeatDemand / unit.MaxHeat;
+                double price = (csvRead.winterPeriods[i].HeatDemand * unit.ProductionCost) + (csvRead.winterPeriods[i].ElectricityPrice * unit.MaxElectricity * efficiencyRate);
+                oilWinterProductionPrices.Add(price);
+            }
+        }
+
         public void CalculatePricesWinterOil()
         {
             csvRead.ReadCSV();
