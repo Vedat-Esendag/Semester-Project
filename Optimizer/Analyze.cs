@@ -307,12 +307,111 @@ namespace Optimizer
 
         public void OptimizeSummer()
         {
+            for (int i =0; i < placesSummerGas.Count() ; i ++) 
+            {
+                switch (placesSummerGas[i])
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                }
+
+                switch (placesSummerElectric[i])
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                }
+
+                switch (placesSummerMotor[i])
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                }
+                
+                switch (placesSummerOil[i])
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                }
+            }
 
         }
 
         public void OptimizeWinter()
         {
+            for (int i =0; i < placesWinterGas.Count() ; i ++) 
+            {
+                switch (placesWinterGas[i])
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                }
 
+                switch (placesWinterElectric[i])
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                }
+
+                switch (placesWinterMotor[i])
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                }
+                
+                switch (placesWinterOil[i])
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                }
+            }
         }
     }
 }
