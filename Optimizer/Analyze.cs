@@ -461,6 +461,70 @@ namespace Optimizer
             for (int i =0; i < motorWinterProductionPrices.Count(); i ++) 
             {
                 int placeWinterMotor;
+                if(motorWinterProductionPrices[i] > oilWinterProductionPrices[i])
+                {
+                    if(motorWinterProductionPrices[i] > electricWinterProductionPrices[i])
+                    {
+                        if(motorWinterProductionPrices[i] > gasWinterProductionPrices[i])
+                        {
+                            placeWinterMotor =4;
+                            placesWinterMotor.Add(placeWinterMotor);
+                        }
+                        else 
+                        {
+                            placeWinterMotor = 3;
+                            placesWinterMotor.Add(placeWinterMotor);
+                        }
+                    }
+
+                    else 
+                    {
+                        if(motorWinterProductionPrices[i] > gasWinterProductionPrices[i]) 
+                        {
+                            placeWinterMotor=3;
+                            placesWinterMotor.Add(placeWinterMotor);
+                        }
+                        else
+                        {
+                            placeWinterMotor=2;
+                            placesWinterMotor.Add(placeWinterMotor);
+                        }
+
+                    }
+                }
+
+                else 
+                {
+                    if (motorWinterProductionPrices[i] > electricWinterProductionPrices[i])
+                    {
+                        if (motorWinterProductionPrices[i] > gasWinterProductionPrices[i])
+                        {
+                            placeWinterMotor= 3;
+                            placesWinterMotor.Add(placeWinterMotor);
+                        }
+                        else
+                        {
+                            placeWinterMotor=2;
+                            placesWinterMotor.Add(placeWinterMotor);
+                        }
+
+                    }
+                    else
+                    {
+                        if (motorWinterProductionPrices[i] > gasWinterProductionPrices[i])
+                        {
+                            placeWinterMotor=2;
+                            placesWinterMotor.Add(placeWinterMotor);
+                        }
+                        else
+                        {
+                            placeWinterMotor=1;
+                            placesWinterMotor.Add(placeWinterMotor);
+                        }
+
+                    }
+
+                }
                 
             }                    
         }
