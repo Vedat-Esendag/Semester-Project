@@ -679,9 +679,74 @@ namespace Optimizer
             for (int i =0; i<electricSummerProductionPrices.Count() ; i ++)
             {
                 int placeSummerElectric;
-                
+                if(electricSummerProductionPrices[i] > oilSummerProductionPrices[i])
+                {
+                    if(electricSummerProductionPrices[i] > motorSummerProductionPrices[i])
+                    {
+                        if(electricSummerProductionPrices[i] > gasSummerProductionPrices[i])
+                        {
+                            placeSummerElectric =4;
+                            placesSummerElectric.Add(placeSummerElectric);
+                        }
+                        else 
+                        {
+                            placeSummerElectric = 3;
+                            placesSummerElectric.Add(placeSummerElectric);
+                        }
+                    }
+
+                    else 
+                    {
+                        if(electricSummerProductionPrices[i] > gasSummerProductionPrices[i]) 
+                        {
+                            placeSummerElectric=3;
+                            placesSummerElectric.Add(placeSummerElectric);
+                        }
+                        else
+                        {
+                            placeSummerElectric=2;
+                            placesSummerElectric.Add(placeSummerElectric);
+                        }
+
+                    }
+                }
+
+                else 
+                {
+                    if (electricSummerProductionPrices[i] > motorSummerProductionPrices[i])
+                    {
+                        if (electricSummerProductionPrices[i] > gasSummerProductionPrices[i])
+                        {
+                            placeSummerElectric= 3;
+                            placesSummerElectric.Add(placeSummerElectric);
+                        }
+                        else
+                        {
+                            placeSummerElectric=2;
+                            placesSummerElectric.Add(placeSummerElectric);
+                        }
+
+                    }
+                    else
+                    {
+                        if (electricSummerProductionPrices[i] > gasSummerProductionPrices[i])
+                        {
+                            placeSummerElectric=2;
+                            placesSummerElectric.Add(placeSummerElectric);
+                        }
+                        else
+                        {
+                            placeSummerElectric=1;
+                            placesSummerElectric.Add(placeSummerElectric);
+                        }
+
+                    }
+
+                }
             }
         }
+
+
 
 
         //Optimizing based on places in order.
