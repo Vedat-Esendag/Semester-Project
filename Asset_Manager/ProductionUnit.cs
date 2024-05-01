@@ -21,8 +21,8 @@ namespace AM
         OilBoiler oilBoiler = new OilBoiler();
         GasMotor gasMotor = new GasMotor();
         ElectricBoiler electricBoiler = new ElectricBoiler();
-        List<IProductionUnit> productionUnits1 = new List<IProductionUnit>();
-        List<IProductionUnit> productionUnits2 = new List<IProductionUnit>();
+        List<ProductionUnit> productionUnits1 = new List<ProductionUnit>();
+        List<ProductionUnit> productionUnits2 = new List<ProductionUnit>();
 
         public void AddBoilersAndSaveState(string filePath)
         {
