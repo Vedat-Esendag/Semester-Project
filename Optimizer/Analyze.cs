@@ -244,6 +244,70 @@ namespace Optimizer
             for (int i =0; i<gasSummerProductionPrices.Count() ; i ++)
             {
                 int placeSummerGas;
+                if(gasSummerProductionPrices[i] > oilSummerProductionPrices[i])
+                {
+                    if(gasSummerProductionPrices[i] > motorSummerProductionPrices[i])
+                    {
+                        if(gasSummerProductionPrices[i] > electricSummerProductionPrices[i])
+                        {
+                            placeSummerGas =4;
+                            placesSummerGas.Add(placeSummerGas);
+                        }
+                        else 
+                        {
+                            placeSummerGas = 3;
+                            placesSummerGas.Add(placeSummerGas);
+                        }
+                    }
+
+                    else 
+                    {
+                        if(gasSummerProductionPrices[i] > electricSummerProductionPrices[i]) 
+                        {
+                            placeSummerGas=3;
+                            placesSummerGas.Add(placeSummerGas);
+                        }
+                        else
+                        {
+                            placeSummerGas=2;
+                            placesSummerGas.Add(placeSummerGas);
+                        }
+
+                    }
+                }
+
+                else 
+                {
+                    if (gasSummerProductionPrices[i] > motorSummerProductionPrices[i])
+                    {
+                        if (gasSummerProductionPrices[i] > electricSummerProductionPrices[i])
+                        {
+                            placeSummerGas= 3;
+                            placesSummerGas.Add(placeSummerGas);
+                        }
+                        else
+                        {
+                            placeSummerGas=2;
+                            placesSummerGas.Add(placeSummerGas);
+                        }
+
+                    }
+                    else
+                    {
+                        if (gasSummerProductionPrices[i] > electricSummerProductionPrices[i])
+                        {
+                            placeSummerGas=2;
+                            placesSummerGas.Add(placeSummerGas);
+                        }
+                        else
+                        {
+                            placeSummerGas=1;
+                            placesSummerGas.Add(placeSummerGas);
+                        }
+
+                    }
+
+                }
                 
             }
         }
@@ -253,7 +317,70 @@ namespace Optimizer
             for (int i =0; i < oilWinterProductionPrices.Count(); i ++) 
             {
                 int placeWinterOil;
-                
+                if(oilWinterProductionPrices[i] > gasWinterProductionPrices[i])
+                {
+                    if(oilWinterProductionPrices[i] > motorWinterProductionPrices[i])
+                    {
+                        if(oilWinterProductionPrices[i] > electricWinterProductionPrices[i])
+                        {
+                            placeWinterOil =4;
+                            placesWinterOil.Add(placeWinterOil);
+                        }
+                        else 
+                        {
+                            placeWinterOil = 3;
+                            placesWinterOil.Add(placeWinterOil);
+                        }
+                    }
+
+                    else 
+                    {
+                        if(oilWinterProductionPrices[i] > electricWinterProductionPrices[i]) 
+                        {
+                            placeWinterOil=3;
+                            placesWinterOil.Add(placeWinterOil);
+                        }
+                        else
+                        {
+                            placeWinterOil=2;
+                            placesWinterOil.Add(placeWinterOil);
+                        }
+
+                    }
+                }
+
+                else 
+                {
+                    if (oilWinterProductionPrices[i] > motorWinterProductionPrices[i])
+                    {
+                        if (oilWinterProductionPrices[i] > electricWinterProductionPrices[i])
+                        {
+                            placeWinterOil= 3;
+                            placesWinterOil.Add(placeWinterOil);
+                        }
+                        else
+                        {
+                            placeWinterOil=2;
+                            placesWinterOil.Add(placeWinterOil);
+                        }
+
+                    }
+                    else
+                    {
+                        if (oilWinterProductionPrices[i] > electricWinterProductionPrices[i])
+                        {
+                            placeWinterOil=2;
+                            placesWinterOil.Add(placeWinterOil);
+                        }
+                        else
+                        {
+                            placeWinterOil=1;
+                            placesWinterOil.Add(placeWinterOil);
+                        }
+
+                    }
+
+                }
             }                    
         }
 
@@ -262,7 +389,70 @@ namespace Optimizer
             for (int i =0; i<oilSummerProductionPrices.Count() ; i ++)
             {
                 int placeSummerOil;
-                
+                if(oilSummerProductionPrices[i] > gasSummerProductionPrices[i])
+                {
+                    if(oilSummerProductionPrices[i] > motorSummerProductionPrices[i])
+                    {
+                        if(oilSummerProductionPrices[i] > electricSummerProductionPrices[i])
+                        {
+                            placeSummerOil =4;
+                            placesSummerOil.Add(placeSummerOil);
+                        }
+                        else 
+                        {
+                            placeSummerOil = 3;
+                            placesSummerOil.Add(placeSummerOil);
+                        }
+                    }
+
+                    else 
+                    {
+                        if(oilSummerProductionPrices[i] > electricSummerProductionPrices[i]) 
+                        {
+                            placeSummerOil=3;
+                            placesSummerOil.Add(placeSummerOil);
+                        }
+                        else
+                        {
+                            placeSummerOil=2;
+                            placesSummerOil.Add(placeSummerOil);
+                        }
+
+                    }
+                }
+
+                else 
+                {
+                    if (oilSummerProductionPrices[i] > motorSummerProductionPrices[i])
+                    {
+                        if (oilSummerProductionPrices[i] > electricSummerProductionPrices[i])
+                        {
+                            placeSummerOil= 3;
+                            placesSummerOil.Add(placeSummerOil);
+                        }
+                        else
+                        {
+                            placeSummerOil=2;
+                            placesSummerOil.Add(placeSummerOil);
+                        }
+
+                    }
+                    else
+                    {
+                        if (oilSummerProductionPrices[i] > electricSummerProductionPrices[i])
+                        {
+                            placeSummerOil=2;
+                            placesSummerOil.Add(placeSummerOil);
+                        }
+                        else
+                        {
+                            placeSummerOil=1;
+                            placesSummerOil.Add(placeSummerOil);
+                        }
+
+                    }
+
+                }
             }
         }
 
