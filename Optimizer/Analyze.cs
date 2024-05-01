@@ -46,6 +46,14 @@ namespace Optimizer
         List<double> electricSummerProductionPrices = new List<double>();
 
 
+        List <int> placeWinterGas = new List<int>();
+        List <int> placeSummerGas = new List<int>();
+        List <int> placeWinterOil = new List<int>();
+        List <int> placeSummerOil = new List<int>();
+        List <int> placeWinterMotor = new List<int>();
+        List <int> placeSummerMotor = new List<int>();
+        List <int> placeWinterElectric = new List<int>();
+        List <int> placeSummerElectric = new List<int>();
 
         CsvRead csvRead = new CsvRead();
         AssetManager assetManager = new AssetManager();
@@ -163,7 +171,63 @@ namespace Optimizer
         {
             for (int i =0; i < gasWinterProductionPrices.Count(); i ++) 
             {
-                
+                int placeWinterGas;
+                if(gasWinterProductionPrices[i] > oilWinterProductionPrices[i])
+                {
+                    if(gasWinterProductionPrices[i] > motorWinterProductionPrices[i])
+                    {
+                        if(gasWinterProductionPrices[i] > electricWinterProductionPrices[i])
+                        {
+
+                        }
+                        else 
+                        {
+
+                        }
+                    }
+
+                    else 
+                    {
+                        if(gasWinterProductionPrices[i] > electricWinterProductionPrices[i]) 
+                        {
+
+                        }
+                        else
+                        {
+
+                        }
+
+                    }
+                }
+
+                else 
+                {
+                    if (gasWinterProductionPrices[i] > motorWinterProductionPrices[i])
+                    {
+                        if (gasWinterProductionPrices[i] > electricWinterProductionPrices[i])
+                        {
+
+                        }
+                        else
+                        {
+
+                        }
+
+                    }
+                    else
+                    {
+                        if (gasWinterProductionPrices[i] > electricWinterProductionPrices[i])
+                        {
+
+                        }
+                        else
+                        {
+
+                        }
+
+                    }
+
+                }
             }                    
         }
 
@@ -171,6 +235,7 @@ namespace Optimizer
         {
             for (int i =0; i<gasSummerProductionPrices.Count() ; i ++)
             {
+                int placeSummerGas;
                 
             }
         }
@@ -179,6 +244,7 @@ namespace Optimizer
         {
             for (int i =0; i < oilWinterProductionPrices.Count(); i ++) 
             {
+                int placeWinterOil;
                 
             }                    
         }
@@ -187,6 +253,7 @@ namespace Optimizer
         {
             for (int i =0; i<oilSummerProductionPrices.Count() ; i ++)
             {
+                int placeSummerOil;
                 
             }
         }
@@ -195,6 +262,7 @@ namespace Optimizer
         {
             for (int i =0; i < motorWinterProductionPrices.Count(); i ++) 
             {
+                int placeWinterMotor;
                 
             }                    
         }
@@ -203,6 +271,7 @@ namespace Optimizer
         {
             for (int i =0; i<motorSummerProductionPrices.Count() ; i ++)
             {
+                int placeSummerMotor;
                 
             }
         }
@@ -211,6 +280,7 @@ namespace Optimizer
         {
             for (int i =0; i < electricWinterProductionPrices.Count(); i ++) 
             {
+                int placeWinterElectric;
                 
             }                    
         }
@@ -219,6 +289,7 @@ namespace Optimizer
         {
             for (int i =0; i<electricSummerProductionPrices.Count() ; i ++)
             {
+                int placeSummerElectric;
                 
             }
         }
