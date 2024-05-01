@@ -5,12 +5,12 @@ namespace Optimizer
 {
     public interface IOptimize
     {
-        void CalculateNetProductionWinter();
-        void CalculateNetProductionSummer();
+        void CalculateNetProductionWinter(); //passing in arguments lists 
+        void CalculateNetProductionSummer(); //List optimize data class, nested for loop
 
-        void ChooseCheapestWinter();
-        void ChooseCheapestSUmmer(); 
-        void OptimizeWinter(); //while loop, cheapest gets removed, efficieny rate, ResultData class
+        void ChooseCheapestWinter(); //foreach loop
+        void ChooseCheapestSUmmer(); //argument pricelists
+        void OptimizeWinter(); //while loop heatdemandel, cheapest gets removed, efficieny rate, ResultData class
         void OptimizeSummer();
     }
 }
