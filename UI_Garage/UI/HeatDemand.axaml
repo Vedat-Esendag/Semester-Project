@@ -2,9 +2,141 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+             mc:Ignorable="d" d:DesignWidth="960" d:DesignHeight="540"
              x:Class="UI.HeatPage"
-             Background="White">
+             Background="#DAEBF4">
     
-    <Label Foreground="Black" Content="Heat Demand"></Label>
+    <Grid ShowGridLines="False" Margin="0">
+       <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions> 
+    
+        <StackPanel Grid.Column="0" Background="#1984C5">
+            <TextBlock Margin="10,15,10,0" FontSize="16" VerticalAlignment="Center" 
+                HorizontalAlignment="Center" Foreground="White" Text="Semester project">
+            </TextBlock>
+            <TextBlock Margin="0,0,0,0" FontSize="13" VerticalAlignment="Center" 
+                HorizontalAlignment="Center" Foreground="White" Text="Group 4">
+            </TextBlock>
+            <Button Content="Production Units" 
+                                Margin="0,30,0,0"
+                                Background="#1984C5"
+                                Foreground="White"
+                                BorderThickness="10"
+                                CornerRadius="12"
+                                Padding="5"
+                                VerticalContentAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontWeight="Bold"
+                                FontSize="15">   
+            </Button>
+            <Button Content="Heat Demand" 
+                                Background="#1984C5"
+                                Foreground="White"
+                                BorderThickness="10"
+                                CornerRadius="12"
+                                Padding="5"
+                                VerticalContentAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontWeight="Bold"
+                                FontSize="15">   
+            </Button>
+            <Button Content="Electricity Price" 
+                                Background="#1984C5"
+                                Foreground="White"
+                                BorderThickness="10"
+                                CornerRadius="12"
+                                Padding="5"
+                                VerticalContentAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontWeight="Bold"
+                                FontSize="15">   
+            </Button>
+            <Button Content="Consumption" 
+                                Background="#1984C5"
+                                Foreground="White"
+                                BorderThickness="10"
+                                CornerRadius="12"
+                                Padding="5"
+                                VerticalContentAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontWeight="Bold"
+                                FontSize="15">   
+            </Button>
+            <Button Content="Advanced Details" 
+                                Margin="0,55,0,0"
+                                Background="#1984C5"
+                                Foreground="White"
+                                BorderThickness="10"
+                                CornerRadius="12"
+                                Padding="5"
+                                VerticalContentAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontWeight="Bold"
+                                FontSize="15">   
+            </Button>
+            <Button Content="Settings" 
+                                Margin="10,55,10,0"
+                                Background="#1984C5"
+                                Foreground="White"
+                                BorderThickness="10"
+                                CornerRadius="12"
+                                Padding="5"
+                                VerticalContentAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontWeight="Bold"
+                                FontSize="15">   
+            </Button>
+            <Button Content="Log out" 
+                                Margin="0"
+                                Background="#1984C5"
+                                Foreground="White"
+                                BorderThickness="10"
+                                CornerRadius="12"
+                                Padding="5"
+                                VerticalContentAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontWeight="Bold"
+                                FontSize="15">   
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Background="#DAEBF4">
+            <Border Margin="0" CornerRadius="0" Background="White">
+            <TextBlock Margin="15"
+            FontSize="26" 
+            FontWeight="Bold"
+            HorizontalAlignment="Center"
+            Text="Heat Demand">
+            </TextBlock>
+            </Border>
+            <Grid ShowGridLines="True" Margin="5"
+                ColumnDefinitions="Auto" 
+                RowDefinitions="Auto">
+                <TextBlock FontSize="14" Text="Some graphs here probably or something">
+                </TextBlock>
+                
+
+            </Grid>
+            
+        </StackPanel>    
+     
+    </Grid> 
+
 </UserControl>
