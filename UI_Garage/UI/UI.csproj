@@ -16,4 +16,20 @@
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
     <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.10" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="danfoss image.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AvaloniaResource Include="danfoss image.png" />
+    <None Remove="Electric Boiler.jpg" />
+    <AvaloniaResource Include="Electric Boiler.jpg" />
+    <None Remove="Gas Boiler.jpg" />
+    <AvaloniaResource Include="Gas Boiler.jpg" />
+    <None Remove="Gas Motor.jpg" />
+    <AvaloniaResource Include="Gas Motor.jpg" />
+    <None Remove="Oil Boiler.jpg" />
+    <AvaloniaResource Include="Oil Boiler.jpg" />
+  </ItemGroup>
 </Project>
