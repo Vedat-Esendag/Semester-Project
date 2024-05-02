@@ -11,8 +11,8 @@
        <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto">
                 
                <!-- Title Bar -->
-                <Grid Grid.Row="0" Background="Orange" Height="60" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
-                        <Grid Grid.Column="0" Background="Orange" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="160">
+               <Grid Grid.Row="0" Background="rgb(25, 132, 197)" Height="60" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
+                        <Grid Grid.Column="0" Background="rgb(25, 132, 197)" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="160">
                                 <Label Content="Semester Project"
                                        HorizontalAlignment="Center" 
                                        VerticalAlignment="Center" 
@@ -26,7 +26,7 @@
                                 Grid.Column="2">
                                 <Label FontWeight="Black" FontSize="28" Foreground="White">Navigation</Label>
                         </StackPanel>
-                        <Grid Grid.Column="4" Background="Orange" Width="80">
+                        <Grid Grid.Column="4" Background="rgb(25, 132, 197)" Width="80">
                                 <Label Content="Group 4"
                                        HorizontalAlignment="Center" 
                                        VerticalAlignment="Center" 
@@ -36,13 +36,12 @@
                 </Grid>
                 
                 <!-- Section 1 -->
-                <Grid Grid.Row="1" Background="PaleTurquoise" Height="90">
+                <Grid Grid.Row="1" Background="rgb(218, 235, 244)" Height="90">
                         <Button Content="Production Units" 
                                 Width="170" 
                                 Height="50"
-                                Background="#4CAF50" 
+                                Background="rgb(25, 132, 197)"
                                 Foreground="White"
-                                BorderBrush="#388E3C"
                                 BorderThickness="2"
                                 CornerRadius="12"
                                 Padding="10"
@@ -50,6 +49,7 @@
                                 HorizontalContentAlignment="Center"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
+                                FontWeight="Bold"
                                 Click="NavigateToPuPage_Click">
                                 <Button.Effect>
                                         <DropShadowEffect BlurRadius="5"
@@ -72,20 +72,20 @@
                 </Grid>
                 
                 <!-- Section 2 -->
-                <Grid Grid.Row="2" Background="PaleTurquoise" Height="75">
+                <Grid Grid.Row="2" Background="rgb(218, 235, 244)" Height="75">
                         <Button Content="Heat demand" 
                                 Width="170" 
                                 Height="50"
-                                Background="#4CAF50" 
+                                Background="rgb(25, 132, 197)"
                                 Foreground="White"
-                                BorderBrush="#388E3C"
                                 BorderThickness="2"
                                 CornerRadius="12"
                                 Padding="10"
                                 VerticalContentAlignment="Center"
                                 HorizontalContentAlignment="Center"
                                 HorizontalAlignment="Left"
-                                VerticalAlignment="Center">
+                                VerticalAlignment="Center"
+                                FontWeight="Bold">
                                 <Button.Effect>
                                         <DropShadowEffect BlurRadius="5"
                                                           Color="#808080"
@@ -108,20 +108,20 @@
                 </Grid>
                      
                 <!-- Section 3 -->
-                <Grid Grid.Row="3" Background="PaleTurquoise" Height="75">
+                <Grid Grid.Row="3" Background="rgb(218, 235, 244)" Height="75">
                         <Button Content="Electricity Price" 
                                 Width="170" 
                                 Height="50"
-                                Background="#4CAF50" 
+                                Background="rgb(25, 132, 197)"
                                 Foreground="White"
-                                BorderBrush="#388E3C"
                                 BorderThickness="2"
                                 CornerRadius="12"
                                 Padding="10"
                                 VerticalContentAlignment="Center"
                                 HorizontalContentAlignment="Center"
                                 HorizontalAlignment="Left"
-                                VerticalAlignment="Center">
+                                VerticalAlignment="Center"
+                                FontWeight="Bold">
                                 <Button.Effect>
                                         <DropShadowEffect BlurRadius="5"
                                                           Color="#808080"
@@ -142,20 +142,20 @@
                 </Grid>
                 
                 <!-- Section 4 -->
-                <Grid Grid.Row="4" Background="PaleTurquoise" Height="75">
+                <Grid Grid.Row="4" Background="rgb(218, 235, 244)" Height="75">
                         <Button Content="Consumption" 
                                 Width="170" 
                                 Height="50"
-                                Background="#4CAF50" 
+                                Background="rgb(25, 132, 197)"
                                 Foreground="White"
-                                BorderBrush="#388E3C"
                                 BorderThickness="2"
                                 CornerRadius="12"
                                 Padding="10"
                                 VerticalContentAlignment="Center"
                                 HorizontalContentAlignment="Center"
                                 HorizontalAlignment="Left"
-                                VerticalAlignment="Center">
+                                VerticalAlignment="Center"
+                                FontWeight="Bold">
                                 <Button.Effect>
                                         <DropShadowEffect BlurRadius="5"
                                                           Color="#808080"
@@ -176,20 +176,20 @@
                 </Grid>
                 
                 <!-- Section 5 -->
-                <Grid Grid.Row="5" Background="PaleTurquoise" Height="75">
+                <Grid Grid.Row="5" Background="rgb(218, 235, 244)" Height="75">
                         <Button Content="Advanced Details" 
                                 Width="170" 
                                 Height="50"
-                                Background="#4CAF50" 
+                                Background="rgb(25, 132, 197)"
                                 Foreground="White"
-                                BorderBrush="#388E3C"
                                 BorderThickness="2"
                                 CornerRadius="12"
                                 Padding="10"
                                 VerticalContentAlignment="Center"
                                 HorizontalContentAlignment="Center"
                                 HorizontalAlignment="Left"
-                                VerticalAlignment="Center">
+                                VerticalAlignment="Center"
+                                FontWeight="Bold">
                                 <Button.Effect>
                                         <DropShadowEffect BlurRadius="5"
                                                           Color="#808080"
@@ -208,7 +208,4 @@
                                    TextAlignment="Center"/>
                 </Grid>
        </Grid>
-
-        
-        
 </Window>
