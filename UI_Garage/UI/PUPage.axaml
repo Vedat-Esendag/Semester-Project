@@ -5,6 +5,204 @@
              mc:Ignorable="d"
              x:Class="UI.PuPage">
 
-    Deneme
+    <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto">
+                
+               <!-- Title Bar -->
+                <Grid Grid.Row="0" Background="Black" Height="60" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
+                        <Grid Grid.Column="0" Background="Orange" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="160">
+                                <Label Content="Semester Project"
+                                       HorizontalAlignment="Center" 
+                                       VerticalAlignment="Center" 
+                                       Foreground="White"
+                                       FontSize="18"/>
+                        </Grid>
+                        <StackPanel 
+                                Orientation="Horizontal" 
+                                VerticalAlignment="Center" 
+                                HorizontalAlignment="Center"
+                                Grid.Column="2">
+                                <Label FontWeight="Black" FontSize="28" Foreground="White">Navigation</Label>
+                        </StackPanel>
+                        <Grid Grid.Column="4" Background="Orange" Width="80">
+                                <Label Content="Group 4"
+                                       HorizontalAlignment="Center" 
+                                       VerticalAlignment="Center" 
+                                       Foreground="White"
+                                />
+                        </Grid>
+                </Grid>
+                
+                <!-- Section 1 -->
+                <Grid Grid.Row="1" Background="PaleTurquoise" Height="90">
+                        <Button Content="Production Units" 
+                                Width="170" 
+                                Height="50"
+                                Background="#4CAF50" 
+                                Foreground="White"
+                                BorderBrush="#388E3C"
+                                BorderThickness="2"
+                                CornerRadius="12"
+                                Padding="10"
+                                VerticalContentAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center">
+                                <Button.Effect>
+                                        <DropShadowEffect BlurRadius="5"
+                                                          Color="#808080"
+                                                          Opacity="0.8"/>
+                                </Button.Effect>
+                        </Button>
+                        
+                        <TextBlock Text="Click button to see details of production units such as maximum heat and electricity production and image" 
+                                   HorizontalAlignment="Right" 
+                                   VerticalAlignment="Center"
+                                   FontSize="14"
+                                   FontWeight="Bold"
+                                   Foreground="#333333"
+                                   TextWrapping="Wrap"
+                                   Width="280"
+                                   TextAlignment="Center"/>
+                        <Polyline Margin="-20,60,0,0" Points="1200,20 20,20" Stroke="Black" StrokeThickness="2"/>
 
+                </Grid>
+                
+                <!-- Section 2 -->
+                <Grid Grid.Row="2" Background="PaleTurquoise" Height="75">
+                        <Button Content="Heat demand" 
+                                Width="170" 
+                                Height="50"
+                                Background="#4CAF50" 
+                                Foreground="White"
+                                BorderBrush="#388E3C"
+                                BorderThickness="2"
+                                CornerRadius="12"
+                                Padding="10"
+                                VerticalContentAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center">
+                                <Button.Effect>
+                                        <DropShadowEffect BlurRadius="5"
+                                                          Color="#808080"
+                                                          Opacity="0.8"/>
+                                </Button.Effect>
+                        </Button>
+                        
+                        
+                        
+                        <TextBlock Text="Click button to see the datas about heat demand needed in winter and summer period respectively." 
+                                   HorizontalAlignment="Right" 
+                                   VerticalAlignment="Center"
+                                   FontSize="14"
+                                   FontWeight="Bold"
+                                   Foreground="#333333"
+                                   TextWrapping="Wrap"
+                                   Width="280"
+                                   TextAlignment="Center"/>
+                        <Polyline Margin="-20,50,0,0" Points="1200,20 20,20" Stroke="Black" StrokeThickness="2"/>
+                </Grid>
+                     
+                <!-- Section 3 -->
+                <Grid Grid.Row="3" Background="PaleTurquoise" Height="75">
+                        <Button Content="Electricity Price" 
+                                Width="170" 
+                                Height="50"
+                                Background="#4CAF50" 
+                                Foreground="White"
+                                BorderBrush="#388E3C"
+                                BorderThickness="2"
+                                CornerRadius="12"
+                                Padding="10"
+                                VerticalContentAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center">
+                                <Button.Effect>
+                                        <DropShadowEffect BlurRadius="5"
+                                                          Color="#808080"
+                                                          Opacity="0.8"/>
+                                </Button.Effect>
+                        </Button>
+                        
+                        <TextBlock Text="Click button to see datas about electricity price in winter and summer period respectively." 
+                                   HorizontalAlignment="Right" 
+                                   VerticalAlignment="Center"
+                                   FontSize="14"
+                                   FontWeight="Bold"
+                                   Foreground="#333333"
+                                   TextWrapping="Wrap"
+                                   Width="280"
+                                   TextAlignment="Center"/>
+                        <Polyline Margin="-20,50,0,0" Points="1200,20 20,20" Stroke="Black" StrokeThickness="2"/>
+                </Grid>
+                
+                <!-- Section 4 -->
+                <Grid Grid.Row="4" Background="PaleTurquoise" Height="75">
+                        <Button Content="Consumption" 
+                                Width="170" 
+                                Height="50"
+                                Background="#4CAF50" 
+                                Foreground="White"
+                                BorderBrush="#388E3C"
+                                BorderThickness="2"
+                                CornerRadius="12"
+                                Padding="10"
+                                VerticalContentAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center">
+                                <Button.Effect>
+                                        <DropShadowEffect BlurRadius="5"
+                                                          Color="#808080"
+                                                          Opacity="0.8"/>
+                                </Button.Effect>
+                        </Button>
+                        
+                        <TextBlock Text="Click button to see datas about consumption of electricity as a console column format." 
+                                   HorizontalAlignment="Right" 
+                                   VerticalAlignment="Center"
+                                   FontSize="14"
+                                   FontWeight="Bold"
+                                   Foreground="#333333"
+                                   TextWrapping="Wrap"
+                                   Width="280"
+                                   TextAlignment="Center"/>
+                        <Polyline Margin="-20,50,0,0" Points="1200,20 20,20" Stroke="Black" StrokeThickness="2"/>
+                </Grid>
+                
+                <!-- Section 5 -->
+                <Grid Grid.Row="5" Background="PaleTurquoise" Height="75">
+                        <Button Content="Advanced Details" 
+                                Width="170" 
+                                Height="50"
+                                Background="#4CAF50" 
+                                Foreground="White"
+                                BorderBrush="#388E3C"
+                                BorderThickness="2"
+                                CornerRadius="12"
+                                Padding="10"
+                                VerticalContentAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center">
+                                <Button.Effect>
+                                        <DropShadowEffect BlurRadius="5"
+                                                          Color="#808080"
+                                                          Opacity="0.8"/>
+                                </Button.Effect>
+                        </Button>
+                        
+                        <TextBlock Text="Click button to see and compare advanced details supported by graphs and charts with values." 
+                                   HorizontalAlignment="Right" 
+                                   VerticalAlignment="Center"
+                                   FontSize="14"
+                                   FontWeight="Bold"
+                                   Foreground="#333333"
+                                   TextWrapping="Wrap"
+                                   Width="280"
+                                   TextAlignment="Center"/>
+                </Grid>
+       </Grid>
 </UserControl>
+
