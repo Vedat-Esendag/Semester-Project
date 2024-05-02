@@ -1,0 +1,577 @@
+Index: Result_Data_Manager/obj/project.assets.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"version\": 3,\n  \"targets\": {\n    \"net8.0\": {\n      \"CsvHelper/31.0.4\": {\n        \"type\": \"package\",\n        \"compile\": {\n          \"lib/net8.0/CsvHelper.dll\": {\n            \"related\": \".xml\"\n          }\n        },\n        \"runtime\": {\n          \"lib/net8.0/CsvHelper.dll\": {\n            \"related\": \".xml\"\n          }\n        }\n      }\n    }\n  },\n  \"libraries\": {\n    \"CsvHelper/31.0.4\": {\n      \"sha512\": \"m4ikjUAn4XOD1tShxxk4ui42sHxjHdX52P7fPQ9K7tzJkPTEwiCbvEz3k73mTGSSaPTUCOp9VziQC757IqKLew==\",\n      \"type\": \"package\",\n      \"path\": \"csvhelper/31.0.4\",\n      \"files\": [\n        \".nupkg.metadata\",\n        \".signature.p7s\",\n        \"Icon.png\",\n        \"csvhelper.31.0.4.nupkg.sha512\",\n        \"csvhelper.nuspec\",\n        \"lib/net462/CsvHelper.dll\",\n        \"lib/net462/CsvHelper.xml\",\n        \"lib/net47/CsvHelper.dll\",\n        \"lib/net47/CsvHelper.xml\",\n        \"lib/net48/CsvHelper.dll\",\n        \"lib/net48/CsvHelper.xml\",\n        \"lib/net6.0/CsvHelper.dll\",\n        \"lib/net6.0/CsvHelper.xml\",\n        \"lib/net7.0/CsvHelper.dll\",\n        \"lib/net7.0/CsvHelper.xml\",\n        \"lib/net8.0/CsvHelper.dll\",\n        \"lib/net8.0/CsvHelper.xml\",\n        \"lib/netstandard2.0/CsvHelper.dll\",\n        \"lib/netstandard2.0/CsvHelper.xml\",\n        \"lib/netstandard2.1/CsvHelper.dll\",\n        \"lib/netstandard2.1/CsvHelper.xml\"\n      ]\n    }\n  },\n  \"projectFileDependencyGroups\": {\n    \"net8.0\": [\n      \"CsvHelper >= 31.0.4\"\n    ]\n  },\n  \"packageFolders\": {\n    \"C:\\\\Users\\\\admin\\\\.nuget\\\\packages\\\\\": {},\n    \"C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\Shared\\\\NuGetPackages\": {}\n  },\n  \"project\": {\n    \"version\": \"1.0.0\",\n    \"restore\": {\n      \"projectUniqueName\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Result_Data_Manager\\\\Result_Data_Manager.csproj\",\n      \"projectName\": \"Result_Data_Manager\",\n      \"projectPath\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Result_Data_Manager\\\\Result_Data_Manager.csproj\",\n      \"packagesPath\": \"C:\\\\Users\\\\admin\\\\.nuget\\\\packages\\\\\",\n      \"outputPath\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Result_Data_Manager\\\\obj\\\\\",\n      \"projectStyle\": \"PackageReference\",\n      \"fallbackFolders\": [\n        \"C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\Shared\\\\NuGetPackages\"\n      ],\n      \"configFilePaths\": [\n        \"C:\\\\Users\\\\admin\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\",\n        \"C:\\\\Program Files (x86)\\\\NuGet\\\\Config\\\\Microsoft.VisualStudio.FallbackLocation.config\",\n        \"C:\\\\Program Files (x86)\\\\NuGet\\\\Config\\\\Microsoft.VisualStudio.Offline.config\"\n      ],\n      \"originalTargetFrameworks\": [\n        \"net8.0\"\n      ],\n      \"sources\": {\n        \"C:\\\\Program Files (x86)\\\\Microsoft SDKs\\\\NuGetPackages\\\\\": {},\n        \"C:\\\\Program Files\\\\dotnet\\\\library-packs\": {},\n        \"https://api.nuget.org/v3/index.json\": {}\n      },\n      \"frameworks\": {\n        \"net8.0\": {\n          \"targetAlias\": \"net8.0\",\n          \"projectReferences\": {}\n        }\n      },\n      \"warningProperties\": {\n        \"warnAsError\": [\n          \"NU1605\"\n        ]\n      }\n    },\n    \"frameworks\": {\n      \"net8.0\": {\n        \"targetAlias\": \"net8.0\",\n        \"dependencies\": {\n          \"CsvHelper\": {\n            \"target\": \"Package\",\n            \"version\": \"[31.0.4, )\"\n          }\n        },\n        \"imports\": [\n          \"net461\",\n          \"net462\",\n          \"net47\",\n          \"net471\",\n          \"net472\",\n          \"net48\",\n          \"net481\"\n        ],\n        \"assetTargetFallback\": true,\n        \"warn\": true,\n        \"frameworkReferences\": {\n          \"Microsoft.NETCore.App\": {\n            \"privateAssets\": \"all\"\n          }\n        },\n        \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\8.0.200/PortableRuntimeIdentifierGraph.json\"\n      }\n    }\n  }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Result_Data_Manager/obj/project.assets.json b/Result_Data_Manager/obj/project.assets.json
+--- a/Result_Data_Manager/obj/project.assets.json	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Result_Data_Manager/obj/project.assets.json	(date 1714652829397)
+@@ -53,32 +53,24 @@
+     ]
+   },
+   "packageFolders": {
+-    "C:\\Users\\admin\\.nuget\\packages\\": {},
+-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
++    "/Users/lajoskariko/.nuget/packages/": {}
+   },
+   "project": {
+     "version": "1.0.0",
+     "restore": {
+-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Result_Data_Manager\\Result_Data_Manager.csproj",
++      "projectUniqueName": "/Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/Result_Data_Manager.csproj",
+       "projectName": "Result_Data_Manager",
+-      "projectPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Result_Data_Manager\\Result_Data_Manager.csproj",
+-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+-      "outputPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Result_Data_Manager\\obj\\",
++      "projectPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/Result_Data_Manager.csproj",
++      "packagesPath": "/Users/lajoskariko/.nuget/packages/",
++      "outputPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/obj/",
+       "projectStyle": "PackageReference",
+-      "fallbackFolders": [
+-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+-      ],
+       "configFilePaths": [
+-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
++        "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
+       ],
+       "originalTargetFrameworks": [
+         "net8.0"
+       ],
+       "sources": {
+-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+-        "C:\\Program Files\\dotnet\\library-packs": {},
+         "https://api.nuget.org/v3/index.json": {}
+       },
+       "frameworks": {
+@@ -118,7 +110,7 @@
+             "privateAssets": "all"
+           }
+         },
+-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
++        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+       }
+     }
+   }
+Index: Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.dgspec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"format\": 1,\n  \"restore\": {\n    \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Result_Data_Manager\\\\Result_Data_Manager.csproj\": {}\n  },\n  \"projects\": {\n    \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Result_Data_Manager\\\\Result_Data_Manager.csproj\": {\n      \"version\": \"1.0.0\",\n      \"restore\": {\n        \"projectUniqueName\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Result_Data_Manager\\\\Result_Data_Manager.csproj\",\n        \"projectName\": \"Result_Data_Manager\",\n        \"projectPath\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Result_Data_Manager\\\\Result_Data_Manager.csproj\",\n        \"packagesPath\": \"C:\\\\Users\\\\admin\\\\.nuget\\\\packages\\\\\",\n        \"outputPath\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Result_Data_Manager\\\\obj\\\\\",\n        \"projectStyle\": \"PackageReference\",\n        \"fallbackFolders\": [\n          \"C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\Shared\\\\NuGetPackages\"\n        ],\n        \"configFilePaths\": [\n          \"C:\\\\Users\\\\admin\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\",\n          \"C:\\\\Program Files (x86)\\\\NuGet\\\\Config\\\\Microsoft.VisualStudio.FallbackLocation.config\",\n          \"C:\\\\Program Files (x86)\\\\NuGet\\\\Config\\\\Microsoft.VisualStudio.Offline.config\"\n        ],\n        \"originalTargetFrameworks\": [\n          \"net8.0\"\n        ],\n        \"sources\": {\n          \"C:\\\\Program Files (x86)\\\\Microsoft SDKs\\\\NuGetPackages\\\\\": {},\n          \"C:\\\\Program Files\\\\dotnet\\\\library-packs\": {},\n          \"https://api.nuget.org/v3/index.json\": {}\n        },\n        \"frameworks\": {\n          \"net8.0\": {\n            \"targetAlias\": \"net8.0\",\n            \"projectReferences\": {}\n          }\n        },\n        \"warningProperties\": {\n          \"warnAsError\": [\n            \"NU1605\"\n          ]\n        }\n      },\n      \"frameworks\": {\n        \"net8.0\": {\n          \"targetAlias\": \"net8.0\",\n          \"dependencies\": {\n            \"CsvHelper\": {\n              \"target\": \"Package\",\n              \"version\": \"[31.0.4, )\"\n            }\n          },\n          \"imports\": [\n            \"net461\",\n            \"net462\",\n            \"net47\",\n            \"net471\",\n            \"net472\",\n            \"net48\",\n            \"net481\"\n          ],\n          \"assetTargetFallback\": true,\n          \"warn\": true,\n          \"frameworkReferences\": {\n            \"Microsoft.NETCore.App\": {\n              \"privateAssets\": \"all\"\n            }\n          },\n          \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\8.0.200/PortableRuntimeIdentifierGraph.json\"\n        }\n      }\n    }\n  }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.dgspec.json b/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.dgspec.json
+--- a/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.dgspec.json	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.dgspec.json	(date 1714652829401)
+@@ -1,32 +1,25 @@
+ {
+   "format": 1,
+   "restore": {
+-    "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Result_Data_Manager\\Result_Data_Manager.csproj": {}
++    "/Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/Result_Data_Manager.csproj": {}
+   },
+   "projects": {
+-    "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Result_Data_Manager\\Result_Data_Manager.csproj": {
++    "/Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/Result_Data_Manager.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Result_Data_Manager\\Result_Data_Manager.csproj",
++        "projectUniqueName": "/Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/Result_Data_Manager.csproj",
+         "projectName": "Result_Data_Manager",
+-        "projectPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Result_Data_Manager\\Result_Data_Manager.csproj",
+-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+-        "outputPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Result_Data_Manager\\obj\\",
++        "projectPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/Result_Data_Manager.csproj",
++        "packagesPath": "/Users/lajoskariko/.nuget/packages/",
++        "outputPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/obj/",
+         "projectStyle": "PackageReference",
+-        "fallbackFolders": [
+-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+-        ],
+         "configFilePaths": [
+-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
++          "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
+         ],
+         "originalTargetFrameworks": [
+           "net8.0"
+         ],
+         "sources": {
+-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+-          "C:\\Program Files\\dotnet\\library-packs": {},
+           "https://api.nuget.org/v3/index.json": {}
+         },
+         "frameworks": {
+@@ -66,7 +59,7 @@
+               "privateAssets": "all"
+             }
+           },
+-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
++          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+         }
+       }
+     }
+Index: Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\n<Project ToolsVersion=\"14.0\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\n  <PropertyGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\n    <RestoreSuccess Condition=\" '$(RestoreSuccess)' == '' \">True</RestoreSuccess>\n    <RestoreTool Condition=\" '$(RestoreTool)' == '' \">NuGet</RestoreTool>\n    <ProjectAssetsFile Condition=\" '$(ProjectAssetsFile)' == '' \">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>\n    <NuGetPackageRoot Condition=\" '$(NuGetPackageRoot)' == '' \">$(UserProfile)\\.nuget\\packages\\</NuGetPackageRoot>\n    <NuGetPackageFolders Condition=\" '$(NuGetPackageFolders)' == '' \">C:\\Users\\admin\\.nuget\\packages\\;C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages</NuGetPackageFolders>\n    <NuGetProjectStyle Condition=\" '$(NuGetProjectStyle)' == '' \">PackageReference</NuGetProjectStyle>\n    <NuGetToolVersion Condition=\" '$(NuGetToolVersion)' == '' \">6.9.1</NuGetToolVersion>\n  </PropertyGroup>\n  <ItemGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\n    <SourceRoot Include=\"C:\\Users\\admin\\.nuget\\packages\\\" />\n    <SourceRoot Include=\"C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\\" />\n  </ItemGroup>\n</Project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props b/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props
+--- a/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props	(date 1714652829396)
+@@ -4,13 +4,12 @@
+     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\admin\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
++    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/lajoskariko/.nuget/packages/</NuGetPackageRoot>
++    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/lajoskariko/.nuget/packages/</NuGetPackageFolders>
+     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.9.1</NuGetToolVersion>
+   </PropertyGroup>
+   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+-    <SourceRoot Include="C:\Users\admin\.nuget\packages\" />
+-    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
++    <SourceRoot Include="/Users/lajoskariko/.nuget/packages/" />
+   </ItemGroup>
+ </Project>
+\ No newline at end of file
+Index: Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>is_global = true\nbuild_property.TargetFramework = net8.0\nbuild_property.TargetPlatformMinVersion = \nbuild_property.UsingMicrosoftNETSdkWeb = \nbuild_property.ProjectTypeGuids = \nbuild_property.InvariantGlobalization = \nbuild_property.PlatformNeutralAssembly = \nbuild_property.EnforceExtendedAnalyzerRules = \nbuild_property._SupportedPlatformList = Linux,macOS,Windows\nbuild_property.RootNamespace = Result_Data_Manager\nbuild_property.ProjectDir = C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Result_Data_Manager\\\nbuild_property.EnableComHosting = \nbuild_property.EnableGeneratedComInterfaceComImportInterop = \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig b/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig
+--- a/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig	(date 1714652830377)
+@@ -8,6 +8,6 @@
+ build_property.EnforceExtendedAnalyzerRules = 
+ build_property._SupportedPlatformList = Linux,macOS,Windows
+ build_property.RootNamespace = Result_Data_Manager
+-build_property.ProjectDir = C:\Users\admin\Desktop\SDU\S2\Semester Project 2\Semester Project Code\Semester-Project\Result_Data_Manager\
++build_property.ProjectDir = /Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/
+ build_property.EnableComHosting = 
+ build_property.EnableGeneratedComInterfaceComImportInterop = 
+Index: Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//------------------------------------------------------------------------------\n// <auto-generated>\n//     This code was generated by a tool.\n//\n//     Changes to this file may cause incorrect behavior and will be lost if\n//     the code is regenerated.\n// </auto-generated>\n//------------------------------------------------------------------------------\n\nusing System;\nusing System.Reflection;\n\n[assembly: System.Reflection.AssemblyCompanyAttribute(\"Result_Data_Manager\")]\n[assembly: System.Reflection.AssemblyConfigurationAttribute(\"Debug\")]\n[assembly: System.Reflection.AssemblyFileVersionAttribute(\"1.0.0.0\")]\n[assembly: System.Reflection.AssemblyInformationalVersionAttribute(\"1.0.0+9ad97b5e6980282ff5d70666e6839797e72c1b74\")]\n[assembly: System.Reflection.AssemblyProductAttribute(\"Result_Data_Manager\")]\n[assembly: System.Reflection.AssemblyTitleAttribute(\"Result_Data_Manager\")]\n[assembly: System.Reflection.AssemblyVersionAttribute(\"1.0.0.0\")]\n\n// Generated by the MSBuild WriteCodeFragment class.\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs b/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs
+--- a/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs	(date 1714652830453)
+@@ -13,7 +13,7 @@
+ [assembly: System.Reflection.AssemblyCompanyAttribute("Result_Data_Manager")]
+ [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+ [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ad97b5e6980282ff5d70666e6839797e72c1b74")]
++[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a")]
+ [assembly: System.Reflection.AssemblyProductAttribute("Result_Data_Manager")]
+ [assembly: System.Reflection.AssemblyTitleAttribute("Result_Data_Manager")]
+ [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+Index: Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.props
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\n<Project ToolsVersion=\"14.0\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\n  <PropertyGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\n    <RestoreSuccess Condition=\" '$(RestoreSuccess)' == '' \">True</RestoreSuccess>\n    <RestoreTool Condition=\" '$(RestoreTool)' == '' \">NuGet</RestoreTool>\n    <ProjectAssetsFile Condition=\" '$(ProjectAssetsFile)' == '' \">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>\n    <NuGetPackageRoot Condition=\" '$(NuGetPackageRoot)' == '' \">$(UserProfile)\\.nuget\\packages\\</NuGetPackageRoot>\n    <NuGetPackageFolders Condition=\" '$(NuGetPackageFolders)' == '' \">C:\\Users\\admin\\.nuget\\packages\\;C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages</NuGetPackageFolders>\n    <NuGetProjectStyle Condition=\" '$(NuGetProjectStyle)' == '' \">PackageReference</NuGetProjectStyle>\n    <NuGetToolVersion Condition=\" '$(NuGetToolVersion)' == '' \">6.9.1</NuGetToolVersion>\n  </PropertyGroup>\n  <ItemGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\n    <SourceRoot Include=\"C:\\Users\\admin\\.nuget\\packages\\\" />\n    <SourceRoot Include=\"C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\\" />\n  </ItemGroup>\n  <ImportGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\n    <Import Project=\"$(NuGetPackageRoot)avalonia\\11.0.10\\buildTransitive\\Avalonia.props\" Condition=\"Exists('$(NuGetPackageRoot)avalonia\\11.0.10\\buildTransitive\\Avalonia.props')\" />\n  </ImportGroup>\n  <PropertyGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\n    <PkgAvalonia_BuildServices Condition=\" '$(PkgAvalonia_BuildServices)' == '' \">C:\\Users\\admin\\.nuget\\packages\\avalonia.buildservices\\0.0.29</PkgAvalonia_BuildServices>\n    <PkgAvalonia Condition=\" '$(PkgAvalonia)' == '' \">C:\\Users\\admin\\.nuget\\packages\\avalonia\\11.0.10</PkgAvalonia>\n  </PropertyGroup>\n</Project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.props b/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.props
+--- a/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.props	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.props	(date 1714652829413)
+@@ -4,20 +4,19 @@
+     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\admin\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
++    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/lajoskariko/.nuget/packages/</NuGetPackageRoot>
++    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/lajoskariko/.nuget/packages/</NuGetPackageFolders>
+     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.9.1</NuGetToolVersion>
+   </PropertyGroup>
+   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+-    <SourceRoot Include="C:\Users\admin\.nuget\packages\" />
+-    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
++    <SourceRoot Include="/Users/lajoskariko/.nuget/packages/" />
+   </ItemGroup>
+   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+-    <Import Project="$(NuGetPackageRoot)avalonia\11.0.10\buildTransitive\Avalonia.props" Condition="Exists('$(NuGetPackageRoot)avalonia\11.0.10\buildTransitive\Avalonia.props')" />
++    <Import Project="$(NuGetPackageRoot)avalonia/11.0.10/buildTransitive/Avalonia.props" Condition="Exists('$(NuGetPackageRoot)avalonia/11.0.10/buildTransitive/Avalonia.props')" />
+   </ImportGroup>
+   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+-    <PkgAvalonia_BuildServices Condition=" '$(PkgAvalonia_BuildServices)' == '' ">C:\Users\admin\.nuget\packages\avalonia.buildservices\0.0.29</PkgAvalonia_BuildServices>
+-    <PkgAvalonia Condition=" '$(PkgAvalonia)' == '' ">C:\Users\admin\.nuget\packages\avalonia\11.0.10</PkgAvalonia>
++    <PkgAvalonia_BuildServices Condition=" '$(PkgAvalonia_BuildServices)' == '' ">/Users/lajoskariko/.nuget/packages/avalonia.buildservices/0.0.29</PkgAvalonia_BuildServices>
++    <PkgAvalonia Condition=" '$(PkgAvalonia)' == '' ">/Users/lajoskariko/.nuget/packages/avalonia/11.0.10</PkgAvalonia>
+   </PropertyGroup>
+ </Project>
+\ No newline at end of file
+Index: Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.targets
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\n<Project ToolsVersion=\"14.0\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\n  <ImportGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\n    <Import Project=\"$(NuGetPackageRoot)avalonia.buildservices\\0.0.29\\buildTransitive\\Avalonia.BuildServices.targets\" Condition=\"Exists('$(NuGetPackageRoot)avalonia.buildservices\\0.0.29\\buildTransitive\\Avalonia.BuildServices.targets')\" />\n    <Import Project=\"$(NuGetPackageRoot)avalonia\\11.0.10\\buildTransitive\\Avalonia.targets\" Condition=\"Exists('$(NuGetPackageRoot)avalonia\\11.0.10\\buildTransitive\\Avalonia.targets')\" />\n  </ImportGroup>\n</Project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.targets b/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.targets
+--- a/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.targets	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.targets	(date 1714652829413)
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="utf-8" standalone="no"?>
+ <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+-    <Import Project="$(NuGetPackageRoot)avalonia.buildservices\0.0.29\buildTransitive\Avalonia.BuildServices.targets" Condition="Exists('$(NuGetPackageRoot)avalonia.buildservices\0.0.29\buildTransitive\Avalonia.BuildServices.targets')" />
+-    <Import Project="$(NuGetPackageRoot)avalonia\11.0.10\buildTransitive\Avalonia.targets" Condition="Exists('$(NuGetPackageRoot)avalonia\11.0.10\buildTransitive\Avalonia.targets')" />
++    <Import Project="$(NuGetPackageRoot)avalonia.buildservices/0.0.29/buildTransitive/Avalonia.BuildServices.targets" Condition="Exists('$(NuGetPackageRoot)avalonia.buildservices/0.0.29/buildTransitive/Avalonia.BuildServices.targets')" />
++    <Import Project="$(NuGetPackageRoot)avalonia/11.0.10/buildTransitive/Avalonia.targets" Condition="Exists('$(NuGetPackageRoot)avalonia/11.0.10/buildTransitive/Avalonia.targets')" />
+   </ImportGroup>
+ </Project>
+\ No newline at end of file
+Index: Source_Data_Manager/obj/project.assets.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"version\": 3,\n  \"targets\": {\n    \"net8.0\": {\n      \"Avalonia/11.0.10\": {\n        \"type\": \"package\",\n        \"dependencies\": {\n          \"Avalonia.BuildServices\": \"0.0.29\",\n          \"Avalonia.Remote.Protocol\": \"11.0.10\",\n          \"MicroCom.Runtime\": \"0.11.0\",\n          \"System.ComponentModel.Annotations\": \"4.5.0\"\n        },\n        \"compile\": {\n          \"ref/net6.0/Avalonia.Base.dll\": {\n            \"related\": \".xml\"\n          },\n          \"ref/net6.0/Avalonia.Controls.dll\": {\n            \"related\": \".xml\"\n          },\n          \"ref/net6.0/Avalonia.DesignerSupport.dll\": {\n            \"related\": \".xml\"\n          },\n          \"ref/net6.0/Avalonia.Dialogs.dll\": {\n            \"related\": \".xml\"\n          },\n          \"ref/net6.0/Avalonia.Markup.Xaml.dll\": {\n            \"related\": \".xml\"\n          },\n          \"ref/net6.0/Avalonia.Markup.dll\": {\n            \"related\": \".Xaml.xml;.xml\"\n          },\n          \"ref/net6.0/Avalonia.Metal.dll\": {\n            \"related\": \".xml\"\n          },\n          \"ref/net6.0/Avalonia.MicroCom.dll\": {\n            \"related\": \".xml\"\n          },\n          \"ref/net6.0/Avalonia.OpenGL.dll\": {\n            \"related\": \".xml\"\n          },\n          \"ref/net6.0/Avalonia.dll\": {\n            \"related\": \".Base.xml;.Controls.xml;.DesignerSupport.xml;.Dialogs.xml;.Markup.Xaml.xml;.Markup.xml;.Metal.xml;.MicroCom.xml;.OpenGL.xml;.xml\"\n          }\n        },\n        \"runtime\": {\n          \"lib/net6.0/Avalonia.Base.dll\": {\n            \"related\": \".xml\"\n          },\n          \"lib/net6.0/Avalonia.Controls.dll\": {\n            \"related\": \".xml\"\n          },\n          \"lib/net6.0/Avalonia.DesignerSupport.dll\": {\n            \"related\": \".xml\"\n          },\n          \"lib/net6.0/Avalonia.Dialogs.dll\": {\n            \"related\": \".xml\"\n          },\n          \"lib/net6.0/Avalonia.Markup.Xaml.dll\": {\n            \"related\": \".xml\"\n          },\n          \"lib/net6.0/Avalonia.Markup.dll\": {\n            \"related\": \".Xaml.xml;.xml\"\n          },\n          \"lib/net6.0/Avalonia.Metal.dll\": {\n            \"related\": \".xml\"\n          },\n          \"lib/net6.0/Avalonia.MicroCom.dll\": {\n            \"related\": \".xml\"\n          },\n          \"lib/net6.0/Avalonia.OpenGL.dll\": {\n            \"related\": \".xml\"\n          },\n          \"lib/net6.0/Avalonia.dll\": {\n            \"related\": \".Base.xml;.Controls.xml;.DesignerSupport.xml;.Dialogs.xml;.Markup.Xaml.xml;.Markup.xml;.Metal.xml;.MicroCom.xml;.OpenGL.xml;.xml\"\n          }\n        },\n        \"build\": {\n          \"buildTransitive/Avalonia.props\": {},\n          \"buildTransitive/Avalonia.targets\": {}\n        }\n      },\n      \"Avalonia.BuildServices/0.0.29\": {\n        \"type\": \"package\",\n        \"build\": {\n          \"buildTransitive/Avalonia.BuildServices.targets\": {}\n        }\n      },\n      \"Avalonia.Remote.Protocol/11.0.10\": {\n        \"type\": \"package\",\n        \"compile\": {\n          \"lib/net6.0/Avalonia.Remote.Protocol.dll\": {\n            \"related\": \".xml\"\n          }\n        },\n        \"runtime\": {\n          \"lib/net6.0/Avalonia.Remote.Protocol.dll\": {\n            \"related\": \".xml\"\n          }\n        }\n      },\n      \"CsvHelper/31.0.4\": {\n        \"type\": \"package\",\n        \"compile\": {\n          \"lib/net8.0/CsvHelper.dll\": {\n            \"related\": \".xml\"\n          }\n        },\n        \"runtime\": {\n          \"lib/net8.0/CsvHelper.dll\": {\n            \"related\": \".xml\"\n          }\n        }\n      },\n      \"MicroCom.Runtime/0.11.0\": {\n        \"type\": \"package\",\n        \"compile\": {\n          \"lib/net5.0/MicroCom.Runtime.dll\": {}\n        },\n        \"runtime\": {\n          \"lib/net5.0/MicroCom.Runtime.dll\": {}\n        }\n      },\n      \"Microsoft.Win32.SystemEvents/8.0.0\": {\n        \"type\": \"package\",\n        \"compile\": {\n          \"lib/net8.0/Microsoft.Win32.SystemEvents.dll\": {\n            \"related\": \".xml\"\n          }\n        },\n        \"runtime\": {\n          \"lib/net8.0/Microsoft.Win32.SystemEvents.dll\": {\n            \"related\": \".xml\"\n          }\n        },\n        \"build\": {\n          \"buildTransitive/net6.0/_._\": {}\n        },\n        \"runtimeTargets\": {\n          \"runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll\": {\n            \"assetType\": \"runtime\",\n            \"rid\": \"win\"\n          }\n        }\n      },\n      \"OxyPlot.Avalonia/2.1.0\": {\n        \"type\": \"package\",\n        \"dependencies\": {\n          \"Avalonia\": \"0.10.11\",\n          \"OxyPlot.Core\": \"2.1.0\"\n        },\n        \"compile\": {\n          \"lib/netstandard2.0/OxyPlot.Avalonia.dll\": {}\n        },\n        \"runtime\": {\n          \"lib/netstandard2.0/OxyPlot.Avalonia.dll\": {}\n        }\n      },\n      \"OxyPlot.Core/2014.1.546\": {\n        \"type\": \"package\",\n        \"compile\": {\n          \"lib/portable-net4+sl4+wp71+win8/OxyPlot.dll\": {\n            \"related\": \".pdb;.xml\"\n          }\n        },\n        \"runtime\": {\n          \"lib/portable-net4+sl4+wp71+win8/OxyPlot.dll\": {\n            \"related\": \".pdb;.xml\"\n          }\n        }\n      },\n      \"OxyPlot.WindowsForms/2014.1.546\": {\n        \"type\": \"package\",\n        \"dependencies\": {\n          \"OxyPlot.Core\": \"[2014.1.546]\"\n        },\n        \"compile\": {\n          \"lib/net45/OxyPlot.WindowsForms.dll\": {\n            \"related\": \".pdb;.XML\"\n          }\n        },\n        \"runtime\": {\n          \"lib/net45/OxyPlot.WindowsForms.dll\": {\n            \"related\": \".pdb;.XML\"\n          }\n        }\n      },\n      \"System.ComponentModel.Annotations/4.5.0\": {\n        \"type\": \"package\",\n        \"compile\": {\n          \"ref/netcoreapp2.0/_._\": {}\n        },\n        \"runtime\": {\n          \"lib/netcoreapp2.0/_._\": {}\n        }\n      },\n      \"System.Drawing.Common/8.0.4\": {\n        \"type\": \"package\",\n        \"dependencies\": {\n          \"Microsoft.Win32.SystemEvents\": \"8.0.0\"\n        },\n        \"compile\": {\n          \"lib/net8.0/System.Drawing.Common.dll\": {\n            \"related\": \".pdb;.xml\"\n          }\n        },\n        \"runtime\": {\n          \"lib/net8.0/System.Drawing.Common.dll\": {\n            \"related\": \".pdb;.xml\"\n          }\n        },\n        \"build\": {\n          \"buildTransitive/net6.0/_._\": {}\n        }\n      }\n    }\n  },\n  \"libraries\": {\n    \"Avalonia/11.0.10\": {\n      \"sha512\": \"EH1FyD1SA7G/TfLmb7JKQlZiOBqr6VzttJMtA5Hnc/c1623zJej0PRuQlqn8Ad6qWKorrKEypBGA9Gye3uWDrA==\",\n      \"type\": \"package\",\n      \"path\": \"avalonia/11.0.10\",\n      \"hasTools\": true,\n      \"files\": [\n        \".nupkg.metadata\",\n        \".signature.p7s\",\n        \"Icon.png\",\n        \"analyzers/dotnet/cs/Avalonia.Analyzers.dll\",\n        \"analyzers/dotnet/cs/Avalonia.Generators.dll\",\n        \"avalonia.11.0.10.nupkg.sha512\",\n        \"avalonia.nuspec\",\n        \"build/Avalonia.Generators.props\",\n        \"build/Avalonia.props\",\n        \"build/Avalonia.targets\",\n        \"build/AvaloniaBuildTasks.props\",\n        \"build/AvaloniaBuildTasks.targets\",\n        \"build/AvaloniaItemSchema.xaml\",\n        \"build/AvaloniaPrivateApis.targets\",\n        \"build/AvaloniaVersion.props\",\n        \"buildTransitive/Avalonia.Generators.props\",\n        \"buildTransitive/Avalonia.props\",\n        \"buildTransitive/Avalonia.targets\",\n        \"buildTransitive/AvaloniaBuildTasks.props\",\n        \"buildTransitive/AvaloniaBuildTasks.targets\",\n        \"buildTransitive/AvaloniaItemSchema.xaml\",\n        \"buildTransitive/AvaloniaPrivateApis.targets\",\n        \"lib/net461/Avalonia.Base.dll\",\n        \"lib/net461/Avalonia.Base.xml\",\n        \"lib/net461/Avalonia.Controls.dll\",\n        \"lib/net461/Avalonia.Controls.xml\",\n        \"lib/net461/Avalonia.DesignerSupport.dll\",\n        \"lib/net461/Avalonia.DesignerSupport.xml\",\n        \"lib/net461/Avalonia.Dialogs.dll\",\n        \"lib/net461/Avalonia.Dialogs.xml\",\n        \"lib/net461/Avalonia.Markup.Xaml.dll\",\n        \"lib/net461/Avalonia.Markup.Xaml.xml\",\n        \"lib/net461/Avalonia.Markup.dll\",\n        \"lib/net461/Avalonia.Markup.xml\",\n        \"lib/net461/Avalonia.Metal.dll\",\n        \"lib/net461/Avalonia.Metal.xml\",\n        \"lib/net461/Avalonia.MicroCom.dll\",\n        \"lib/net461/Avalonia.MicroCom.xml\",\n        \"lib/net461/Avalonia.OpenGL.dll\",\n        \"lib/net461/Avalonia.OpenGL.xml\",\n        \"lib/net461/Avalonia.dll\",\n        \"lib/net461/Avalonia.xml\",\n        \"lib/net6.0/Avalonia.Base.dll\",\n        \"lib/net6.0/Avalonia.Base.xml\",\n        \"lib/net6.0/Avalonia.Controls.dll\",\n        \"lib/net6.0/Avalonia.Controls.xml\",\n        \"lib/net6.0/Avalonia.DesignerSupport.dll\",\n        \"lib/net6.0/Avalonia.DesignerSupport.xml\",\n        \"lib/net6.0/Avalonia.Dialogs.dll\",\n        \"lib/net6.0/Avalonia.Dialogs.xml\",\n        \"lib/net6.0/Avalonia.Markup.Xaml.dll\",\n        \"lib/net6.0/Avalonia.Markup.Xaml.xml\",\n        \"lib/net6.0/Avalonia.Markup.dll\",\n        \"lib/net6.0/Avalonia.Markup.xml\",\n        \"lib/net6.0/Avalonia.Metal.dll\",\n        \"lib/net6.0/Avalonia.Metal.xml\",\n        \"lib/net6.0/Avalonia.MicroCom.dll\",\n        \"lib/net6.0/Avalonia.MicroCom.xml\",\n        \"lib/net6.0/Avalonia.OpenGL.dll\",\n        \"lib/net6.0/Avalonia.OpenGL.xml\",\n        \"lib/net6.0/Avalonia.dll\",\n        \"lib/net6.0/Avalonia.xml\",\n        \"lib/netcoreapp2.0/Avalonia.Base.dll\",\n        \"lib/netcoreapp2.0/Avalonia.Base.xml\",\n        \"lib/netcoreapp2.0/Avalonia.Controls.dll\",\n        \"lib/netcoreapp2.0/Avalonia.Controls.xml\",\n        \"lib/netcoreapp2.0/Avalonia.DesignerSupport.dll\",\n        \"lib/netcoreapp2.0/Avalonia.DesignerSupport.xml\",\n        \"lib/netcoreapp2.0/Avalonia.Dialogs.dll\",\n        \"lib/netcoreapp2.0/Avalonia.Dialogs.xml\",\n        \"lib/netcoreapp2.0/Avalonia.Markup.Xaml.dll\",\n        \"lib/netcoreapp2.0/Avalonia.Markup.Xaml.xml\",\n        \"lib/netcoreapp2.0/Avalonia.Markup.dll\",\n        \"lib/netcoreapp2.0/Avalonia.Markup.xml\",\n        \"lib/netcoreapp2.0/Avalonia.Metal.dll\",\n        \"lib/netcoreapp2.0/Avalonia.Metal.xml\",\n        \"lib/netcoreapp2.0/Avalonia.MicroCom.dll\",\n        \"lib/netcoreapp2.0/Avalonia.MicroCom.xml\",\n        \"lib/netcoreapp2.0/Avalonia.OpenGL.dll\",\n        \"lib/netcoreapp2.0/Avalonia.OpenGL.xml\",\n        \"lib/netcoreapp2.0/Avalonia.dll\",\n        \"lib/netcoreapp2.0/Avalonia.xml\",\n        \"lib/netstandard2.0/Avalonia.Base.dll\",\n        \"lib/netstandard2.0/Avalonia.Base.xml\",\n        \"lib/netstandard2.0/Avalonia.Controls.dll\",\n        \"lib/netstandard2.0/Avalonia.Controls.xml\",\n        \"lib/netstandard2.0/Avalonia.DesignerSupport.dll\",\n        \"lib/netstandard2.0/Avalonia.DesignerSupport.xml\",\n        \"lib/netstandard2.0/Avalonia.Dialogs.dll\",\n        \"lib/netstandard2.0/Avalonia.Dialogs.xml\",\n        \"lib/netstandard2.0/Avalonia.Markup.Xaml.dll\",\n        \"lib/netstandard2.0/Avalonia.Markup.Xaml.xml\",\n        \"lib/netstandard2.0/Avalonia.Markup.dll\",\n        \"lib/netstandard2.0/Avalonia.Markup.xml\",\n        \"lib/netstandard2.0/Avalonia.Metal.dll\",\n        \"lib/netstandard2.0/Avalonia.Metal.xml\",\n        \"lib/netstandard2.0/Avalonia.MicroCom.dll\",\n        \"lib/netstandard2.0/Avalonia.MicroCom.xml\",\n        \"lib/netstandard2.0/Avalonia.OpenGL.dll\",\n        \"lib/netstandard2.0/Avalonia.OpenGL.xml\",\n        \"lib/netstandard2.0/Avalonia.dll\",\n        \"lib/netstandard2.0/Avalonia.xml\",\n        \"ref/net461/Avalonia.Base.dll\",\n        \"ref/net461/Avalonia.Base.xml\",\n        \"ref/net461/Avalonia.Controls.dll\",\n        \"ref/net461/Avalonia.Controls.xml\",\n        \"ref/net461/Avalonia.DesignerSupport.dll\",\n        \"ref/net461/Avalonia.DesignerSupport.xml\",\n        \"ref/net461/Avalonia.Dialogs.dll\",\n        \"ref/net461/Avalonia.Dialogs.xml\",\n        \"ref/net461/Avalonia.Markup.Xaml.dll\",\n        \"ref/net461/Avalonia.Markup.Xaml.xml\",\n        \"ref/net461/Avalonia.Markup.dll\",\n        \"ref/net461/Avalonia.Markup.xml\",\n        \"ref/net461/Avalonia.Metal.dll\",\n        \"ref/net461/Avalonia.Metal.xml\",\n        \"ref/net461/Avalonia.MicroCom.dll\",\n        \"ref/net461/Avalonia.MicroCom.xml\",\n        \"ref/net461/Avalonia.OpenGL.dll\",\n        \"ref/net461/Avalonia.OpenGL.xml\",\n        \"ref/net461/Avalonia.dll\",\n        \"ref/net461/Avalonia.xml\",\n        \"ref/net6.0/Avalonia.Base.dll\",\n        \"ref/net6.0/Avalonia.Base.xml\",\n        \"ref/net6.0/Avalonia.Controls.dll\",\n        \"ref/net6.0/Avalonia.Controls.xml\",\n        \"ref/net6.0/Avalonia.DesignerSupport.dll\",\n        \"ref/net6.0/Avalonia.DesignerSupport.xml\",\n        \"ref/net6.0/Avalonia.Dialogs.dll\",\n        \"ref/net6.0/Avalonia.Dialogs.xml\",\n        \"ref/net6.0/Avalonia.Markup.Xaml.dll\",\n        \"ref/net6.0/Avalonia.Markup.Xaml.xml\",\n        \"ref/net6.0/Avalonia.Markup.dll\",\n        \"ref/net6.0/Avalonia.Markup.xml\",\n        \"ref/net6.0/Avalonia.Metal.dll\",\n        \"ref/net6.0/Avalonia.Metal.xml\",\n        \"ref/net6.0/Avalonia.MicroCom.dll\",\n        \"ref/net6.0/Avalonia.MicroCom.xml\",\n        \"ref/net6.0/Avalonia.OpenGL.dll\",\n        \"ref/net6.0/Avalonia.OpenGL.xml\",\n        \"ref/net6.0/Avalonia.dll\",\n        \"ref/net6.0/Avalonia.xml\",\n        \"ref/netcoreapp2.0/Avalonia.Base.dll\",\n        \"ref/netcoreapp2.0/Avalonia.Base.xml\",\n        \"ref/netcoreapp2.0/Avalonia.Controls.dll\",\n        \"ref/netcoreapp2.0/Avalonia.Controls.xml\",\n        \"ref/netcoreapp2.0/Avalonia.DesignerSupport.dll\",\n        \"ref/netcoreapp2.0/Avalonia.DesignerSupport.xml\",\n        \"ref/netcoreapp2.0/Avalonia.Dialogs.dll\",\n        \"ref/netcoreapp2.0/Avalonia.Dialogs.xml\",\n        \"ref/netcoreapp2.0/Avalonia.Markup.Xaml.dll\",\n        \"ref/netcoreapp2.0/Avalonia.Markup.Xaml.xml\",\n        \"ref/netcoreapp2.0/Avalonia.Markup.dll\",\n        \"ref/netcoreapp2.0/Avalonia.Markup.xml\",\n        \"ref/netcoreapp2.0/Avalonia.Metal.dll\",\n        \"ref/netcoreapp2.0/Avalonia.Metal.xml\",\n        \"ref/netcoreapp2.0/Avalonia.MicroCom.dll\",\n        \"ref/netcoreapp2.0/Avalonia.MicroCom.xml\",\n        \"ref/netcoreapp2.0/Avalonia.OpenGL.dll\",\n        \"ref/netcoreapp2.0/Avalonia.OpenGL.xml\",\n        \"ref/netcoreapp2.0/Avalonia.dll\",\n        \"ref/netcoreapp2.0/Avalonia.xml\",\n        \"ref/netstandard2.0/Avalonia.Base.dll\",\n        \"ref/netstandard2.0/Avalonia.Base.xml\",\n        \"ref/netstandard2.0/Avalonia.Controls.dll\",\n        \"ref/netstandard2.0/Avalonia.Controls.xml\",\n        \"ref/netstandard2.0/Avalonia.DesignerSupport.dll\",\n        \"ref/netstandard2.0/Avalonia.DesignerSupport.xml\",\n        \"ref/netstandard2.0/Avalonia.Dialogs.dll\",\n        \"ref/netstandard2.0/Avalonia.Dialogs.xml\",\n        \"ref/netstandard2.0/Avalonia.Markup.Xaml.dll\",\n        \"ref/netstandard2.0/Avalonia.Markup.Xaml.xml\",\n        \"ref/netstandard2.0/Avalonia.Markup.dll\",\n        \"ref/netstandard2.0/Avalonia.Markup.xml\",\n        \"ref/netstandard2.0/Avalonia.Metal.dll\",\n        \"ref/netstandard2.0/Avalonia.Metal.xml\",\n        \"ref/netstandard2.0/Avalonia.MicroCom.dll\",\n        \"ref/netstandard2.0/Avalonia.MicroCom.xml\",\n        \"ref/netstandard2.0/Avalonia.OpenGL.dll\",\n        \"ref/netstandard2.0/Avalonia.OpenGL.xml\",\n        \"ref/netstandard2.0/Avalonia.dll\",\n        \"ref/netstandard2.0/Avalonia.xml\",\n        \"tools/net461/designer/Avalonia.Designer.HostApp.exe\",\n        \"tools/netcoreapp2.0/designer/Avalonia.Designer.HostApp.dll\",\n        \"tools/netstandard2.0/Avalonia.Build.Tasks.dll\"\n      ]\n    },\n    \"Avalonia.BuildServices/0.0.29\": {\n      \"sha512\": \"U4eJLQdoDNHXtEba7MZUCwrBErBTxFp6sUewXBOdAhU0Kwzwaa/EKFcYm8kpcysjzKtfB4S0S9n0uxKZFz/ikw==\",\n      \"type\": \"package\",\n      \"path\": \"avalonia.buildservices/0.0.29\",\n      \"hasTools\": true,\n      \"files\": [\n        \".nupkg.metadata\",\n        \".signature.p7s\",\n        \"avalonia.buildservices.0.0.29.nupkg.sha512\",\n        \"avalonia.buildservices.nuspec\",\n        \"build/Avalonia.BuildServices.targets\",\n        \"buildTransitive/Avalonia.BuildServices.targets\",\n        \"tools/netstandard2.0/Avalonia.BuildServices.Collector.dll\",\n        \"tools/netstandard2.0/Avalonia.BuildServices.dll\",\n        \"tools/netstandard2.0/runtimeconfig.json\"\n      ]\n    },\n    \"Avalonia.Remote.Protocol/11.0.10\": {\n      \"sha512\": \"4/zXSx7P2+4g7nIkSd8aIfEfRnvHjpeSEBjJznzE5iJBYO98B78wDPWEkyN8sQBJnLghaNKKsGCApx3g5R0Gsg==\",\n      \"type\": \"package\",\n      \"path\": \"avalonia.remote.protocol/11.0.10\",\n      \"files\": [\n        \".nupkg.metadata\",\n        \".signature.p7s\",\n        \"Icon.png\",\n        \"avalonia.remote.protocol.11.0.10.nupkg.sha512\",\n        \"avalonia.remote.protocol.nuspec\",\n        \"lib/net6.0/Avalonia.Remote.Protocol.dll\",\n        \"lib/net6.0/Avalonia.Remote.Protocol.xml\",\n        \"lib/netstandard2.0/Avalonia.Remote.Protocol.dll\",\n        \"lib/netstandard2.0/Avalonia.Remote.Protocol.xml\"\n      ]\n    },\n    \"CsvHelper/31.0.4\": {\n      \"sha512\": \"m4ikjUAn4XOD1tShxxk4ui42sHxjHdX52P7fPQ9K7tzJkPTEwiCbvEz3k73mTGSSaPTUCOp9VziQC757IqKLew==\",\n      \"type\": \"package\",\n      \"path\": \"csvhelper/31.0.4\",\n      \"files\": [\n        \".nupkg.metadata\",\n        \".signature.p7s\",\n        \"Icon.png\",\n        \"csvhelper.31.0.4.nupkg.sha512\",\n        \"csvhelper.nuspec\",\n        \"lib/net462/CsvHelper.dll\",\n        \"lib/net462/CsvHelper.xml\",\n        \"lib/net47/CsvHelper.dll\",\n        \"lib/net47/CsvHelper.xml\",\n        \"lib/net48/CsvHelper.dll\",\n        \"lib/net48/CsvHelper.xml\",\n        \"lib/net6.0/CsvHelper.dll\",\n        \"lib/net6.0/CsvHelper.xml\",\n        \"lib/net7.0/CsvHelper.dll\",\n        \"lib/net7.0/CsvHelper.xml\",\n        \"lib/net8.0/CsvHelper.dll\",\n        \"lib/net8.0/CsvHelper.xml\",\n        \"lib/netstandard2.0/CsvHelper.dll\",\n        \"lib/netstandard2.0/CsvHelper.xml\",\n        \"lib/netstandard2.1/CsvHelper.dll\",\n        \"lib/netstandard2.1/CsvHelper.xml\"\n      ]\n    },\n    \"MicroCom.Runtime/0.11.0\": {\n      \"sha512\": \"MEnrZ3UIiH40hjzMDsxrTyi8dtqB5ziv3iBeeU4bXsL/7NLSal9F1lZKpK+tfBRnUoDSdtcW3KufE4yhATOMCA==\",\n      \"type\": \"package\",\n      \"path\": \"microcom.runtime/0.11.0\",\n      \"files\": [\n        \".nupkg.metadata\",\n        \".signature.p7s\",\n        \"lib/net5.0/MicroCom.Runtime.dll\",\n        \"lib/netstandard2.0/MicroCom.Runtime.dll\",\n        \"microcom.runtime.0.11.0.nupkg.sha512\",\n        \"microcom.runtime.nuspec\"\n      ]\n    },\n    \"Microsoft.Win32.SystemEvents/8.0.0\": {\n      \"sha512\": \"9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==\",\n      \"type\": \"package\",\n      \"path\": \"microsoft.win32.systemevents/8.0.0\",\n      \"files\": [\n        \".nupkg.metadata\",\n        \".signature.p7s\",\n        \"Icon.png\",\n        \"LICENSE.TXT\",\n        \"THIRD-PARTY-NOTICES.TXT\",\n        \"buildTransitive/net461/Microsoft.Win32.SystemEvents.targets\",\n        \"buildTransitive/net462/_._\",\n        \"buildTransitive/net6.0/_._\",\n        \"buildTransitive/netcoreapp2.0/Microsoft.Win32.SystemEvents.targets\",\n        \"lib/net462/Microsoft.Win32.SystemEvents.dll\",\n        \"lib/net462/Microsoft.Win32.SystemEvents.xml\",\n        \"lib/net6.0/Microsoft.Win32.SystemEvents.dll\",\n        \"lib/net6.0/Microsoft.Win32.SystemEvents.xml\",\n        \"lib/net7.0/Microsoft.Win32.SystemEvents.dll\",\n        \"lib/net7.0/Microsoft.Win32.SystemEvents.xml\",\n        \"lib/net8.0/Microsoft.Win32.SystemEvents.dll\",\n        \"lib/net8.0/Microsoft.Win32.SystemEvents.xml\",\n        \"lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll\",\n        \"lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml\",\n        \"microsoft.win32.systemevents.8.0.0.nupkg.sha512\",\n        \"microsoft.win32.systemevents.nuspec\",\n        \"runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll\",\n        \"runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.xml\",\n        \"runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll\",\n        \"runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.xml\",\n        \"runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll\",\n        \"runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.xml\",\n        \"useSharedDesignerContext.txt\"\n      ]\n    },\n    \"OxyPlot.Avalonia/2.1.0\": {\n      \"sha512\": \"eYIRqGFeIKg2Iv4kdcfxbQvfqmApqBe556WZjlQ0MU3gH+KRVetigYSFFi74yyUEFLI9kbNwAvS41FeTHgZBrQ==\",\n      \"type\": \"package\",\n      \"path\": \"oxyplot.avalonia/2.1.0\",\n      \"files\": [\n        \".nupkg.metadata\",\n        \".signature.p7s\",\n        \"lib/netstandard2.0/OxyPlot.Avalonia.dll\",\n        \"oxyplot.avalonia.2.1.0.nupkg.sha512\",\n        \"oxyplot.avalonia.nuspec\"\n      ]\n    },\n    \"OxyPlot.Core/2014.1.546\": {\n      \"sha512\": \"Vv7C4yjW4V3fjH4tjR295noyZXHrAdpFN/WXZM8COAIwYjmoXbG3sX1DBAcQgT72yf4mKcVoo66bUz7uUp9sCw==\",\n      \"type\": \"package\",\n      \"path\": \"oxyplot.core/2014.1.546\",\n      \"files\": [\n        \".nupkg.metadata\",\n        \".signature.p7s\",\n        \"AUTHORS\",\n        \"CONTRIBUTORS\",\n        \"LICENSE\",\n        \"README.md\",\n        \"lib/portable-net4+sl4+wp71+win8/OxyPlot.dll\",\n        \"lib/portable-net4+sl4+wp71+win8/OxyPlot.pdb\",\n        \"lib/portable-net4+sl4+wp71+win8/OxyPlot.xml\",\n        \"oxyplot.core.2014.1.546.nupkg.sha512\",\n        \"oxyplot.core.nuspec\"\n      ]\n    },\n    \"OxyPlot.WindowsForms/2014.1.546\": {\n      \"sha512\": \"yKYHoSVLFr7i+K4gERwKRz+40zRNApiJyR/r+/dgL1Z5axJ6bx7KmQfyw3yQfwdpDXolbpTnHxLCIqgWDT7sHg==\",\n      \"type\": \"package\",\n      \"path\": \"oxyplot.windowsforms/2014.1.546\",\n      \"files\": [\n        \".nupkg.metadata\",\n        \".signature.p7s\",\n        \"README.md\",\n        \"lib/net40/OxyPlot.WindowsForms.XML\",\n        \"lib/net40/OxyPlot.WindowsForms.dll\",\n        \"lib/net40/OxyPlot.WindowsForms.pdb\",\n        \"lib/net45/OxyPlot.WindowsForms.XML\",\n        \"lib/net45/OxyPlot.WindowsForms.dll\",\n        \"lib/net45/OxyPlot.WindowsForms.pdb\",\n        \"oxyplot.windowsforms.2014.1.546.nupkg.sha512\",\n        \"oxyplot.windowsforms.nuspec\"\n      ]\n    },\n    \"System.ComponentModel.Annotations/4.5.0\": {\n      \"sha512\": \"UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==\",\n      \"type\": \"package\",\n      \"path\": \"system.componentmodel.annotations/4.5.0\",\n      \"files\": [\n        \".nupkg.metadata\",\n        \".signature.p7s\",\n        \"LICENSE.TXT\",\n        \"THIRD-PARTY-NOTICES.TXT\",\n        \"lib/MonoAndroid10/_._\",\n        \"lib/MonoTouch10/_._\",\n        \"lib/net45/_._\",\n        \"lib/net461/System.ComponentModel.Annotations.dll\",\n        \"lib/netcore50/System.ComponentModel.Annotations.dll\",\n        \"lib/netcoreapp2.0/_._\",\n        \"lib/netstandard1.4/System.ComponentModel.Annotations.dll\",\n        \"lib/netstandard2.0/System.ComponentModel.Annotations.dll\",\n        \"lib/portable-net45+win8/_._\",\n        \"lib/uap10.0.16299/_._\",\n        \"lib/win8/_._\",\n        \"lib/xamarinios10/_._\",\n        \"lib/xamarinmac20/_._\",\n        \"lib/xamarintvos10/_._\",\n        \"lib/xamarinwatchos10/_._\",\n        \"ref/MonoAndroid10/_._\",\n        \"ref/MonoTouch10/_._\",\n        \"ref/net45/_._\",\n        \"ref/net461/System.ComponentModel.Annotations.dll\",\n        \"ref/net461/System.ComponentModel.Annotations.xml\",\n        \"ref/netcore50/System.ComponentModel.Annotations.dll\",\n        \"ref/netcore50/System.ComponentModel.Annotations.xml\",\n        \"ref/netcore50/de/System.ComponentModel.Annotations.xml\",\n        \"ref/netcore50/es/System.ComponentModel.Annotations.xml\",\n        \"ref/netcore50/fr/System.ComponentModel.Annotations.xml\",\n        \"ref/netcore50/it/System.ComponentModel.Annotations.xml\",\n        \"ref/netcore50/ja/System.ComponentModel.Annotations.xml\",\n        \"ref/netcore50/ko/System.ComponentModel.Annotations.xml\",\n        \"ref/netcore50/ru/System.ComponentModel.Annotations.xml\",\n        \"ref/netcore50/zh-hans/System.ComponentModel.Annotations.xml\",\n        \"ref/netcore50/zh-hant/System.ComponentModel.Annotations.xml\",\n        \"ref/netcoreapp2.0/_._\",\n        \"ref/netstandard1.1/System.ComponentModel.Annotations.dll\",\n        \"ref/netstandard1.1/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.1/de/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.1/es/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.1/fr/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.1/it/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.1/ja/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.1/ko/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.1/ru/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.1/zh-hans/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.1/zh-hant/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.3/System.ComponentModel.Annotations.dll\",\n        \"ref/netstandard1.3/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.3/de/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.3/es/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.3/fr/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.3/it/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.3/ja/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.3/ko/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.3/ru/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.3/zh-hans/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.3/zh-hant/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.4/System.ComponentModel.Annotations.dll\",\n        \"ref/netstandard1.4/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.4/de/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.4/es/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.4/fr/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.4/it/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.4/ja/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.4/ko/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.4/ru/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.4/zh-hans/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard1.4/zh-hant/System.ComponentModel.Annotations.xml\",\n        \"ref/netstandard2.0/System.ComponentModel.Annotations.dll\",\n        \"ref/netstandard2.0/System.ComponentModel.Annotations.xml\",\n        \"ref/portable-net45+win8/_._\",\n        \"ref/uap10.0.16299/_._\",\n        \"ref/win8/_._\",\n        \"ref/xamarinios10/_._\",\n        \"ref/xamarinmac20/_._\",\n        \"ref/xamarintvos10/_._\",\n        \"ref/xamarinwatchos10/_._\",\n        \"system.componentmodel.annotations.4.5.0.nupkg.sha512\",\n        \"system.componentmodel.annotations.nuspec\",\n        \"useSharedDesignerContext.txt\",\n        \"version.txt\"\n      ]\n    },\n    \"System.Drawing.Common/8.0.4\": {\n      \"sha512\": \"3G4xpa8mUYGzEF0HlswlBArAFywHJIzsZoB5hU4yMlnYHaabj/lg019BwbyyYBxj0aoM7Cz+jdlgUemeno9LOQ==\",\n      \"type\": \"package\",\n      \"path\": \"system.drawing.common/8.0.4\",\n      \"files\": [\n        \".nupkg.metadata\",\n        \".signature.p7s\",\n        \"Icon.png\",\n        \"LICENSE.TXT\",\n        \"THIRD-PARTY-NOTICES.TXT\",\n        \"buildTransitive/net461/System.Drawing.Common.targets\",\n        \"buildTransitive/net462/_._\",\n        \"buildTransitive/net6.0/_._\",\n        \"buildTransitive/netcoreapp2.0/System.Drawing.Common.targets\",\n        \"lib/MonoAndroid10/_._\",\n        \"lib/MonoTouch10/_._\",\n        \"lib/net462/System.Drawing.Common.dll\",\n        \"lib/net462/System.Drawing.Common.pdb\",\n        \"lib/net462/System.Drawing.Common.xml\",\n        \"lib/net6.0/System.Drawing.Common.dll\",\n        \"lib/net6.0/System.Drawing.Common.pdb\",\n        \"lib/net6.0/System.Drawing.Common.xml\",\n        \"lib/net7.0/System.Drawing.Common.dll\",\n        \"lib/net7.0/System.Drawing.Common.pdb\",\n        \"lib/net7.0/System.Drawing.Common.xml\",\n        \"lib/net8.0/System.Drawing.Common.dll\",\n        \"lib/net8.0/System.Drawing.Common.pdb\",\n        \"lib/net8.0/System.Drawing.Common.xml\",\n        \"lib/netstandard2.0/System.Drawing.Common.dll\",\n        \"lib/netstandard2.0/System.Drawing.Common.pdb\",\n        \"lib/netstandard2.0/System.Drawing.Common.xml\",\n        \"lib/xamarinios10/_._\",\n        \"lib/xamarinmac20/_._\",\n        \"lib/xamarintvos10/_._\",\n        \"lib/xamarinwatchos10/_._\",\n        \"system.drawing.common.8.0.4.nupkg.sha512\",\n        \"system.drawing.common.nuspec\",\n        \"useSharedDesignerContext.txt\"\n      ]\n    }\n  },\n  \"projectFileDependencyGroups\": {\n    \"net8.0\": [\n      \"Avalonia >= 11.0.10\",\n      \"CsvHelper >= 31.0.4\",\n      \"OxyPlot.Avalonia >= 2.1.0\",\n      \"OxyPlot.Core >= 2014.1.546\",\n      \"OxyPlot.WindowsForms >= 2014.1.546\",\n      \"System.Drawing.Common >= 8.0.4\"\n    ]\n  },\n  \"packageFolders\": {\n    \"C:\\\\Users\\\\admin\\\\.nuget\\\\packages\\\\\": {},\n    \"C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\Shared\\\\NuGetPackages\": {}\n  },\n  \"project\": {\n    \"version\": \"1.0.0\",\n    \"restore\": {\n      \"projectUniqueName\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Source_Data_Manager\\\\Source_Data_Manager.csproj\",\n      \"projectName\": \"Source_Data_Manager\",\n      \"projectPath\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Source_Data_Manager\\\\Source_Data_Manager.csproj\",\n      \"packagesPath\": \"C:\\\\Users\\\\admin\\\\.nuget\\\\packages\\\\\",\n      \"outputPath\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Source_Data_Manager\\\\obj\\\\\",\n      \"projectStyle\": \"PackageReference\",\n      \"fallbackFolders\": [\n        \"C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\Shared\\\\NuGetPackages\"\n      ],\n      \"configFilePaths\": [\n        \"C:\\\\Users\\\\admin\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\",\n        \"C:\\\\Program Files (x86)\\\\NuGet\\\\Config\\\\Microsoft.VisualStudio.FallbackLocation.config\",\n        \"C:\\\\Program Files (x86)\\\\NuGet\\\\Config\\\\Microsoft.VisualStudio.Offline.config\"\n      ],\n      \"originalTargetFrameworks\": [\n        \"net8.0\"\n      ],\n      \"sources\": {\n        \"C:\\\\Program Files (x86)\\\\Microsoft SDKs\\\\NuGetPackages\\\\\": {},\n        \"C:\\\\Program Files\\\\dotnet\\\\library-packs\": {},\n        \"https://api.nuget.org/v3/index.json\": {}\n      },\n      \"frameworks\": {\n        \"net8.0\": {\n          \"targetAlias\": \"net8.0\",\n          \"projectReferences\": {}\n        }\n      },\n      \"warningProperties\": {\n        \"warnAsError\": [\n          \"NU1605\"\n        ]\n      }\n    },\n    \"frameworks\": {\n      \"net8.0\": {\n        \"targetAlias\": \"net8.0\",\n        \"dependencies\": {\n          \"Avalonia\": {\n            \"target\": \"Package\",\n            \"version\": \"[11.0.10, )\"\n          },\n          \"CsvHelper\": {\n            \"target\": \"Package\",\n            \"version\": \"[31.0.4, )\"\n          },\n          \"OxyPlot.Avalonia\": {\n            \"target\": \"Package\",\n            \"version\": \"[2.1.0, )\"\n          },\n          \"OxyPlot.Core\": {\n            \"target\": \"Package\",\n            \"version\": \"[2014.1.546, )\"\n          },\n          \"OxyPlot.WindowsForms\": {\n            \"target\": \"Package\",\n            \"version\": \"[2014.1.546, )\"\n          },\n          \"System.Drawing.Common\": {\n            \"target\": \"Package\",\n            \"version\": \"[8.0.4, )\"\n          }\n        },\n        \"imports\": [\n          \"net461\",\n          \"net462\",\n          \"net47\",\n          \"net471\",\n          \"net472\",\n          \"net48\",\n          \"net481\"\n        ],\n        \"assetTargetFallback\": true,\n        \"warn\": true,\n        \"frameworkReferences\": {\n          \"Microsoft.NETCore.App\": {\n            \"privateAssets\": \"all\"\n          }\n        },\n        \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\8.0.200/PortableRuntimeIdentifierGraph.json\"\n      }\n    }\n  },\n  \"logs\": [\n    {\n      \"code\": \"NU1701\",\n      \"level\": \"Warning\",\n      \"warningLevel\": 1,\n      \"message\": \"Package 'OxyPlot.Core 2014.1.546' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.\",\n      \"libraryId\": \"OxyPlot.Core\",\n      \"targetGraphs\": [\n        \"net8.0\"\n      ]\n    },\n    {\n      \"code\": \"NU1701\",\n      \"level\": \"Warning\",\n      \"warningLevel\": 1,\n      \"message\": \"Package 'OxyPlot.WindowsForms 2014.1.546' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.\",\n      \"libraryId\": \"OxyPlot.WindowsForms\",\n      \"targetGraphs\": [\n        \"net8.0\"\n      ]\n    }\n  ]\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Source_Data_Manager/obj/project.assets.json b/Source_Data_Manager/obj/project.assets.json
+--- a/Source_Data_Manager/obj/project.assets.json	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Source_Data_Manager/obj/project.assets.json	(date 1714652829417)
+@@ -706,32 +706,24 @@
+     ]
+   },
+   "packageFolders": {
+-    "C:\\Users\\admin\\.nuget\\packages\\": {},
+-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
++    "/Users/lajoskariko/.nuget/packages/": {}
+   },
+   "project": {
+     "version": "1.0.0",
+     "restore": {
+-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\Source_Data_Manager.csproj",
++      "projectUniqueName": "/Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/Source_Data_Manager.csproj",
+       "projectName": "Source_Data_Manager",
+-      "projectPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\Source_Data_Manager.csproj",
+-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+-      "outputPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\obj\\",
++      "projectPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/Source_Data_Manager.csproj",
++      "packagesPath": "/Users/lajoskariko/.nuget/packages/",
++      "outputPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/obj/",
+       "projectStyle": "PackageReference",
+-      "fallbackFolders": [
+-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+-      ],
+       "configFilePaths": [
+-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
++        "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
+       ],
+       "originalTargetFrameworks": [
+         "net8.0"
+       ],
+       "sources": {
+-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+-        "C:\\Program Files\\dotnet\\library-packs": {},
+         "https://api.nuget.org/v3/index.json": {}
+       },
+       "frameworks": {
+@@ -791,7 +783,7 @@
+             "privateAssets": "all"
+           }
+         },
+-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
++        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+       }
+     }
+   },
+Index: Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.dgspec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"format\": 1,\n  \"restore\": {\n    \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Source_Data_Manager\\\\Source_Data_Manager.csproj\": {}\n  },\n  \"projects\": {\n    \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Source_Data_Manager\\\\Source_Data_Manager.csproj\": {\n      \"version\": \"1.0.0\",\n      \"restore\": {\n        \"projectUniqueName\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Source_Data_Manager\\\\Source_Data_Manager.csproj\",\n        \"projectName\": \"Source_Data_Manager\",\n        \"projectPath\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Source_Data_Manager\\\\Source_Data_Manager.csproj\",\n        \"packagesPath\": \"C:\\\\Users\\\\admin\\\\.nuget\\\\packages\\\\\",\n        \"outputPath\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Source_Data_Manager\\\\obj\\\\\",\n        \"projectStyle\": \"PackageReference\",\n        \"fallbackFolders\": [\n          \"C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\Shared\\\\NuGetPackages\"\n        ],\n        \"configFilePaths\": [\n          \"C:\\\\Users\\\\admin\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\",\n          \"C:\\\\Program Files (x86)\\\\NuGet\\\\Config\\\\Microsoft.VisualStudio.FallbackLocation.config\",\n          \"C:\\\\Program Files (x86)\\\\NuGet\\\\Config\\\\Microsoft.VisualStudio.Offline.config\"\n        ],\n        \"originalTargetFrameworks\": [\n          \"net8.0\"\n        ],\n        \"sources\": {\n          \"C:\\\\Program Files (x86)\\\\Microsoft SDKs\\\\NuGetPackages\\\\\": {},\n          \"C:\\\\Program Files\\\\dotnet\\\\library-packs\": {},\n          \"https://api.nuget.org/v3/index.json\": {}\n        },\n        \"frameworks\": {\n          \"net8.0\": {\n            \"targetAlias\": \"net8.0\",\n            \"projectReferences\": {}\n          }\n        },\n        \"warningProperties\": {\n          \"warnAsError\": [\n            \"NU1605\"\n          ]\n        }\n      },\n      \"frameworks\": {\n        \"net8.0\": {\n          \"targetAlias\": \"net8.0\",\n          \"dependencies\": {\n            \"Avalonia\": {\n              \"target\": \"Package\",\n              \"version\": \"[11.0.10, )\"\n            },\n            \"CsvHelper\": {\n              \"target\": \"Package\",\n              \"version\": \"[31.0.4, )\"\n            },\n            \"OxyPlot.Avalonia\": {\n              \"target\": \"Package\",\n              \"version\": \"[2.1.0, )\"\n            },\n            \"OxyPlot.Core\": {\n              \"target\": \"Package\",\n              \"version\": \"[2014.1.546, )\"\n            },\n            \"OxyPlot.WindowsForms\": {\n              \"target\": \"Package\",\n              \"version\": \"[2014.1.546, )\"\n            },\n            \"System.Drawing.Common\": {\n              \"target\": \"Package\",\n              \"version\": \"[8.0.4, )\"\n            }\n          },\n          \"imports\": [\n            \"net461\",\n            \"net462\",\n            \"net47\",\n            \"net471\",\n            \"net472\",\n            \"net48\",\n            \"net481\"\n          ],\n          \"assetTargetFallback\": true,\n          \"warn\": true,\n          \"frameworkReferences\": {\n            \"Microsoft.NETCore.App\": {\n              \"privateAssets\": \"all\"\n            }\n          },\n          \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\8.0.200/PortableRuntimeIdentifierGraph.json\"\n        }\n      }\n    }\n  }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.dgspec.json b/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.dgspec.json
+--- a/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.dgspec.json	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.dgspec.json	(date 1714652829422)
+@@ -1,32 +1,25 @@
+ {
+   "format": 1,
+   "restore": {
+-    "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\Source_Data_Manager.csproj": {}
++    "/Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/Source_Data_Manager.csproj": {}
+   },
+   "projects": {
+-    "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\Source_Data_Manager.csproj": {
++    "/Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/Source_Data_Manager.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\Source_Data_Manager.csproj",
++        "projectUniqueName": "/Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/Source_Data_Manager.csproj",
+         "projectName": "Source_Data_Manager",
+-        "projectPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\Source_Data_Manager.csproj",
+-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+-        "outputPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\obj\\",
++        "projectPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/Source_Data_Manager.csproj",
++        "packagesPath": "/Users/lajoskariko/.nuget/packages/",
++        "outputPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/obj/",
+         "projectStyle": "PackageReference",
+-        "fallbackFolders": [
+-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+-        ],
+         "configFilePaths": [
+-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
++          "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
+         ],
+         "originalTargetFrameworks": [
+           "net8.0"
+         ],
+         "sources": {
+-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+-          "C:\\Program Files\\dotnet\\library-packs": {},
+           "https://api.nuget.org/v3/index.json": {}
+         },
+         "frameworks": {
+@@ -86,7 +79,7 @@
+               "privateAssets": "all"
+             }
+           },
+-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
++          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+         }
+       }
+     }
+Index: Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"format\": 1,\n  \"restore\": {\n    \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Asset_Manager\\\\Asset_Manager.csproj\": {}\n  },\n  \"projects\": {\n    \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Asset_Manager\\\\Asset_Manager.csproj\": {\n      \"version\": \"1.0.0\",\n      \"restore\": {\n        \"projectUniqueName\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Asset_Manager\\\\Asset_Manager.csproj\",\n        \"projectName\": \"Asset_Manager\",\n        \"projectPath\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Asset_Manager\\\\Asset_Manager.csproj\",\n        \"packagesPath\": \"C:\\\\Users\\\\admin\\\\.nuget\\\\packages\\\\\",\n        \"outputPath\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Asset_Manager\\\\obj\\\\\",\n        \"projectStyle\": \"PackageReference\",\n        \"fallbackFolders\": [\n          \"C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\Shared\\\\NuGetPackages\"\n        ],\n        \"configFilePaths\": [\n          \"C:\\\\Users\\\\admin\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\",\n          \"C:\\\\Program Files (x86)\\\\NuGet\\\\Config\\\\Microsoft.VisualStudio.FallbackLocation.config\",\n          \"C:\\\\Program Files (x86)\\\\NuGet\\\\Config\\\\Microsoft.VisualStudio.Offline.config\"\n        ],\n        \"originalTargetFrameworks\": [\n          \"net8.0\"\n        ],\n        \"sources\": {\n          \"C:\\\\Program Files (x86)\\\\Microsoft SDKs\\\\NuGetPackages\\\\\": {},\n          \"C:\\\\Program Files\\\\dotnet\\\\library-packs\": {},\n          \"https://api.nuget.org/v3/index.json\": {}\n        },\n        \"frameworks\": {\n          \"net8.0\": {\n            \"targetAlias\": \"net8.0\",\n            \"projectReferences\": {}\n          }\n        },\n        \"warningProperties\": {\n          \"warnAsError\": [\n            \"NU1605\"\n          ]\n        }\n      },\n      \"frameworks\": {\n        \"net8.0\": {\n          \"targetAlias\": \"net8.0\",\n          \"dependencies\": {\n            \"Newtonsoft.Json\": {\n              \"target\": \"Package\",\n              \"version\": \"[13.0.3, )\"\n            }\n          },\n          \"imports\": [\n            \"net461\",\n            \"net462\",\n            \"net47\",\n            \"net471\",\n            \"net472\",\n            \"net48\",\n            \"net481\"\n          ],\n          \"assetTargetFallback\": true,\n          \"warn\": true,\n          \"frameworkReferences\": {\n            \"Microsoft.NETCore.App\": {\n              \"privateAssets\": \"all\"\n            }\n          },\n          \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\8.0.200/PortableRuntimeIdentifierGraph.json\"\n        }\n      }\n    }\n  }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json b/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json
+--- a/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json	(date 1714652829414)
+@@ -1,32 +1,25 @@
+ {
+   "format": 1,
+   "restore": {
+-    "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset_Manager\\Asset_Manager.csproj": {}
++    "/Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/Asset_Manager.csproj": {}
+   },
+   "projects": {
+-    "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset_Manager\\Asset_Manager.csproj": {
++    "/Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/Asset_Manager.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset_Manager\\Asset_Manager.csproj",
++        "projectUniqueName": "/Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/Asset_Manager.csproj",
+         "projectName": "Asset_Manager",
+-        "projectPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset_Manager\\Asset_Manager.csproj",
+-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+-        "outputPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset_Manager\\obj\\",
++        "projectPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/Asset_Manager.csproj",
++        "packagesPath": "/Users/lajoskariko/.nuget/packages/",
++        "outputPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/obj/",
+         "projectStyle": "PackageReference",
+-        "fallbackFolders": [
+-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+-        ],
+         "configFilePaths": [
+-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
++          "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
+         ],
+         "originalTargetFrameworks": [
+           "net8.0"
+         ],
+         "sources": {
+-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+-          "C:\\Program Files\\dotnet\\library-packs": {},
+           "https://api.nuget.org/v3/index.json": {}
+         },
+         "frameworks": {
+@@ -66,7 +59,7 @@
+               "privateAssets": "all"
+             }
+           },
+-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
++          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+         }
+       }
+     }
+Index: Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>is_global = true\nbuild_property.AvaloniaNameGeneratorIsEnabled = true\nbuild_property.AvaloniaNameGeneratorBehavior = InitializeComponent\nbuild_property.AvaloniaNameGeneratorDefaultFieldModifier = internal\nbuild_property.AvaloniaNameGeneratorFilterByPath = *\nbuild_property.AvaloniaNameGeneratorFilterByNamespace = *\nbuild_property.TargetFramework = net8.0\nbuild_property.TargetPlatformMinVersion = \nbuild_property.UsingMicrosoftNETSdkWeb = \nbuild_property.ProjectTypeGuids = \nbuild_property.InvariantGlobalization = \nbuild_property.PlatformNeutralAssembly = \nbuild_property.EnforceExtendedAnalyzerRules = \nbuild_property._SupportedPlatformList = Linux,macOS,Windows\nbuild_property.RootNamespace = Source_Data_Manager\nbuild_property.ProjectDir = C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\\nbuild_property.EnableComHosting = \nbuild_property.EnableGeneratedComInterfaceComImportInterop = \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig b/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig
+--- a/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig	(date 1714652830961)
+@@ -13,6 +13,6 @@
+ build_property.EnforceExtendedAnalyzerRules = 
+ build_property._SupportedPlatformList = Linux,macOS,Windows
+ build_property.RootNamespace = Source_Data_Manager
+-build_property.ProjectDir = C:\Users\admin\Desktop\SDU\S2\Semester Project 2\Semester Project Code\Semester-Project\Source_Data_Manager\
++build_property.ProjectDir = /Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/
+ build_property.EnableComHosting = 
+ build_property.EnableGeneratedComInterfaceComImportInterop = 
+Index: Asset_Manager/obj/project.assets.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"version\": 3,\n  \"targets\": {\n    \"net8.0\": {\n      \"Newtonsoft.Json/13.0.3\": {\n        \"type\": \"package\",\n        \"compile\": {\n          \"lib/net6.0/Newtonsoft.Json.dll\": {\n            \"related\": \".xml\"\n          }\n        },\n        \"runtime\": {\n          \"lib/net6.0/Newtonsoft.Json.dll\": {\n            \"related\": \".xml\"\n          }\n        }\n      }\n    }\n  },\n  \"libraries\": {\n    \"Newtonsoft.Json/13.0.3\": {\n      \"sha512\": \"HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==\",\n      \"type\": \"package\",\n      \"path\": \"newtonsoft.json/13.0.3\",\n      \"files\": [\n        \".nupkg.metadata\",\n        \".signature.p7s\",\n        \"LICENSE.md\",\n        \"README.md\",\n        \"lib/net20/Newtonsoft.Json.dll\",\n        \"lib/net20/Newtonsoft.Json.xml\",\n        \"lib/net35/Newtonsoft.Json.dll\",\n        \"lib/net35/Newtonsoft.Json.xml\",\n        \"lib/net40/Newtonsoft.Json.dll\",\n        \"lib/net40/Newtonsoft.Json.xml\",\n        \"lib/net45/Newtonsoft.Json.dll\",\n        \"lib/net45/Newtonsoft.Json.xml\",\n        \"lib/net6.0/Newtonsoft.Json.dll\",\n        \"lib/net6.0/Newtonsoft.Json.xml\",\n        \"lib/netstandard1.0/Newtonsoft.Json.dll\",\n        \"lib/netstandard1.0/Newtonsoft.Json.xml\",\n        \"lib/netstandard1.3/Newtonsoft.Json.dll\",\n        \"lib/netstandard1.3/Newtonsoft.Json.xml\",\n        \"lib/netstandard2.0/Newtonsoft.Json.dll\",\n        \"lib/netstandard2.0/Newtonsoft.Json.xml\",\n        \"newtonsoft.json.13.0.3.nupkg.sha512\",\n        \"newtonsoft.json.nuspec\",\n        \"packageIcon.png\"\n      ]\n    }\n  },\n  \"projectFileDependencyGroups\": {\n    \"net8.0\": [\n      \"Newtonsoft.Json >= 13.0.3\"\n    ]\n  },\n  \"packageFolders\": {\n    \"C:\\\\Users\\\\admin\\\\.nuget\\\\packages\\\\\": {},\n    \"C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\Shared\\\\NuGetPackages\": {}\n  },\n  \"project\": {\n    \"version\": \"1.0.0\",\n    \"restore\": {\n      \"projectUniqueName\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Asset_Manager\\\\Asset_Manager.csproj\",\n      \"projectName\": \"Asset_Manager\",\n      \"projectPath\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Asset_Manager\\\\Asset_Manager.csproj\",\n      \"packagesPath\": \"C:\\\\Users\\\\admin\\\\.nuget\\\\packages\\\\\",\n      \"outputPath\": \"C:\\\\Users\\\\admin\\\\Desktop\\\\SDU\\\\S2\\\\Semester Project 2\\\\Semester Project Code\\\\Semester-Project\\\\Asset_Manager\\\\obj\\\\\",\n      \"projectStyle\": \"PackageReference\",\n      \"fallbackFolders\": [\n        \"C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\Shared\\\\NuGetPackages\"\n      ],\n      \"configFilePaths\": [\n        \"C:\\\\Users\\\\admin\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\",\n        \"C:\\\\Program Files (x86)\\\\NuGet\\\\Config\\\\Microsoft.VisualStudio.FallbackLocation.config\",\n        \"C:\\\\Program Files (x86)\\\\NuGet\\\\Config\\\\Microsoft.VisualStudio.Offline.config\"\n      ],\n      \"originalTargetFrameworks\": [\n        \"net8.0\"\n      ],\n      \"sources\": {\n        \"C:\\\\Program Files (x86)\\\\Microsoft SDKs\\\\NuGetPackages\\\\\": {},\n        \"C:\\\\Program Files\\\\dotnet\\\\library-packs\": {},\n        \"https://api.nuget.org/v3/index.json\": {}\n      },\n      \"frameworks\": {\n        \"net8.0\": {\n          \"targetAlias\": \"net8.0\",\n          \"projectReferences\": {}\n        }\n      },\n      \"warningProperties\": {\n        \"warnAsError\": [\n          \"NU1605\"\n        ]\n      }\n    },\n    \"frameworks\": {\n      \"net8.0\": {\n        \"targetAlias\": \"net8.0\",\n        \"dependencies\": {\n          \"Newtonsoft.Json\": {\n            \"target\": \"Package\",\n            \"version\": \"[13.0.3, )\"\n          }\n        },\n        \"imports\": [\n          \"net461\",\n          \"net462\",\n          \"net47\",\n          \"net471\",\n          \"net472\",\n          \"net48\",\n          \"net481\"\n        ],\n        \"assetTargetFallback\": true,\n        \"warn\": true,\n        \"frameworkReferences\": {\n          \"Microsoft.NETCore.App\": {\n            \"privateAssets\": \"all\"\n          }\n        },\n        \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\8.0.200/PortableRuntimeIdentifierGraph.json\"\n      }\n    }\n  }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Asset_Manager/obj/project.assets.json b/Asset_Manager/obj/project.assets.json
+--- a/Asset_Manager/obj/project.assets.json	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Asset_Manager/obj/project.assets.json	(date 1714652829412)
+@@ -55,32 +55,24 @@
+     ]
+   },
+   "packageFolders": {
+-    "C:\\Users\\admin\\.nuget\\packages\\": {},
+-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
++    "/Users/lajoskariko/.nuget/packages/": {}
+   },
+   "project": {
+     "version": "1.0.0",
+     "restore": {
+-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset_Manager\\Asset_Manager.csproj",
++      "projectUniqueName": "/Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/Asset_Manager.csproj",
+       "projectName": "Asset_Manager",
+-      "projectPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset_Manager\\Asset_Manager.csproj",
+-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+-      "outputPath": "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset_Manager\\obj\\",
++      "projectPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/Asset_Manager.csproj",
++      "packagesPath": "/Users/lajoskariko/.nuget/packages/",
++      "outputPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/obj/",
+       "projectStyle": "PackageReference",
+-      "fallbackFolders": [
+-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+-      ],
+       "configFilePaths": [
+-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
++        "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
+       ],
+       "originalTargetFrameworks": [
+         "net8.0"
+       ],
+       "sources": {
+-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+-        "C:\\Program Files\\dotnet\\library-packs": {},
+         "https://api.nuget.org/v3/index.json": {}
+       },
+       "frameworks": {
+@@ -120,7 +112,7 @@
+             "privateAssets": "all"
+           }
+         },
+-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
++        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+       }
+     }
+   }
+Index: Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\n<Project ToolsVersion=\"14.0\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\n  <PropertyGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\n    <RestoreSuccess Condition=\" '$(RestoreSuccess)' == '' \">True</RestoreSuccess>\n    <RestoreTool Condition=\" '$(RestoreTool)' == '' \">NuGet</RestoreTool>\n    <ProjectAssetsFile Condition=\" '$(ProjectAssetsFile)' == '' \">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>\n    <NuGetPackageRoot Condition=\" '$(NuGetPackageRoot)' == '' \">$(UserProfile)\\.nuget\\packages\\</NuGetPackageRoot>\n    <NuGetPackageFolders Condition=\" '$(NuGetPackageFolders)' == '' \">C:\\Users\\admin\\.nuget\\packages\\;C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages</NuGetPackageFolders>\n    <NuGetProjectStyle Condition=\" '$(NuGetProjectStyle)' == '' \">PackageReference</NuGetProjectStyle>\n    <NuGetToolVersion Condition=\" '$(NuGetToolVersion)' == '' \">6.9.1</NuGetToolVersion>\n  </PropertyGroup>\n  <ItemGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\n    <SourceRoot Include=\"C:\\Users\\admin\\.nuget\\packages\\\" />\n    <SourceRoot Include=\"C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\\" />\n  </ItemGroup>\n</Project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props b/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props
+--- a/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props	(date 1714652829410)
+@@ -4,13 +4,12 @@
+     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\admin\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
++    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/lajoskariko/.nuget/packages/</NuGetPackageRoot>
++    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/lajoskariko/.nuget/packages/</NuGetPackageFolders>
+     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.9.1</NuGetToolVersion>
+   </PropertyGroup>
+   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+-    <SourceRoot Include="C:\Users\admin\.nuget\packages\" />
+-    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
++    <SourceRoot Include="/Users/lajoskariko/.nuget/packages/" />
+   </ItemGroup>
+ </Project>
+\ No newline at end of file
+Index: Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//------------------------------------------------------------------------------\n// <auto-generated>\n//     This code was generated by a tool.\n//\n//     Changes to this file may cause incorrect behavior and will be lost if\n//     the code is regenerated.\n// </auto-generated>\n//------------------------------------------------------------------------------\n\nusing System;\nusing System.Reflection;\n\n[assembly: System.Reflection.AssemblyCompanyAttribute(\"Source_Data_Manager\")]\n[assembly: System.Reflection.AssemblyConfigurationAttribute(\"Debug\")]\n[assembly: System.Reflection.AssemblyFileVersionAttribute(\"1.0.0.0\")]\n[assembly: System.Reflection.AssemblyInformationalVersionAttribute(\"1.0.0+9ad97b5e6980282ff5d70666e6839797e72c1b74\")]\n[assembly: System.Reflection.AssemblyProductAttribute(\"Source_Data_Manager\")]\n[assembly: System.Reflection.AssemblyTitleAttribute(\"Source_Data_Manager\")]\n[assembly: System.Reflection.AssemblyVersionAttribute(\"1.0.0.0\")]\n\n// Generated by the MSBuild WriteCodeFragment class.\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs b/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs
+--- a/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs	(date 1714652828674)
+@@ -13,7 +13,7 @@
+ [assembly: System.Reflection.AssemblyCompanyAttribute("Source_Data_Manager")]
+ [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+ [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ad97b5e6980282ff5d70666e6839797e72c1b74")]
++[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a")]
+ [assembly: System.Reflection.AssemblyProductAttribute("Source_Data_Manager")]
+ [assembly: System.Reflection.AssemblyTitleAttribute("Source_Data_Manager")]
+ [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+Index: Asset_Manager/obj/Debug/net8.0/Asset_Manager.GeneratedMSBuildEditorConfig.editorconfig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>is_global = true\nbuild_property.TargetFramework = net8.0\nbuild_property.TargetPlatformMinVersion = \nbuild_property.UsingMicrosoftNETSdkWeb = \nbuild_property.ProjectTypeGuids = \nbuild_property.InvariantGlobalization = \nbuild_property.PlatformNeutralAssembly = \nbuild_property.EnforceExtendedAnalyzerRules = \nbuild_property._SupportedPlatformList = Linux,macOS,Windows\nbuild_property.RootNamespace = Asset_Manager\nbuild_property.ProjectDir = C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Asset_Manager\\\nbuild_property.EnableComHosting = \nbuild_property.EnableGeneratedComInterfaceComImportInterop = \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Asset_Manager/obj/Debug/net8.0/Asset_Manager.GeneratedMSBuildEditorConfig.editorconfig b/Asset_Manager/obj/Debug/net8.0/Asset_Manager.GeneratedMSBuildEditorConfig.editorconfig
+--- a/Asset_Manager/obj/Debug/net8.0/Asset_Manager.GeneratedMSBuildEditorConfig.editorconfig	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Asset_Manager/obj/Debug/net8.0/Asset_Manager.GeneratedMSBuildEditorConfig.editorconfig	(date 1714652830564)
+@@ -8,6 +8,6 @@
+ build_property.EnforceExtendedAnalyzerRules = 
+ build_property._SupportedPlatformList = Linux,macOS,Windows
+ build_property.RootNamespace = Asset_Manager
+-build_property.ProjectDir = C:\Users\admin\Desktop\SDU\S2\Semester Project 2\Semester Project Code\Semester-Project\Asset_Manager\
++build_property.ProjectDir = /Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/
+ build_property.EnableComHosting = 
+ build_property.EnableGeneratedComInterfaceComImportInterop = 
+Index: Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//------------------------------------------------------------------------------\n// <auto-generated>\n//     This code was generated by a tool.\n//\n//     Changes to this file may cause incorrect behavior and will be lost if\n//     the code is regenerated.\n// </auto-generated>\n//------------------------------------------------------------------------------\n\nusing System;\nusing System.Reflection;\n\n[assembly: System.Reflection.AssemblyCompanyAttribute(\"Asset_Manager\")]\n[assembly: System.Reflection.AssemblyConfigurationAttribute(\"Debug\")]\n[assembly: System.Reflection.AssemblyFileVersionAttribute(\"1.0.0.0\")]\n[assembly: System.Reflection.AssemblyInformationalVersionAttribute(\"1.0.0+9ad97b5e6980282ff5d70666e6839797e72c1b74\")]\n[assembly: System.Reflection.AssemblyProductAttribute(\"Asset_Manager\")]\n[assembly: System.Reflection.AssemblyTitleAttribute(\"Asset_Manager\")]\n[assembly: System.Reflection.AssemblyVersionAttribute(\"1.0.0.0\")]\n\n// Generated by the MSBuild WriteCodeFragment class.\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs b/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs
+--- a/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs	(revision 6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a)
++++ b/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs	(date 1714652830632)
+@@ -13,7 +13,7 @@
+ [assembly: System.Reflection.AssemblyCompanyAttribute("Asset_Manager")]
+ [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+ [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ad97b5e6980282ff5d70666e6839797e72c1b74")]
++[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ec03743691fb5e8ebda8ddbc3dd584b121b4f8a")]
+ [assembly: System.Reflection.AssemblyProductAttribute("Asset_Manager")]
+ [assembly: System.Reflection.AssemblyTitleAttribute("Asset_Manager")]
+ [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

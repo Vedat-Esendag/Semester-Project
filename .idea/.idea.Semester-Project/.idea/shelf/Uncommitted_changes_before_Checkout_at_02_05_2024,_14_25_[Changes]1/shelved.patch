@@ -1,0 +1,53 @@
+Index: .idea/.idea.Semester-Project/.idea/projectSettingsUpdater.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.Semester-Project/.idea/projectSettingsUpdater.xml b/.idea/.idea.Semester-Project/.idea/projectSettingsUpdater.xml
+new file mode 100644
+--- /dev/null	(date 1714566897210)
++++ b/.idea/.idea.Semester-Project/.idea/projectSettingsUpdater.xml	(date 1714566897210)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RiderProjectSettingsUpdater">
++    <option name="vcsConfiguration" value="2" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.idea.Semester-Project/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.Semester-Project/.idea/vcs.xml b/.idea/.idea.Semester-Project/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1714652715331)
++++ b/.idea/.idea.Semester-Project/.idea/vcs.xml	(date 1714652715331)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.idea.Semester-Project/.idea/indexLayout.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.Semester-Project/.idea/indexLayout.xml b/.idea/.idea.Semester-Project/.idea/indexLayout.xml
+new file mode 100644
+--- /dev/null	(date 1714652715331)
++++ b/.idea/.idea.Semester-Project/.idea/indexLayout.xml	(date 1714652715331)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="UserContentModel">
++    <attachedFolders />
++    <explicitIncludes />
++    <explicitExcludes />
++  </component>
++</project>
+\ No newline at end of file
