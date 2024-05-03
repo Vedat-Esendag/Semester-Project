@@ -17,8 +17,9 @@ namespace UI
         
         private void BackBtn_Click(object sender, RoutedEventArgs e)
         {
-            var goBack = new MainWindow();
-            Content = goBack;
+            var mainWindow = new MainWindow();
+            mainWindow.Show();
+            (this.Parent as Window)?.Close();
         }
     }
 }
