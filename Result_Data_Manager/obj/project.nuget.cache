@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZlROxgburbWXaKRy6GDiXFZ5aXfH43vo5sNXhEbcBPDuWGl7Qn8IPCEmdkQgigcE2DcHRVW/CVFpdA8ZMxqaAw==",
+  "dgSpecHash": "nfWOfNi2TAZ1MNLeVDeH5Xh7LGu4WCF2zdfTrjVwTrrQ6Y4sTSYmy+cDwQXvmARQ2f5nvaRZjdTyNUWlqnNHoA==",
   "success": true,
-  "projectFilePath": "/Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/Result_Data_Manager.csproj",
+  "projectFilePath": "C:\\Users\\natal\\source\\repos\\Semester-Project\\Result_Data_Manager\\Result_Data_Manager.csproj",
   "expectedPackageFiles": [
-    "/Users/lajoskariko/.nuget/packages/csvhelper/31.0.4/csvhelper.31.0.4.nupkg.sha512"
+    "C:\\Users\\natal\\.nuget\\packages\\csvhelper\\31.0.4\\csvhelper.31.0.4.nupkg.sha512"
   ],
   "logs": []
 }

@@ -2,9 +2,80 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="UI.PuPage">
+             mc:Ignorable="d" d:DesignWidth="730" d:DesignHeight="700"
+             x:Class="UI.PuPage"
+             Background="White">
 
-    Deneme
-    
+    <Grid ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+        <!-- Title Bar -->
+        <Grid VerticalAlignment="Top" Background="Red" Height="60" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
+            <Grid Grid.Column="0" Background="Red" HorizontalAlignment="Left" VerticalAlignment="Center" Width="490">
+                <Image Source="danfoss image.png" VerticalAlignment="Center" HorizontalAlignment="Left"></Image>
+            </Grid>
+            <StackPanel Orientation="Horizontal" Margin="-235,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="2">
+                <Label FontWeight="Black" FontSize="28" Foreground="White">Production Units</Label>
+            </StackPanel>
+            <Grid Grid.Column="4" Background="Red" Width="80">
+                <Label Content="Group 4"
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center" 
+                       Foreground="White"/>
+            </Grid>
+        </Grid>
+        
+        <!-- Main Section -->
+        <StackPanel Grid.Column="0" Spacing="20">
+            <Grid>
+                <!-- First Part (Gas Boiler Image) -->
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="Gas Boiler.jpg" Width="300" Height="120" Margin="-220,100,200,0"/>
+                    <TextBlock Foreground="Black" FontWeight="Bold" Text="Gas Boiler" Margin="-110,25,0,10"/>
+                    <TextBlock Foreground="Black" Text="Name: GB" Margin="-180,5,0,0"/>
+                    <TextBlock Foreground="Black" Text="Max heat:	5,0	MW" Margin="-65,-18,0,0"/>
+                    <TextBlock Foreground="Black" Text="Production costs:	500	DKK / MWh(th)" Margin="-180,5,0,0"/>
+                    <TextBlock Foreground="Black" Text="CO2 emissions:	215	kg / MWh(th)" Margin="-180,5,0,0"/>
+                    <TextBlock Foreground="Black" Text="Gas consumption:	1,1	MWh(gas) / MWh(th)" Margin="-180,5,0,0"/>
+                </StackPanel>
+            </Grid>
+            
+            <Grid>
+                <!-- Second Part (Oil Boiler Image) -->
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="Oil Boiler.jpg" Width="320" Height="130" Margin="410,-455,0,0"/>
+                    <TextBlock Text="Oil Boiler" FontWeight="Bold" Margin="550,-140,0,0" Foreground="Black"/>
+                    <TextBlock Text="Name: OB" Margin="450,-108,0,0" Foreground="Black"/>
+                    <TextBlock Text="Max heat: 4,0 MW" Margin="580,-111,0,0" Foreground="Black"/>
+                    <TextBlock Text="Production costs:	700	DKK / MWh(th)" Margin="450,-88,0,0" Foreground="Black"/>
+                    <TextBlock Text="CO2 emissions: 265 kg / MWh(th)" Margin="450,-68,0,0" Foreground="Black"/>
+                    <TextBlock Text="Gas consumption: 1,2 MWh(oil) / MWh(th)" Margin="450,-48,0,0" Foreground="Black"/>
+                </StackPanel>
+            </Grid>
+            
+            <Grid>
+                <!-- Third Part (Gas Motor Image) -->
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Gas Motor.jpg" Width="300" Height="120" Margin="0,50,420,0"/>
+                    <TextBlock Text="Gas Motor" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="-202,20,220,0"/>
+                    <TextBlock Text="Name: GM" Margin="45,0,0,0" Foreground="Black"/>
+                    <TextBlock Text="Max heat: 3,6 MW" Margin="185,-20,0,0" Foreground="Black"/>
+                    <TextBlock Text="Max electricity: 2,7 MW" Margin="45,0,0,0" Foreground="Black"/>
+                    <TextBlock Text="Production costs: 1100 DKK / MWh(th)" Margin="45,0,0,0" Foreground="Black"/>
+                    <TextBlock Text="CO2 emissions:  640 kg / MWh(th)" Margin="45,-0,0,0" Foreground="Black"/>
+                    <TextBlock Text="Gas consumption: 1,9 MWh(gas) / MWh(th)" Margin="45,-0,0,0" Foreground="Black"/>
+                </StackPanel>
+            </Grid>
+            
+            <Grid>
+                <!-- Fourth Part (Electric Boiler Image) -->
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="Electric Boiler.jpg" Width="300" Height="120" Margin="410,-415,0,0"/>
+                    <TextBlock Text="Electric Boiler" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="420,-128,0,0"/>
+                    <TextBlock Text="Name: EK" Foreground="Black" HorizontalAlignment="Center" Margin="280,-110,0,0"/>
+                    <TextBlock Text="Max heat: 8,0 MW" Foreground="Black" HorizontalAlignment="Center" Margin="550,-110,0,0"/>
+                    <TextBlock Text="Max electricity: -8,0 MW" Foreground="Black" HorizontalAlignment="Center" Margin="380,-90,0,0"/>
+                    <TextBlock Text="Production costs:	50	DKK / MWh(th)" Foreground="Black" HorizontalAlignment="Center" Margin="455,-70,0,0"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
 </UserControl>

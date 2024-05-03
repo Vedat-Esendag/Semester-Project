@@ -6,7 +6,6 @@ namespace UI
 {
     public partial class MainWindow : Window
     {
-        private UserControl _currentPage;
 
         public MainWindow()
         {
@@ -22,6 +21,12 @@ namespace UI
         {
             var puPage = new PuPage();
             Content = puPage;
+        }
+
+        private void NavigateToHeatDemand_Click(object sender, RoutedEventArgs e)
+        {
+            var heatPage = new HeatPage();
+            Content = heatPage;
         }
     }
 }

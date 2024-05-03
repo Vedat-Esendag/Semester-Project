@@ -3,9 +3,9 @@ using Avalonia.Markup.Xaml;
 
 namespace UI
 {
-    public partial class PuPage : UserControl
+    public partial class HeatPage : UserControl
     {
-        public PuPage()
+        public HeatPage()
         {
             InitializeComponent();
         }
