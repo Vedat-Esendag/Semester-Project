@@ -13,24 +13,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3874f28a-2d5d-4e98-a8ec-fe8f288633b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/HeatDemand.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/HeatDemand.axaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/avalonia.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_05_2024__14_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_05_2024__14_35__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_25__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_25__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_25__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_25__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_26__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_35__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/AdvancedDetails.axaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/AdvancedDetails.axaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/Consumption.axaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/Consumption.axaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/ElectricityPrice.axaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/ElectricityPrice.axaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Visualization/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Visualization/MainWindow.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
@@ -51,8 +49,6 @@
       <change beforePath="$PROJECT_DIR$/UI_Garage/UI/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/MainWindow.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI_Garage/UI/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/MainWindow.axaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/UI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/UI.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,39 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8c5be7826d6a434f911dfe811b698519eca00/ae/a0188a10/Rectangle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8c5be7826d6a434f911dfe811b698519eca00/46/a8338b12/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Semester_Project2/Data_Visualization/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Semester_Project2/Optimizer/Analyze.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Semester_Project2/Optimizer/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Semester_Project2/Source_Data_Manager/CsvRead.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -97,12 +125,13 @@
     ".NET Project.UI.executor": "Run",
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "#8 on UI-Backgorund-Work",
+    "git-widget-placeholder": "UI-Backgorund-Work",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -237,7 +266,6 @@
       <workItem from="1714472784135" duration="6254000" />
       <workItem from="1714487752284" duration="6431000" />
       <workItem from="1714553783647" duration="3810000" />
-      <workItem from="1714664151965" duration="12977000" />
     </task>
     <task id="LOCAL-00001" summary="Rider commit1">
       <option name="closed" value="true" />
@@ -255,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714476769675</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".">
+      <option name="closed" value="true" />
+      <created>1714720698670</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714720698670</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,6 +341,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Rider commit1" />
     <MESSAGE value="Rider commit 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

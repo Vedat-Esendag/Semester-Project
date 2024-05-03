@@ -28,5 +28,23 @@ namespace UI
             var heatPage = new HeatPage();
             Content = heatPage;
         }
+        
+        private void NavigateToElectricityPrice_Click(object sender, RoutedEventArgs e)
+        {
+            var electricityPage = new ElectricityPrice();
+            Content = electricityPage;
+        }
+        
+        private void NavigateToConsumption_Click(object sender, RoutedEventArgs e)
+        {
+            var consumption = new Consumption();
+            Content = consumption;
+        }
+        
+        private void NavigateToAdvancedDetails_Click(object sender, RoutedEventArgs e)
+        {
+            var advancedDetails = new AdvancedDetails();
+            Content = advancedDetails;
+        }
     }
 }

@@ -53,31 +53,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\natal\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/lajoskariko/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\natal\\Source\\Repos\\Semester-Project\\Result_Data_Manager\\Result_Data_Manager.csproj",
+      "projectUniqueName": "/Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/Result_Data_Manager.csproj",
       "projectName": "Result_Data_Manager",
-      "projectPath": "C:\\Users\\natal\\Source\\Repos\\Semester-Project\\Result_Data_Manager\\Result_Data_Manager.csproj",
-      "packagesPath": "C:\\Users\\natal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\natal\\Source\\Repos\\Semester-Project\\Result_Data_Manager\\obj\\",
+      "projectPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/Result_Data_Manager.csproj",
+      "packagesPath": "/Users/lajoskariko/.nuget/packages/",
+      "outputPath": "/Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\natal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -117,7 +110,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -13,7 +13,7 @@
                 <Image Source="danfoss image.png" VerticalAlignment="Center" HorizontalAlignment="Left"></Image>
             </Grid>
             <StackPanel Orientation="Horizontal" Margin="-235,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="2">
-                <Label FontWeight="Black" FontSize="28" Foreground="White">Production Units</Label>
+                <Label FontWeight="Bold" FontSize="28" Foreground="White">Production Units</Label>
             </StackPanel>
             <Grid Grid.Column="4" Background="Red" Width="80">
                 <Label Content="Group 4"

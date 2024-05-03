@@ -123,7 +123,8 @@
                                 HorizontalContentAlignment="Center"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
-                                FontWeight="Bold">
+                                FontWeight="Bold"
+                                Click="NavigateToElectricityPrice_Click">
                                 <Button.Effect>
                                         <DropShadowEffect BlurRadius="5"
                                                           Color="#808080"
@@ -157,7 +158,8 @@
                                 HorizontalContentAlignment="Center"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
-                                FontWeight="Bold">
+                                FontWeight="Bold"
+                                Click="NavigateToConsumption_Click">
                                 <Button.Effect>
                                         <DropShadowEffect BlurRadius="5"
                                                           Color="#808080"
@@ -191,7 +193,8 @@
                                 HorizontalContentAlignment="Center"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
-                                FontWeight="Bold">
+                                FontWeight="Bold"
+                                Click="NavigateToAdvancedDetails_Click">
                                 <Button.Effect>
                                         <DropShadowEffect BlurRadius="5"
                                                           Color="#808080"
