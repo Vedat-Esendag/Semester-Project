@@ -4,7 +4,10 @@
     <option name="projectPerEditor">
       <map>
         <entry key="Data_Visualization/MainWindow.axaml" value="Data_Visualization/Data_Visualization.csproj" />
+        <entry key="UI_Garage/UI/AdvancedDetails.axaml" value="UI_Garage/UI/UI.csproj" />
         <entry key="UI_Garage/UI/App.axaml" value="UI_Garage/UI/UI.csproj" />
+        <entry key="UI_Garage/UI/Consumption.axaml" value="UI_Garage/UI/UI.csproj" />
+        <entry key="UI_Garage/UI/ElectricityPrice.axaml" value="UI_Garage/UI/UI.csproj" />
         <entry key="UI_Garage/UI/HeatDemand.axaml" value="UI_Garage/UI/UI.csproj" />
         <entry key="UI_Garage/UI/MainWindow.axaml" value="UI_Garage/UI/UI.csproj" />
         <entry key="UI_Garage/UI/PUPage.axaml" value="UI_Garage/UI/UI.csproj" />
