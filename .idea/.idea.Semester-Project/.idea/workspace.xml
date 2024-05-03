@@ -13,12 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3874f28a-2d5d-4e98-a8ec-fe8f288633b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/AdvancedDetails.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/AdvancedDetails.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/Consumption.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/Consumption.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/ElectricityPrice.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/ElectricityPrice.axaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props" afterDir="false" />
@@ -28,7 +22,6 @@
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Visualization/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Visualization/MainWindow.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
@@ -46,9 +39,8 @@
       <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/MainWindow.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/MainWindow.axaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +117,7 @@
     ".NET Project.UI.executor": "Run",
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "UI-Backgorund-Work",
+    "git-widget-placeholder": "#8 on UI-Backgorund-Work",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -266,6 +258,7 @@
       <workItem from="1714472784135" duration="6254000" />
       <workItem from="1714487752284" duration="6431000" />
       <workItem from="1714553783647" duration="3810000" />
+      <workItem from="1714735850820" duration="1460000" />
     </task>
     <task id="LOCAL-00001" summary="Rider commit1">
       <option name="closed" value="true" />

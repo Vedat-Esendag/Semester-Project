@@ -16,10 +16,27 @@
                 <Label FontWeight="Bold" FontSize="28" Foreground="White">Production Units</Label>
             </StackPanel>
             <Grid Grid.Column="4" Background="Red" Width="80">
-                <Label Content="Group 4"
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center" 
-                       Foreground="White"/>
+                <Button Content="Back" 
+                        Width="60" 
+                        Height="40"
+                        Background="Red"
+                        Foreground="White"
+                        BorderThickness="2"
+                        CornerRadius="12"
+                        Padding="4,2,0,0"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontWeight="Bold"
+                        Margin="10,0,0,0"
+                        Click="BackBtn_Click">
+                    <Button.Effect>
+                        <DropShadowEffect BlurRadius="30"
+                                          Color="Black"
+                                          Opacity="0.8"/>
+                    </Button.Effect>
+                </Button>
             </Grid>
         </Grid>
         
