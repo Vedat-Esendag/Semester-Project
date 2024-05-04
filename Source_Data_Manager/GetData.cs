@@ -3,11 +3,11 @@ using System.IO;
 
 namespace SourceDataManager
 {
-    class GetData
+    public class GetData
     {
-        public static void WinterHeatDemand()
+        private static readonly string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "data.csv");
+        public static string WinterHeatDemand()
         {
-            string filePath = "data.csv";
             using (var reader = new StreamReader(filePath))
             {
                 reader.ReadLine();
@@ -17,13 +17,14 @@ namespace SourceDataManager
                 {
                     var line = reader.ReadLine();
                     var values = line.Split(',');
-                    Console.WriteLine($"Winter Heat Demand: {values[2]}");
+                    return values[2]; // Return the winter heat demand value
                 }
             }
+            return null; // Return null if no data is found
         }
         public static void SummerHeatDemand()
         {
-            string filePath = "data.csv";
+            //string filePath = "data.csv";
             using (var reader = new StreamReader(filePath))
             {
                 reader.ReadLine();
@@ -39,7 +40,7 @@ namespace SourceDataManager
         }
         public static void WinterElectricityPrice()
         {
-            string filePath = "data.csv";
+            //string filePath = "data.csv";
             using (var reader = new StreamReader(filePath))
             {
                 reader.ReadLine();
@@ -55,7 +56,7 @@ namespace SourceDataManager
         }
         public static void SummerElectricityPrice()
         {
-            string filePath = "data.csv";
+            //string filePath = "data.csv";
             using (var reader = new StreamReader(filePath))
             {
                 reader.ReadLine();

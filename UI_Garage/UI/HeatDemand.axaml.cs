@@ -1,6 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using SourceDataManager;
 
 namespace UI
 {
@@ -38,6 +39,16 @@ namespace UI
         {
             var advancedDetails = new AdvancedDetails();
             Content = advancedDetails;
+        }
+
+        private void DisplayWinterHeatDemand()
+        {
+            WinterHeatDemandTextBlock.Text = SourceDataManager.GetData.WinterHeatDemand();
+        }
+
+        private void DisplayWinterHeatDemand_Click(object sender, RoutedEventArgs e)
+        {
+            DisplayWinterHeatDemand();
         }
     }
 }

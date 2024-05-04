@@ -12,10 +12,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3874f28a-2d5d-4e98-a8ec-fe8f288633b5" name="Changes" comment="Solving small merge problem">
+    <list default="true" id="3874f28a-2d5d-4e98-a8ec-fe8f288633b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/avalonia.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/GetData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/GetData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/HeatDemand.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/HeatDemand.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/HeatDemand.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/HeatDemand.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/UI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/UI.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,6 +244,10 @@
       <workItem from="1714487752284" duration="6431000" />
       <workItem from="1714553783647" duration="3810000" />
       <workItem from="1714735850820" duration="1460000" />
+      <workItem from="1714839059347" duration="1634000" />
+      <workItem from="1714840826001" duration="72000" />
+      <workItem from="1714841619721" duration="302000" />
+      <workItem from="1714843085697" duration="7483000" />
     </task>
     <task id="LOCAL-00001" summary="Rider commit1">
       <option name="closed" value="true" />
@@ -267,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714737465889</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="solvıng back button">
+      <option name="closed" value="true" />
+      <created>1714740499604</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714740499604</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +341,7 @@
     <MESSAGE value="Rider commit 2" />
     <MESSAGE value="." />
     <MESSAGE value="Solving small merge problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solving small merge problem" />
+    <MESSAGE value="solvıng back button" />
+    <option name="LAST_COMMIT_MESSAGE" value="solvıng back button" />
   </component>
 </project>
