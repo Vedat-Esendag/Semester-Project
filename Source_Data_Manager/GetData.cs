@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Text;
 
 namespace SourceDataManager
 {
@@ -8,20 +9,33 @@ namespace SourceDataManager
         private static readonly string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "data.csv");
         public static string WinterHeatDemand()
         {
-            using (var reader = new StreamReader(filePath))
+            StringBuilder text = new StringBuilder();
+
+            if (File.Exists(filePath))
             {
-                reader.ReadLine();
-                reader.ReadLine();
-                reader.ReadLine();
-                while (!reader.EndOfStream)
+                using (var reader = new StreamReader(filePath))
                 {
-                    var line = reader.ReadLine();
-                    var values = line.Split(',');
-                    return values[2]; // Return the winter heat demand value
+                    reader.ReadLine();
+                    reader.ReadLine();
+                    reader.ReadLine();
+
+                    while (!reader.EndOfStream)
+                    {
+                        var line = reader.ReadLine();
+                        var values = line.Split(',');
+
+                        text.AppendLine(string.Join(", ", values));
+                    }
                 }
             }
-            return null; // Return null if no data is found
+            else
+            {
+                Console.WriteLine($"File not found: {filePath}");
+            }
+
+            return text.ToString();
         }
+
         public static void SummerHeatDemand()
         {
             //string filePath = "data.csv";
