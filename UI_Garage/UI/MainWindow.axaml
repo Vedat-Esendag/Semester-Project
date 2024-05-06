@@ -150,7 +150,7 @@
                 
                 <!-- Section 4 -->
                 <Grid Grid.Row="4" Background="rgb(218, 235, 244)" Height="75">
-                        <Button Content="Consumption" 
+                        <Button Content="Optimizer" 
                                 Width="170" 
                                 Height="50"
                                 Background="rgb(25, 132, 197)"

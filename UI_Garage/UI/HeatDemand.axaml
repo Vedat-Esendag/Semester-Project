@@ -2,7 +2,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:liveChartsCore="clr-namespace:LiveChartsCore;assembly=LiveChartsCore"
+             xmlns:liveChartsCore="clr-namespace:LiveCharts;assembly=LiveCharts.Avalonia"
+             xmlns:system="clr-namespace:System;assembly=System.Runtime"
+             xmlns:avalonia="clr-namespace:LiveChartsCore.SkiaSharpView.Avalonia;assembly=LiveChartsCore.SkiaSharpView.Avalonia"
              mc:Ignorable="d" d:DesignWidth="960" d:DesignHeight="540"
              x:Class="UI.HeatPage"
              Background="#DAEBF4">
@@ -127,9 +129,7 @@
                         Click="DisplayWinterHeatDemand_Click"></Button>
                 <TextBlock x:Name="WinterHeatDemandTextBlock" />
                 <!-- Live Chart Section -->
-                <liveCharts:CartesianChart x:Name="WinterHeatDemandChart" Margin="10">
-                    <!-- Chart content here -->
-                </liveCharts:CartesianChart>            
+                <avalonia:CartesianChart x:Name="WinterHeatDemandChart"/>         
             </Grid>
         </StackPanel>    
     </Grid> 
