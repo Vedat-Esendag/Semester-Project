@@ -42,7 +42,13 @@ namespace UI
             var advancedDetails = new AdvancedDetails();
             Content = advancedDetails;
         }
+        
+        private void DisplayWinterHeatDemand_Click(object sender, RoutedEventArgs e)
+        {
+            DisplayWinterHeatDemand();
+        }
 
+        
         private void DisplayWinterHeatDemand()
         {
             string winterHeatDemandText = SourceDataManager.GetData.WinterHeatDemand();
@@ -55,12 +61,6 @@ namespace UI
             {
                 Console.WriteLine("WinterHeatDemandTextBlock is null.");
             }
-        }
-
-
-        private void DisplayWinterHeatDemand_Click(object sender, RoutedEventArgs e)
-        {
-            DisplayWinterHeatDemand();
         }
     }
 }
