@@ -13,19 +13,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3874f28a-2d5d-4e98-a8ec-fe8f288633b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/avalonia.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/GetData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/GetData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/HeatDemand.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/HeatDemand.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/HeatDemand.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/HeatDemand.axaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/UI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/UI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/project.nuget.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,6 +260,7 @@
       <workItem from="1714840826001" duration="72000" />
       <workItem from="1714841619721" duration="302000" />
       <workItem from="1714843085697" duration="7483000" />
+      <workItem from="1714982588575" duration="625000" />
     </task>
     <task id="LOCAL-00001" summary="Rider commit1">
       <option name="closed" value="true" />
