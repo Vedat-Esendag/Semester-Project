@@ -11,9 +11,9 @@ namespace Optimizer
         {
             CsvRead csvRead= new();
             Optimize optimizer= new Optimize();
-            AssetManager assetManager= new AssetManager();
             csvRead.ReadCSV();
-            optimizer.ChooseCheapestWinter(csvRead.winterPeriods);
+            optimizer.OptimizeData(csvRead.winterPeriods);
+            optimizer.OptimizeData(csvRead.summerPeriods);
         }
     }
 }
