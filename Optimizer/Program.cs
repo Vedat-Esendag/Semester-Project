@@ -1,28 +1,19 @@
 ﻿using System;
 using SourceDataManager;
+using AM;
+using System.Security.Cryptography.X509Certificates;
+
 namespace Optimizer
 {
     class Program
     {
         public static void Main()
         {
-            GetData getData = new();
-            Analyze analyze = new();
+            CsvRead csvRead= new();
             Optimize optimizer= new Optimize();
-            //analyze.CalculatePricesSummerElectric();
-            //analyze.CalculatePricesSummerMotor();
-            optimizer.MethodTest();
+            AssetManager assetManager= new AssetManager();
+            csvRead.ReadCSV();
+            optimizer.ChooseCheapestWinter(csvRead.winterPeriods);
         }
-    }
-
-    public class ResultData
-    {
-        public DateTime TimeFrom;
-        public DateTime TimeTo;
-        public double HeatDemand;
-        public double ElectricityPrice;
-        public double HeatProduced;
-        public double GasConsumed;
-        public double CO2;
     }
 }

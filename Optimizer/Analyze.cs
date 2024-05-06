@@ -5,7 +5,7 @@ using AM;
 
 namespace Optimizer
 {
-    interface IAnalyze
+   /* interface IAnalyze
     {
         void CalculatePricesWinterElectric();
         void CalculatePricesWinterOil();
@@ -871,5 +871,5 @@ namespace Optimizer
                 }
             }
         }
-    }
+    }*/
 }

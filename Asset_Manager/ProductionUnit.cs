@@ -63,6 +63,7 @@ namespace AM
             public string Name { get; set; }
             public double MaxHeat { get; set; }
             public double ProductionCost { get; set; }
+            public double netCosts;
             public double CO2Emissions { get; set; }
             public double GasConsumption { get; set; }
             public string Image { get; set; }
