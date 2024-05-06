@@ -21,5 +21,12 @@ namespace UI
             mainWindow.Show();
             (this.Parent as Window)?.Close();
         }
+
+        private void NavigateToMap_Click(object sender, RoutedEventArgs e)
+        {
+            var map = new Map();
+            Content = map;
+            
+        }
     }
 }

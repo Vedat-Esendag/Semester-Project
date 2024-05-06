@@ -53,6 +53,27 @@
                                           Opacity="0.8"/>
                     </Button.Effect>
                 </Button>
+                <Button Grid.Column="1" Content="Map" 
+                        Width="60" 
+                        Height="40"
+                        Background="Red"
+                        Foreground="White"
+                        BorderThickness="2"
+                        CornerRadius="12"
+                        Padding="4,2,0,0"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        FontWeight="Bold"
+                        Margin="10,0,10,0"
+                        Click="NavigateToMap_Click">
+                    <Button.Effect>
+                        <DropShadowEffect BlurRadius="30"
+                                          Color="Black"
+                                          Opacity="0.8"/>
+                    </Button.Effect>
+                </Button>
 
             </Grid> 
         </StackPanel>    
