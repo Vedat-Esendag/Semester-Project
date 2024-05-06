@@ -1,3 +1,4 @@
+using System;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
@@ -39,5 +40,44 @@ public partial class ElectricityPrice : UserControl
     {
         var advancedDetails = new AdvancedDetails();
         Content = advancedDetails;
+    }
+    
+    private void DisplayWinterElectricityPrice_Click(object sender, RoutedEventArgs e)
+    {
+        DisplayWinterElectricityPrice();
+    }
+
+    private void DisplaySummerElectricityPrice_Click(object sender, RoutedEventArgs e)
+    {
+        DisplaySummerElectricityPrice();
+    }
+
+
+    private void DisplayWinterElectricityPrice()
+    {
+        string winterElectricityPrice = SourceDataManager.GetData.WinterElectricityPrice();
+
+        if (WinterElectricityPriceTextBlock != null)
+        {
+            WinterElectricityPriceTextBlock.Text = winterElectricityPrice;
+        }
+        else
+        {
+            Console.WriteLine("WinterElectricityPriceTextBlock is null.");
+        }
+    }
+
+    private void DisplaySummerElectricityPrice()
+    {
+        string summerElectricityPrice = SourceDataManager.GetData.SummerElectricityPrice();
+
+        if (SummerElectricityPriceTextBlock != null)
+        {
+            SummerElectricityPriceTextBlock.Text = summerElectricityPrice;
+        }
+        else
+        {
+            Console.WriteLine("SummerElectricityPriceTextBlock is null.");
+        }
     }
 }

@@ -36,54 +36,94 @@ namespace SourceDataManager
             return text.ToString();
         }
 
-        public static void SummerHeatDemand()
+        public static string SummerHeatDemand()
         {
-            //string filePath = "data.csv";
-            using (var reader = new StreamReader(filePath))
+            StringBuilder text = new StringBuilder();
+
+            if (File.Exists(filePath))
             {
-                reader.ReadLine();
-                reader.ReadLine();
-                reader.ReadLine();
-                while (!reader.EndOfStream)
+                using (var reader = new StreamReader(filePath))
                 {
-                    var line = reader.ReadLine();
-                    var values = line.Split(',');
-                    Console.WriteLine($"Summer Heat Demand: {values[7]}");
+                    reader.ReadLine();
+                    reader.ReadLine();
+                    reader.ReadLine();
+
+                    while (!reader.EndOfStream)
+                    {
+                        var line = reader.ReadLine();
+                        var values = line.Split(',');
+
+                        text.AppendLine(string.Join(", ", values));
+                    }
                 }
             }
-        }
-        public static void WinterElectricityPrice()
-        {
-            //string filePath = "data.csv";
-            using (var reader = new StreamReader(filePath))
+            else
             {
-                reader.ReadLine();
-                reader.ReadLine();
-                reader.ReadLine();
-                while (!reader.EndOfStream)
+                Console.WriteLine($"File not found: {filePath}");
+            }
+
+            return text.ToString();
+        }
+        
+        public static string WinterElectricityPrice()
+        {
+            StringBuilder text = new StringBuilder();
+
+            if (File.Exists(filePath))
+            {
+                using (var reader = new StreamReader(filePath))
                 {
-                    var line = reader.ReadLine();
-                    var values = line.Split(',');
-                    Console.WriteLine($"Winter Electricity Price: {values[3]}");
+                    reader.ReadLine();
+                    reader.ReadLine();
+                    reader.ReadLine();
+
+                    while (!reader.EndOfStream)
+                    {
+                        var line = reader.ReadLine();
+                        var values = line.Split(',');
+
+                        text.AppendLine(string.Join(", ", values));
+                    }
                 }
             }
-        }
-        public static void SummerElectricityPrice()
-        {
-            //string filePath = "data.csv";
-            using (var reader = new StreamReader(filePath))
+            else
             {
-                reader.ReadLine();
-                reader.ReadLine();
-                reader.ReadLine();
-                while (!reader.EndOfStream)
+                Console.WriteLine($"File not found: {filePath}");
+            }
+
+            return text.ToString();
+        }
+        
+        public static string SummerElectricityPrice()
+        {
+            StringBuilder text = new StringBuilder();
+
+            if (File.Exists(filePath))
+            {
+                using (var reader = new StreamReader(filePath))
                 {
-                    var line = reader.ReadLine();
-                    var values = line.Split(',');
-                    Console.WriteLine($"Summer Electricity Price: {values[8]}");
+                    reader.ReadLine();
+                    reader.ReadLine();
+                    reader.ReadLine();
+
+                    while (!reader.EndOfStream)
+                    {
+                        var line = reader.ReadLine();
+                        var values = line.Split(',');
+
+                        text.AppendLine(string.Join(", ", values));
+                    }
                 }
             }
+            else
+            {
+                Console.WriteLine($"File not found: {filePath}");
+            }
+
+            return text.ToString();
         }
+        
+        
         public static void WinterHeatDemandTime()
         {
             if (File.Exists(filePath))
