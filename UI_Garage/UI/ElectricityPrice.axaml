@@ -117,24 +117,14 @@
             </TextBlock>
             </Border>
             <Grid ShowGridLines="True" Margin="5"
-                  ColumnDefinitions="Auto" 
-                  RowDefinitions="Auto">
-                <Button Content="Winter period electricity price"
-                        Margin="10,0,0,0"
-                        Click="DisplayWinterElectricityPrice_Click"
-                        ></Button>
-                <TextBlock x:Name="WinterElectricityPriceTextBlock" />            
+                ColumnDefinitions="Auto" 
+                RowDefinitions="Auto">
+                <TextBlock FontSize="14" Text="Some graphs here probably or something">
+                </TextBlock>
+                
+
             </Grid>
             
-            <Grid ShowGridLines="True" Margin="5"
-                  ColumnDefinitions="Auto" 
-                  RowDefinitions="Auto">
-                <Button Content="Summer period electricity price"
-                        Margin="10,0,0,0"
-                        Click="DisplaySummerElectricityPrice_Click"
-                ></Button>
-                <TextBlock x:Name="SummerElectricityPriceTextBlock" />            
-            </Grid>
         </StackPanel>    
      
     </Grid>
