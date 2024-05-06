@@ -13,12 +13,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3874f28a-2d5d-4e98-a8ec-fe8f288633b5" name="Changes" comment="Solving small merge problem">
+      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/Map.axaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI_Garage/UI/Map.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/avalonia.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_05_2024__14_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_05_2024__14_35__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_25__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_25__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_25__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_25__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_26__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_05_2024__14_35__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/PUPage.axaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +67,12 @@
     &quot;assignee&quot;: &quot;AltanEsmer&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Vedat-Esendag/Semester-Project.git&quot;,
-    &quot;accountId&quot;: &quot;da091664-e953-44df-b397-2493afa496ca&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Vedat-Esendag/Semester-Project.git",
+    "accountId": "f7c7ece3-3c9d-48f6-a9fc-d5858a6d874d"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8c5be7826d6a434f911dfe811b698519eca00/46/a8338b12/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
@@ -81,29 +111,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.Asset_Manager.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.UI.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#8 on UI-Backgorund-Work&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Asset_Manager.executor": "Run",
+    ".NET Project.UI.executor": "Run",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "#8 on UI-Backgorund-Work",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\admin\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\vesen\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\vesen\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\vesen\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.UI">
     <configuration name="Asset_Manager" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -229,6 +259,7 @@
       <workItem from="1714487752284" duration="6431000" />
       <workItem from="1714553783647" duration="3810000" />
       <workItem from="1714735850820" duration="1460000" />
+      <workItem from="1714992367337" duration="1621000" />
     </task>
     <task id="LOCAL-00001" summary="Rider commit1">
       <option name="closed" value="true" />
