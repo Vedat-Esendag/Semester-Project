@@ -13,37 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3874f28a-2d5d-4e98-a8ec-fe8f288633b5" name="Changes" comment="Solving small merge problem">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/avalonia.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semester-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Asset_Manager.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/Debug/net8.0/Asset_Manager.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asset_Manager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Asset_Manager/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/Result_Data_Manager.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result_Data_Manager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Result_Data_Manager/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/GetData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/GetData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/Source_Data_Manager.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source_Data_Manager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source_Data_Manager/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/ElectricityPrice.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/ElectricityPrice.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/ElectricityPrice.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/ElectricityPrice.axaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_Garage/UI/HeatDemand.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Garage/UI/HeatDemand.axaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,18 +37,28 @@
     &quot;assignee&quot;: &quot;AltanEsmer&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Vedat-Esendag/Semester-Project.git",
-    "accountId": "da091664-e953-44df-b397-2493afa496ca"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Vedat-Esendag/Semester-Project.git&quot;,
+    &quot;accountId&quot;: &quot;da091664-e953-44df-b397-2493afa496ca&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8c5be7826d6a434f911dfe811b698519eca00/46/a8338b12/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Asset_Manager/obj/Debug/net8.0/Asset_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Result_Data_Manager/obj/Debug/net8.0/Result_Data_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/GetData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/GetData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/lajoskariko/RiderProjects/SemesterProject/Source_Data_Manager/obj/Debug/net8.0/Source_Data_Manager.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Semester_Project2/Data_Visualization/Program.cs" root0="SKIP_HIGHLIGHTING" />
@@ -277,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714737465889</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=".">
+      <option name="closed" value="true" />
+      <created>1714986843872</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714986843872</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,8 +320,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Rider commit1" />
     <MESSAGE value="Rider commit 2" />
-    <MESSAGE value="." />
     <MESSAGE value="Solving small merge problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solving small merge problem" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
