@@ -2,17 +2,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="400"
+        MinWidth="450" MinHeight="300"
         x:Class="UI.MainWindow"
         Title="UI"
         Background="White">
         
         
         
-       <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto">
+       <Grid RowDefinitions="Auto, *, *, *, *, *" Background="#DAEBF4">
                 
                <!-- Title Bar -->
-               <Grid Grid.Row="0" Background="rgb(25, 132, 197)" Height="60" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
+               <Grid Grid.Row="0" Background="#1984C5" Height="60" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
                         <Grid Grid.Column="0" Background="rgb(25, 132, 197)" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="160">
                                 <Label Content="Semester Project"
                                        HorizontalAlignment="Center" 
@@ -51,6 +52,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 FontWeight="Bold"
+                                Margin="5"
                                 Click="NavigateToPuPage_Click">
                                 <Button.Effect>
                                         <DropShadowEffect BlurRadius="5"
@@ -64,11 +66,11 @@
                                    VerticalAlignment="Center"
                                    FontSize="14"
                                    FontWeight="Bold"
-                                   Foreground="#333333"
+                                   Foreground="Black"
                                    TextWrapping="Wrap"
                                    Width="280"
                                    TextAlignment="Center"/>
-                        <Polyline Margin="-20,60,0,0" Points="1200,20 20,20" Stroke="Black" StrokeThickness="2"/>
+                        <Polyline Margin="-20,70,0,0" Points="1200,20 20,20" Stroke="Black" StrokeThickness="2"/>
 
                 </Grid>
                 
@@ -87,6 +89,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 FontWeight="Bold"
+                                Margin="5"
                                 Click="NavigateToHeatDemand_Click">
                                 <Button.Effect>
                                         <DropShadowEffect BlurRadius="5"
@@ -102,11 +105,11 @@
                                    VerticalAlignment="Center"
                                    FontSize="14"
                                    FontWeight="Bold"
-                                   Foreground="#333333"
+                                   Foreground="Black"
                                    TextWrapping="Wrap"
                                    Width="280"
                                    TextAlignment="Center"/>
-                        <Polyline Margin="-20,50,0,0" Points="1200,20 20,20" Stroke="Black" StrokeThickness="2"/>
+                        <Polyline Margin="-20,70,0,0" Points="1200,20 20,20" Stroke="Black" StrokeThickness="2"/>
                 </Grid>
                      
                 <!-- Section 3 -->
@@ -124,6 +127,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 FontWeight="Bold"
+                                Margin="5"
                                 Click="NavigateToElectricityPrice_Click">
                                 <Button.Effect>
                                         <DropShadowEffect BlurRadius="5"
@@ -137,11 +141,11 @@
                                    VerticalAlignment="Center"
                                    FontSize="14"
                                    FontWeight="Bold"
-                                   Foreground="#333333"
+                                   Foreground="Black"
                                    TextWrapping="Wrap"
                                    Width="280"
                                    TextAlignment="Center"/>
-                        <Polyline Margin="-20,50,0,0" Points="1200,20 20,20" Stroke="Black" StrokeThickness="2"/>
+                        <Polyline Margin="-20,70,0,0" Points="1200,20 20,20" Stroke="Black" StrokeThickness="2"/>
                 </Grid>
                 
                 <!-- Section 4 -->
@@ -159,6 +163,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 FontWeight="Bold"
+                                Margin="5"
                                 Click="NavigateToConsumption_Click">
                                 <Button.Effect>
                                         <DropShadowEffect BlurRadius="5"
@@ -172,11 +177,11 @@
                                    VerticalAlignment="Center"
                                    FontSize="14"
                                    FontWeight="Bold"
-                                   Foreground="#333333"
+                                   Foreground="Black"
                                    TextWrapping="Wrap"
                                    Width="280"
                                    TextAlignment="Center"/>
-                        <Polyline Margin="-20,50,0,0" Points="1200,20 20,20" Stroke="Black" StrokeThickness="2"/>
+                        <Polyline Margin="-20,70,0,0" Points="1200,20 20,20" Stroke="Black" StrokeThickness="2"/>
                 </Grid>
                 
                 <!-- Section 5 -->
@@ -194,6 +199,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 FontWeight="Bold"
+                                Margin="5"
                                 Click="NavigateToAdvancedDetails_Click">
                                 <Button.Effect>
                                         <DropShadowEffect BlurRadius="5"
@@ -207,7 +213,7 @@
                                    VerticalAlignment="Center"
                                    FontSize="14"
                                    FontWeight="Bold"
-                                   Foreground="#333333"
+                                   Foreground="Black"
                                    TextWrapping="Wrap"
                                    Width="280"
                                    TextAlignment="Center"/>

@@ -32,4 +32,12 @@
     <None Remove="Oil Boiler.jpg" />
     <AvaloniaResource Include="Oil Boiler.jpg" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Source_Data_Manager\Source_Data_Manager.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
 </Project>

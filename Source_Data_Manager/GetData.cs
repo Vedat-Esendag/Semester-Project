@@ -1,29 +1,44 @@
 using System;
 using System.IO;
+using System.Text;
 
 namespace SourceDataManager
 {
-    class GetData
+    public class GetData
     {
-        public static void WinterHeatDemand()
+        private static readonly string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "data.csv");
+        public static string WinterHeatDemand()
         {
-            string filePath = "data.csv";
-            using (var reader = new StreamReader(filePath))
+            StringBuilder text = new StringBuilder();
+
+            if (File.Exists(filePath))
             {
-                reader.ReadLine();
-                reader.ReadLine();
-                reader.ReadLine();
-                while (!reader.EndOfStream)
+                using (var reader = new StreamReader(filePath))
                 {
-                    var line = reader.ReadLine();
-                    var values = line.Split(',');
-                    Console.WriteLine($"Winter Heat Demand: {values[2]}");
+                    reader.ReadLine();
+                    reader.ReadLine();
+                    reader.ReadLine();
+
+                    while (!reader.EndOfStream)
+                    {
+                        var line = reader.ReadLine();
+                        var values = line.Split(',');
+
+                        text.AppendLine(string.Join(", ", values));
+                    }
                 }
             }
+            else
+            {
+                Console.WriteLine($"File not found: {filePath}");
+            }
+
+            return text.ToString();
         }
+
         public static void SummerHeatDemand()
         {
-            string filePath = "data.csv";
+            //string filePath = "data.csv";
             using (var reader = new StreamReader(filePath))
             {
                 reader.ReadLine();
@@ -39,7 +54,7 @@ namespace SourceDataManager
         }
         public static void WinterElectricityPrice()
         {
-            string filePath = "data.csv";
+            //string filePath = "data.csv";
             using (var reader = new StreamReader(filePath))
             {
                 reader.ReadLine();
@@ -55,7 +70,7 @@ namespace SourceDataManager
         }
         public static void SummerElectricityPrice()
         {
-            string filePath = "data.csv";
+            //string filePath = "data.csv";
             using (var reader = new StreamReader(filePath))
             {
                 reader.ReadLine();

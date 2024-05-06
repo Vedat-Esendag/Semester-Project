@@ -1,6 +1,9 @@
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using CsvHelper.Configuration.Attributes;
+using SourceDataManager;
+using System;
 
 namespace UI
 {
@@ -38,6 +41,26 @@ namespace UI
         {
             var advancedDetails = new AdvancedDetails();
             Content = advancedDetails;
+        }
+
+        private void DisplayWinterHeatDemand()
+        {
+            string winterHeatDemandText = SourceDataManager.GetData.WinterHeatDemand();
+
+            if (WinterHeatDemandTextBlock != null)
+            {
+                WinterHeatDemandTextBlock.Text = winterHeatDemandText;
+            }
+            else
+            {
+                Console.WriteLine("WinterHeatDemandTextBlock is null.");
+            }
+        }
+
+
+        private void DisplayWinterHeatDemand_Click(object sender, RoutedEventArgs e)
+        {
+            DisplayWinterHeatDemand();
         }
     }
 }

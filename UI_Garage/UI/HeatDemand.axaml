@@ -114,20 +114,18 @@
             FontSize="26" 
             FontWeight="Bold"
             HorizontalAlignment="Center"
-            Text="Heat Demand">
+            Text="Heat Demand"
+            Foreground="Black">
             </TextBlock>
             </Border>
             <Grid ShowGridLines="True" Margin="5"
                 ColumnDefinitions="Auto" 
                 RowDefinitions="Auto">
-                <TextBlock FontSize="14" Text="Some graphs here probably or something">
-                </TextBlock>
-                
-
+                <Button Content="Winter Heat Demand"
+                        Margin="10,0,0,0"
+                        Click="DisplayWinterHeatDemand_Click"></Button>
+                <TextBlock x:Name="WinterHeatDemandTextBlock" />            
             </Grid>
-            
         </StackPanel>    
-     
     </Grid> 
-
 </UserControl>
