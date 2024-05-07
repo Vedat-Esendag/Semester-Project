@@ -7,7 +7,25 @@ namespace Result_Data_Manager
 {
     public class Program
     {
-        static Optimize optimize = new Optimize();
+        static Optimize optimizer = new Optimize();
+        static CsvRead csvRead = new CsvRead();
+        public class ResultDataMap : ClassMap<ResultData>
+        {
+            public ResultDataMap()
+            {
+                Map(m => m.UnitName).Name("Unit name");
+                Map(m => m.Electricity).Name("Electricity usage");
+                Map(m => m.Expenses).Name("Expenses");
+                Map(m => m.HeatProduced).Name("Produced heat");
+                Map(m => m.PrimaryEnergyConsumed).Name("Primary energy");
+                Map(m => m.CO2).Name("CO2");
+                Map(m => m.TimeFrom).Name("Time From");
+                Map(m => m.TimeTo).Name("Time To");
+                Map(m => m.HeatDemand).Name("Heat Demand");
+                Map(m => m.ElectricityPrice).Name("Electricity Price");
+            }
+        }
+
         public static void CsvWriterCreator(string filePath)
         {
             CsvConfiguration config = new CsvConfiguration(CultureInfo.InvariantCulture)
@@ -16,15 +34,12 @@ namespace Result_Data_Manager
             };
             try
             {
-                if (!File.Exists(filePath))
-                {
-                    using (File.Create(filePath)) ;
-                }
-                
                 using (StreamWriter writer = new StreamWriter(filePath, true))
                 using (CsvWriter csvWriter = new CsvWriter(writer, config))
                 {
-                    csvWriter.WriteRecords(optimize.resultDatas); //resultdata comes from optimizer
+                    //Mapping Implement
+                    csvWriter.Context.RegisterClassMap<ResultDataMap>();
+                    csvWriter.WriteRecords(optimizer.resultDatas); 
                 }
             }
             catch (Exception e)
@@ -34,15 +49,23 @@ namespace Result_Data_Manager
         }
         public static void Main(string[] args)
         {
-            //What is the path of the file?
             string path = "./";
-            string fileName = "data.csv";
+            string fileName = "result.csv";
             string filePath = Path.Combine(path, fileName);
 
-            //This can be deleted
-            CsvWriterCreator(filePath);
-            Console.WriteLine("Successfully added!");
-            Console.ReadKey();
+            csvRead.ReadCSV();
+            optimizer.OptimizeData(csvRead.summerPeriods);
+            optimizer.OptimizeData(csvRead.winterPeriods);
+
+            if (!File.Exists(filePath))
+            {
+                using (File.Create(filePath)) ;
+            }
+            bool isEmpty = new FileInfo(fileName).Length == 0;
+            if(isEmpty)
+            {
+                CsvWriterCreator(filePath);
+            }
         }
     }
 }

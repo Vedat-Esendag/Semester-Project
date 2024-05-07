@@ -13,7 +13,7 @@ namespace SourceDataManager
         public List<PeriodData> summerPeriods = new List<PeriodData>();
         public void ReadCSV()
         {
-            string filePath = "C:\\Users\\Fefe\\Documents\\Semester-Project-04-24\\Source_Data_Manager\\data.csv";
+            string filePath = "C:\\Users\\Fefe\\Documents\\Semester-Project-05-07\\Source_Data_Manager\\data.csv";
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 HasHeaderRecord = true,
