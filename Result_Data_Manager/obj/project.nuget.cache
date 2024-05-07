@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "q3fXQlK6MpAnRZ6wjx1Pvo+CSfnPOvcwnc02ufzEgkq8bjzMIRcPjLBDlPO4zCppJ99UjZFFqnST2R2Y4QHadQ==",
-  "success": false,
-  "projectFilePath": "C:\\Users\\Fefe\\Documents\\Semester-Project-04-24\\Result_Data_Manager\\Result_Data_Manager.csproj",
+  "dgSpecHash": "9fMfFuACZeRoC4t9TJ8YNXc4uZGwd7XQfvzHeMMahv82vFIJL6muaWChNEf2Ry8uSzaTj9/zVkfV0XxWfHChww==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Fefe\\Documents\\Semester-Project-05-07\\Result_Data_Manager\\Result_Data_Manager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fefe\\.nuget\\packages\\avalonia\\11.0.10\\avalonia.11.0.10.nupkg.sha512",
     "C:\\Users\\Fefe\\.nuget\\packages\\avalonia.buildservices\\0.0.29\\avalonia.buildservices.0.0.29.nupkg.sha512",
     "C:\\Users\\Fefe\\.nuget\\packages\\avalonia.remote.protocol\\11.0.10\\avalonia.remote.protocol.11.0.10.nupkg.sha512",
-    "C:\\Users\\Fefe\\.nuget\\packages\\csvhelper\\31.0.4\\csvhelper.31.0.4.nupkg.sha512",
+    "C:\\Users\\Fefe\\.nuget\\packages\\csvhelper\\32.0.1\\csvhelper.32.0.1.nupkg.sha512",
     "C:\\Users\\Fefe\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
     "C:\\Users\\Fefe\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
     "C:\\Users\\Fefe\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
@@ -34,15 +34,6 @@
       "warningLevel": 1,
       "message": "Package 'OxyPlot.WindowsForms 2014.1.546' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
       "libraryId": "OxyPlot.WindowsForms",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: CsvHelper from 32.0.1 to 31.0.4. Reference the package directly from the project to select a different version. \r\n Result_Data_Manager -> Optimizer -> CsvHelper (>= 32.0.1) \r\n Result_Data_Manager -> CsvHelper (>= 31.0.4)",
-      "libraryId": "CsvHelper",
       "targetGraphs": [
         "net8.0"
       ]

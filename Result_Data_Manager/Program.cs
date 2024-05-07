@@ -2,6 +2,7 @@ using CsvHelper.Configuration;
 using CsvHelper;
 using System.Globalization;
 using Optimizer;
+using SourceDataManager;
 namespace Result_Data_Manager
 {
     public class Program
@@ -9,7 +10,6 @@ namespace Result_Data_Manager
         static Optimize optimize = new Optimize();
         public static void CsvWriterCreator(string filePath)
         {
-            
             CsvConfiguration config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 HasHeaderRecord = true,
@@ -24,8 +24,7 @@ namespace Result_Data_Manager
                 using (StreamWriter writer = new StreamWriter(filePath, true))
                 using (CsvWriter csvWriter = new CsvWriter(writer, config))
                 {
-                    csvWriter.WriteRecords(optimize.resultDatasSummer);
-                    csvWriter.WriteRecords(optimize.resultDatasWinter); //resultdata comes from optimizer
+                    csvWriter.WriteRecords(optimize.resultDatas); //resultdata comes from optimizer
                 }
             }
             catch (Exception e)

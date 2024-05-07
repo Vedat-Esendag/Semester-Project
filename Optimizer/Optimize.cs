@@ -1,7 +1,5 @@
 using SourceDataManager;
 using AM;
-using OxyPlot;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Optimizer
 {
@@ -16,9 +14,8 @@ namespace Optimizer
         AssetManager assetManager = new AssetManager();
         CsvRead csvRead= new CsvRead(); 
         List<double> producedHeats = new List<double>();
-        public List<ResultData> resultDatasWinter= new List<ResultData>();
 
-        public List<ResultData> resultDatasSummer= new List<ResultData>();
+        public List<ResultData> resultDatas= new List<ResultData>();
 
         public void CalculateAndFindCheapest(PeriodData dataPoint, List<ProductionUnit> units, int turn) 
         {
@@ -31,120 +28,30 @@ namespace Optimizer
                 costs.Add(cost);
             }
             costs.Sort();
-            double cheapestPrice = costs[0]; 
-            double secondCheapestPrice = costs[1];
-            double thirdCheapestPrice = costs[2];
-            costs.Clear();
             foreach (ProductionUnit unit1 in units)
             {
                 double efficiencyRate =  dataPoint.HeatDemand / unit1.MaxHeat;
-                if (turn == 0)
+                if (efficiencyRate > 1)
+                    efficiencyRate = 1;
+                
+                if(unit1.netCosts == costs[turn])
                 {
-                    if(unit1.netCosts == cheapestPrice)
-                    {
-                        if(efficiencyRate <= 1)
-                        {
-                            producedHeats.Add(unit1.MaxHeat*efficiencyRate);
-                            ResultData resultData = new ResultData(unit1.Name, dataPoint.TimeFrom, dataPoint.TimeTo, dataPoint.HeatDemand, 
-                            unit1.MaxElectricity*efficiencyRate, unit1.netCosts, dataPoint.ElectricityPrice, unit1.MaxHeat*efficiencyRate, unit1.GasConsumption*efficiencyRate,
-                            unit1.CO2Emissions*efficiencyRate);
-                            if(dataPoint.TimeFrom.Month == 02)
-                            {
-                                resultDatasWinter.Add(resultData);
-                            }
-                            else 
-                            {
-                                resultDatasSummer.Add(resultData);
-                            }
-                        }
-                        else 
-                        {
-                            producedHeats.Add(unit1.MaxHeat);
-                            ResultData resultData = new ResultData(unit1.Name, dataPoint.TimeFrom, dataPoint.TimeTo, dataPoint.HeatDemand, 
-                            unit1.MaxElectricity, unit1.netCosts, dataPoint.ElectricityPrice, unit1.MaxHeat, unit1.GasConsumption,
-                            unit1.CO2Emissions);
-                            if(dataPoint.TimeFrom.Month == 02)
-                            {
-                                resultDatasWinter.Add(resultData);
-                            }
-                            else 
-                            {
-                                resultDatasSummer.Add(resultData);
-                            }
-                        }
-                    }
-                }
-                else if (turn == 1)
-                {
-                    if(unit1.netCosts == secondCheapestPrice)
-                    {
-                        if(efficiencyRate <= 1)
-                        {
-                            producedHeats.Add(unit1.MaxHeat*efficiencyRate);
-                            ResultData resultData = new ResultData(unit1.Name, dataPoint.TimeFrom, dataPoint.TimeTo, dataPoint.HeatDemand, 
-                            unit1.MaxElectricity*efficiencyRate, unit1.netCosts, dataPoint.ElectricityPrice, unit1.MaxHeat*efficiencyRate, unit1.GasConsumption*efficiencyRate,
-                            unit1.CO2Emissions*efficiencyRate);
-                            if(dataPoint.TimeFrom.Month == 02)
-                            {
-                                resultDatasWinter.Add(resultData);
-                            }
-                            else 
-                            {
-                                resultDatasSummer.Add(resultData);
-                            }
-                        }
-                        else 
-                        {
-                            producedHeats.Add(unit1.MaxHeat);
-                            ResultData resultData = new ResultData(unit1.Name, dataPoint.TimeFrom, dataPoint.TimeTo, dataPoint.HeatDemand, 
-                            unit1.MaxElectricity, unit1.netCosts, dataPoint.ElectricityPrice, unit1.MaxHeat, unit1.GasConsumption,
-                            unit1.CO2Emissions);
-                            if(dataPoint.TimeFrom.Month == 02)
-                            {
-                                resultDatasWinter.Add(resultData);
-                            }
-                            else 
-                            {
-                                resultDatasSummer.Add(resultData);
-                            }
-                        }
-                    }
-                }
-                else
-                {
-                    if(unit1.netCosts == thirdCheapestPrice)
-                    {
-                        if(efficiencyRate <= 1)
-                        {
-                            producedHeats.Add(unit1.MaxHeat*efficiencyRate);
-                            ResultData resultData = new ResultData(unit1.Name, dataPoint.TimeFrom, dataPoint.TimeTo, dataPoint.HeatDemand, 
-                            unit1.MaxElectricity*efficiencyRate, unit1.netCosts, dataPoint.ElectricityPrice, unit1.MaxHeat*efficiencyRate, unit1.GasConsumption*efficiencyRate,
-                            unit1.CO2Emissions*efficiencyRate);
-                            if(dataPoint.TimeFrom.Month == 02)
-                            {
-                                resultDatasWinter.Add(resultData);
-                            }
-                            else 
-                            {
-                                resultDatasSummer.Add(resultData);
-                            }
-                        }
-                        else 
-                        {
-                            producedHeats.Add(unit1.MaxHeat);
-                            ResultData resultData = new ResultData(unit1.Name, dataPoint.TimeFrom, dataPoint.TimeTo, dataPoint.HeatDemand, 
-                            unit1.MaxElectricity, unit1.netCosts, dataPoint.ElectricityPrice, unit1.MaxHeat, unit1.GasConsumption,
-                            unit1.CO2Emissions);
-                            if(dataPoint.TimeFrom.Month == 02)
-                            {
-                                resultDatasWinter.Add(resultData);
-                            }
-                            else 
-                            {
-                                resultDatasSummer.Add(resultData);
-                            }
-                        }
-                    }
+                    producedHeats.Add(unit1.MaxHeat*efficiencyRate);
+                    ResultData resultData = new ResultData
+                    (
+                        unit1.Name, 
+                        dataPoint.TimeFrom, 
+                        dataPoint.TimeTo, 
+                        dataPoint.HeatDemand, 
+                        unit1.MaxElectricity*efficiencyRate, 
+                        unit1.netCosts, 
+                        dataPoint.ElectricityPrice, 
+                        unit1.MaxHeat*efficiencyRate, 
+                        unit1.GasConsumption*efficiencyRate,
+                        unit1.CO2Emissions*efficiencyRate
+                    );
+
+                    resultDatas.Add(resultData);
                 }
             }
         }
