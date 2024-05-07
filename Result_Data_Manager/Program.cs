@@ -14,15 +14,15 @@ namespace Result_Data_Manager
             public ResultDataMap()
             {
                 Map(m => m.UnitName).Name("Unit name");
-                Map(m => m.Electricity).Name("Electricity usage");
-                Map(m => m.Expenses).Name("Expenses");
-                Map(m => m.HeatProduced).Name("Produced heat");
-                Map(m => m.PrimaryEnergyConsumed).Name("Primary energy");
-                Map(m => m.CO2).Name("CO2");
                 Map(m => m.TimeFrom).Name("Time From");
                 Map(m => m.TimeTo).Name("Time To");
                 Map(m => m.HeatDemand).Name("Heat Demand");
+                Map(m => m.HeatProduced).Name("Produced heat");
                 Map(m => m.ElectricityPrice).Name("Electricity Price");
+                Map(m => m.Electricity).Name("Electricity usage");
+                Map(m => m.Expenses).Name("Expenses");
+                Map(m => m.PrimaryEnergyConsumed).Name("Primary energy");
+                Map(m => m.CO2).Name("CO2");
             }
         }
 
