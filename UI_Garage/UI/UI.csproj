@@ -36,6 +36,8 @@
     <AvaloniaResource Include="Gas Motor.jpg" />
     <None Remove="Oil Boiler.jpg" />
     <AvaloniaResource Include="Oil Boiler.jpg" />
+    <None Remove="map.jpg" />
+    <AvaloniaResource Include="map.jpg" />
   </ItemGroup>
 
   <ItemGroup>

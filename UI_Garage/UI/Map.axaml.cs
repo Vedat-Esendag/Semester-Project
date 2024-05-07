@@ -2,6 +2,7 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Interactivity;
 
+
 namespace UI;
 public partial class Map : UserControl
 {
@@ -14,6 +15,6 @@ public partial class Map : UserControl
     {
         AvaloniaXamlLoader.Load(this);
     }
-    
-    
+
+   
 }

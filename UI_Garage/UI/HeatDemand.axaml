@@ -155,10 +155,14 @@
                            TextWrapping="Wrap"/>
 
                 <!-- Live Chart Section -->
+<<<<<<< Updated upstream
                 <avalonia:CartesianChart 
                     x:Name="WinterHeatDemandChart"
                     Grid.Row="2"
                     Margin="10"/>
+=======
+                   
+>>>>>>> Stashed changes
             </Grid>
         </StackPanel>
     </Grid> 
