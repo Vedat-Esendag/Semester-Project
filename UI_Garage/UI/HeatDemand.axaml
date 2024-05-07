@@ -112,25 +112,54 @@
         </StackPanel>
 
         <StackPanel Grid.Column="1" Background="#DAEBF4">
-            <Border Margin="0" CornerRadius="0" Background="White">
-            <TextBlock Margin="15"
-            FontSize="26" 
-            FontWeight="Bold"
-            HorizontalAlignment="Center"
-            Text="Heat Demand"
-            Foreground="Black">
-            </TextBlock>
+            <Border Margin="0" CornerRadius="5" Background="#FFFFFF" BorderBrush="#CCCCCC" BorderThickness="1">
+                <TextBlock Margin="15"
+                           FontSize="26" 
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center"
+                           Text="Heat Demand"
+                           Foreground="#333333">
+                </TextBlock>
             </Border>
-            <Grid ShowGridLines="True" Margin="5"
-                ColumnDefinitions="Auto" 
-                RowDefinitions="Auto">
+
+            <Grid ShowGridLines="True" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <!-- Add additional ColumnDefinitions if needed -->
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!-- Add additional RowDefinitions if needed -->
+                </Grid.RowDefinitions>
+
                 <Button Content="Winter Heat Demand"
                         Margin="10,0,0,0"
-                        Click="DisplayWinterHeatDemand_Click"></Button>
-                <TextBlock x:Name="WinterHeatDemandTextBlock" />
+                        HorizontalAlignment="Left"
+                        Click="DisplayWinterHeatDemand_Click">
+                    <Button.Styles>
+                        <Style Selector="Button">
+                            <Setter Property="Background" Value="#007ACC"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="Padding" Value="10"/>
+                            <Setter Property="FontSize" Value="14"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Styles>
+                </Button>
+
+                <TextBlock x:Name="WinterHeatDemandTextBlock"
+                           Grid.Row="1"
+                           Margin="10"
+                           TextWrapping="Wrap"/>
+
                 <!-- Live Chart Section -->
-                <avalonia:CartesianChart x:Name="WinterHeatDemandChart"/>         
+                <avalonia:CartesianChart 
+                    x:Name="WinterHeatDemandChart"
+                    Grid.Row="2"
+                    Margin="10"/>
             </Grid>
-        </StackPanel>    
+        </StackPanel>
     </Grid> 
 </UserControl>

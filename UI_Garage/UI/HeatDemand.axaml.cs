@@ -1,11 +1,13 @@
+using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
-using CsvHelper.Configuration.Attributes;
+using Avalonia.Interactivity;
 using SourceDataManager;
 using LiveCharts;
-using LiveCharts.Wpf;
 using System;
+using System.Linq;
+using LiveCharts.Defaults;
+using LiveCharts.Wpf;
 
 namespace UI
 {
@@ -47,49 +49,45 @@ namespace UI
 
         private void DisplayWinterHeatDemand()
         {
-            string winterHeatDemandText = SourceDataManager.GetData.WinterHeatDemand();
+            // Get winter heat demand data from the source data manager
+            string winterHeatDemandData = GetData.WinterHeatDemand();
 
-            if (WinterHeatDemandTextBlock != null)
-            {
-                WinterHeatDemandTextBlock.Text = winterHeatDemandText;
-            }
-            else
-            {
-                Console.WriteLine("WinterHeatDemandTextBlock is null.");
-            }
-
-            // Extract winter heat demand data and time data for the chart
-            string[] heatDemandData = winterHeatDemandText.Split(',');
-            string[] timeData = new string[heatDemandData.Length / 2];
-            double[] demandValues = new double[heatDemandData.Length / 2];
-
-            for (int i = 0; i < heatDemandData.Length; i += 2)
-            {
-                timeData[i / 2] = heatDemandData[i];
-                demandValues[i / 2] = double.Parse(heatDemandData[i + 1]);
-            }
-
-            // Clear existing series and add new series to the chart
-            WinterHeatDemandChart.Series.Clear();
-            WinterHeatDemandChart.Series.Add(new ColumnSeries
+            // Parse the data and prepare it for visualization
+            var series = new LineSeries
             {
                 Title = "Winter Heat Demand",
-                Values = new ChartValues<double>(demandValues),
-                DataLabels = true,
-                LabelPoint = point => $"{point.Y}",
-                LabelsPosition = BarLabelPosition.Top
-            });
+                Values = ParseData(winterHeatDemandData)
+            };
 
-            // Update X axis labels with time data
-            WinterHeatDemandChart.AxisX.Clear();
-            WinterHeatDemandChart.AxisX.Add(new Axis
-            {
-                Title = "Time", // Add title if needed
-                Labels = timeData
-            });
+            // Create a new SeriesCollection and add the series to it
+            var seriesCollection = new SeriesCollection { series };
+
+            // Assign the SeriesCollection to the chart
+            WinterHeatDemandChart.Series = seriesCollection.Cast<LiveChartsCore.ISeries>();
         }
 
+        private ChartValues<ObservablePoint> ParseData(string data)
+        {
+            var chartValues = new ChartValues<ObservablePoint>();
 
+            // Assuming the data format is comma-separated values
+            string[] rows = data.Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
+            foreach (string row in rows)
+            {
+                string[] values = row.Split(',');
+                if (values.Length >= 2) // Assuming the data contains at least two columns (x and y)
+                {
+                    double x, y;
+                    if (double.TryParse(values[0], out x) && double.TryParse(values[1], out y))
+                    {
+                        chartValues.Add(new ObservablePoint(x, y));
+                    }
+                }
+            }
+
+            return chartValues;
+        }
+        
         private void DisplayWinterHeatDemand_Click(object sender, RoutedEventArgs e)
         {
             DisplayWinterHeatDemand();
