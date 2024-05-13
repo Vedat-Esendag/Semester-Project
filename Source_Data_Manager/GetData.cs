@@ -6,7 +6,7 @@ namespace SourceDataManager
 {
     public class GetData
     {
-        private static readonly string filePath = "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\data.csv";//Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "data.csv");
+        public static readonly string filePath = "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\data.csv";//Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "data.csv");
         public static string WinterHeatDemand()
         {
             StringBuilder text = new StringBuilder();
@@ -124,23 +124,25 @@ namespace SourceDataManager
         }
         
         
-        public static void WinterHeatDemandTime()
+        public static string WinterHeatDemandTime()
         {
+            StringBuilder text = new StringBuilder();
+
             if (File.Exists(filePath))
             {
                 using (var reader = new StreamReader(filePath))
                 {
-                    reader.ReadLine();
-                    reader.ReadLine();
-                    reader.ReadLine();
+                    reader.ReadLine(); // Skip headers
+                    reader.ReadLine(); // Skip additional lines
+                    reader.ReadLine(); // Skip additional lines
 
                     while (!reader.EndOfStream)
                     {
                         var line = reader.ReadLine();
-                        var values = line.Split(',');
+                        var columns = line.Split(',');
 
                         // Extract winter period time from and to from columns 1 and 2
-                        Console.WriteLine($"Winter Heat Demand Time: From {values[1]} To {values[2]}");
+                        text.AppendLine($"Winter Heat Demand Time: From {columns[1]} To {columns[2]}");
                     }
                 }
             }
@@ -148,6 +150,8 @@ namespace SourceDataManager
             {
                 Console.WriteLine($"File not found: {filePath}");
             }
+
+            return text.ToString();
         }
         public static void SummerHeatDemandTime()
         {

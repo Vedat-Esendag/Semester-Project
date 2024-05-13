@@ -20,9 +20,9 @@ namespace SourceDataManager
             Console.WriteLine("Electricity price:");
             GetData.WinterElectricityPrice();
             GetData.SummerElectricityPrice();
-            Console.WriteLine();
-            GetData.WinterHeatDemandTime();
-            GetData.SummerHeatDemandTime();
+            //Console.WriteLine();
+            //GetData.WinterHeatDemandTime();
+            //GetData.SummerHeatDemandTime();
         }
     }
 }
