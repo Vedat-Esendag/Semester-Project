@@ -22,6 +22,10 @@ namespace UI
         {
             InitializeComponent();
             
+            //Initalize to prevent null-reference error
+            FromDate = this.FindControl<DatePicker>("FromDate");
+            ToDate = this.FindControl<DatePicker>("ToDate");
+            
             FromDate.SelectedDateChanged += FromDate_DateChanged_Winter;
             ToDate.SelectedDateChanged += ToDate_DateChanged_Winter;
             // Create a custom mapper for ObservablePoint

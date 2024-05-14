@@ -149,7 +149,7 @@
                     </Button.Styles>
                 </Button>
                 
-                <TextBlock Name="WinterHeatDemandTime"></TextBlock>
+                <TextBlock Name="WinterHeatDemandTime" Text="random"></TextBlock>
                 
                 <!-- Chart Section -->
                 <avalonia:CartesianChart x:Name="WinterHeatDemandChart"
