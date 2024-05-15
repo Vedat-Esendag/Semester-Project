@@ -9,7 +9,7 @@
              Background="White">
     <StackPanel VerticalAlignment="Stretch">
         <!-- Header Section with Image, Title, and Back Button -->
-        <Grid Background="Red" 
+        <Grid Background="#E5180E" 
               ColumnDefinitions="Auto,*,Auto" 
               Margin="0">
             <Image Source="danfoss image.png"
@@ -20,7 +20,7 @@
                   Grid.Column="0"/>
 
             <Border Grid.Column="1"
-                    Background="Red"
+                    Background="#E5180E"
                     CornerRadius="0"
                     Margin="0">
                 <TextBlock Text="Map"

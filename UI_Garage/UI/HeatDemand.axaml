@@ -17,16 +17,16 @@
         </Grid.RowDefinitions> 
 
         <!-- Title Bar -->
-        <StackPanel Grid.Row="0" Background="Red">
+        <StackPanel Grid.Row="0" Background="#E5180E">
             
-            <Grid ColumnDefinitions="Auto,*,Auto" Background="Red">
+            <Grid ColumnDefinitions="Auto,*,Auto" Background="#E5180E">
                 
             <Image Grid.Column="0"
                 Source="danfoss image.png" VerticalAlignment="Top" HorizontalAlignment="Left"
                 Width="60" Height="60"
                 >
             </Image>
-            <Border Grid.Column="1" Margin="0" CornerRadius="0" Background="Red">
+            <Border Grid.Column="1" Margin="0" CornerRadius="0" Background="#E5180E">
                 <TextBlock Margin="15"
                 FontSize="28" 
                 FontWeight="Bold"
@@ -38,7 +38,7 @@
             <Button Grid.Column="2" Content="Back" 
                         Width="60" 
                         Height="40"
-                        Background="Red"
+                        Background="#E5180E"
                         Foreground="White"
                         BorderThickness="2"
                         CornerRadius="12"
