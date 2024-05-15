@@ -10,6 +10,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using LiveChartsCore;
+using LiveChartsCore.Kernel;
 using LiveChartsCore.SkiaSharpView;
 
 namespace UI
@@ -28,14 +29,15 @@ namespace UI
             
             FromDate.SelectedDateChanged += FromDate_DateChanged_Winter;
             ToDate.SelectedDateChanged += ToDate_DateChanged_Winter;
-            // Create a custom mapper for ObservablePoint
-            var mapper = Mappers.Xy<ObservablePoint>()
-                .X(point => point.X) // Map X property of ObservablePoint
-                .Y(point => point.Y); // Map Y property of ObservablePoint
-    
-            // Register the mapper with LiveCharts
-            Charting.For<ObservablePoint>(mapper);
-
+            
+            
+            // Configure LiveCharts to map ObservablePoint
+            LiveChartsCore.LiveCharts.Configure(settings =>
+            {
+                settings.HasMap<ObservablePoint>((point, index) => new LiveChartsCore.Kernel.Coordinate(point.X, point.Y));
+            });
+            
+            
             
             DataContext = this;
         }
@@ -164,10 +166,17 @@ namespace UI
             // Call the method to get winter heat demand series and display it in a chart
             var seriesCollection = GetWinterHeatDemandSeries();
             // Set the SeriesCollection to the chart in your UI
-            WinterHeatDemandChart.Series = seriesCollection;
+            if (WinterHeatDemandChart != null)
+            {
+                WinterHeatDemandChart.Series = seriesCollection;
+            }
+            else
+            {
+                Console.WriteLine("WinterHeatDemandChart is null. Make sure it's properly initialized in XAML.");
+            }
 
             // Display winter heat demand time period in a text block
-            //WinterHeatDemandTime.Text = GetData.WinterHeatDemandTime();
+            WinterHeatDemandTime.Text = GetData.WinterHeatDemandTime();
         }
     }
 }
