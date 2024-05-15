@@ -41,6 +41,12 @@ public partial class ElectricityPrice : UserControl
         var advancedDetails = new AdvancedDetails();
         Content = advancedDetails;
     }
+     private void BackBtn_Click(object sender, RoutedEventArgs e)
+    {
+        var mainWindow = new MainWindow();
+        mainWindow.Show();
+        (this.Parent as Window)?.Close();
+    }
     
     private void DisplayWinterElectricityPrice_Click(object sender, RoutedEventArgs e)
     {

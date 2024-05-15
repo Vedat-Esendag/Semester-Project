@@ -70,6 +70,12 @@ namespace UI
             var advancedDetails = new AdvancedDetails();
             Content = advancedDetails;
         }
+        private void BackBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = new MainWindow();
+            mainWindow.Show();
+            (this.Parent as Window)?.Close();
+        }
         
         private void FromDate_DateChanged_Winter(object? sender, DatePickerSelectedValueChangedEventArgs  e)
         {
