@@ -39,7 +39,9 @@ namespace UI
             
             
             
-            DataContext = this;
+            DataContext = new HeatDemandViewModel();
+            
+            (DataContext as HeatDemandViewModel)?.LoadData();
         }
 
         private void InitializeComponent()
@@ -164,25 +166,45 @@ namespace UI
 
 
 
-        private void DisplayWinterHeatDemand_Click(object sender, RoutedEventArgs e)
+        /*private void DisplayWinterHeatDemand_Click(object sender, RoutedEventArgs e)
         {
-            DateTimeOffset fromDateOffset = FromDate.SelectedDate ?? DateTimeOffset.MinValue;
-            DateTimeOffset toDateOffset = ToDate.SelectedDate ?? DateTimeOffset.MaxValue;
-            
-            // Call the method to get winter heat demand series and display it in a chart
-            var seriesCollection = GetWinterHeatDemandSeries();
-            // Set the SeriesCollection to the chart in your UI
-            if (WinterHeatDemandChart != null)
+            try
             {
-                WinterHeatDemandChart.Series = seriesCollection;
-            }
-            else
-            {
-                Console.WriteLine("WinterHeatDemandChart is null. Make sure it's properly initialized in XAML.");
-            }
+                DateTimeOffset fromDateOffset = FromDate.SelectedDate ?? DateTimeOffset.MinValue;
+                DateTimeOffset toDateOffset = ToDate.SelectedDate ?? DateTimeOffset.MaxValue;
 
-            // Display winter heat demand time period in a text block
-            WinterHeatDemandTime.Text = GetData.WinterHeatDemandTime();
-        }
+                // Call the method to get winter heat demand series and display it in a chart
+                var seriesCollection = GetWinterHeatDemandSeries();
+                // Set the SeriesCollection to the chart in your UI
+                if (WinterHeatDemandChart != null)
+                {
+                    WinterHeatDemandChart.Series = seriesCollection;
+                }
+                else
+                {
+                    Console.WriteLine("WinterHeatDemandChart is null. Make sure it's properly initialized in XAML.");
+                }
+
+                // Display winter heat demand time period in a text block
+                WinterHeatDemandTime.Text = GetData.WinterHeatDemandTime();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+        } */
+
+       /* private void DisplayWinterHeatDemand_ClickText(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                // Display winter heat demand time period in a text block
+                WinterHeatDemandTime.Text = GetData.WinterHeatDemand();
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine($"Error: {exception.Message}");
+            }
+        } */
     }
 }

@@ -6,7 +6,7 @@
              xmlns:ui="clr-namespace:UI"
              mc:Ignorable="d" d:DesignWidth="960" d:DesignHeight="540"
              x:Class="UI.HeatPage"
-             x:DataType="ui:HeatPage"
+             x:DataType="ui:HeatDemandViewModel"
              Background="#DAEBF4">
     
     <Grid ShowGridLines="False" Margin="0">
@@ -74,7 +74,7 @@
                         <!-- Add additional RowDefinitions if needed -->
                     </Grid.RowDefinitions>
 
-                    <Button Grid.Row="0" Content="Winter Heat Demand"
+                    <!--<Button Grid.Row="0" Content="Winter Heat Demand"
                         Margin="10,0,0,0"
                         HorizontalAlignment="Left"
                         Click="DisplayWinterHeatDemand_Click">
@@ -91,13 +91,15 @@
                         </Button.Styles>
                     </Button>
                 
-                    <TextBlock Name="WinterHeatDemandTime" Text="random" Grid.Row="1"></TextBlock>
+                    <TextBlock Name="WinterHeatDemandTime" Text="random" Grid.Row="1"></TextBlock> -->
                 
                     <!-- Chart Section -->
                     <avalonia:CartesianChart x:Name="WinterHeatDemandChart"
                                          Grid.Row="2"
                                          Margin="10"
-                                         Series="{Binding WinterHeatDemandSeries}" />
+                                         Series="{Binding WinterHeatDemandSeries}" 
+                                         Width="650"
+                                         Height="650"/>
                     
                 
                 </Grid>
@@ -111,8 +113,23 @@
                     <TextBlock VerticalAlignment="Center" Text="To: " />
                     <DatePicker x:Name="ToDate" Margin="5" />
                 </StackPanel>
-                <!-- Click needed -->
-                <Button Content="Display Winter Heat Demand" Margin="5" />
+                
+                <!-- <Button Grid.Row="0" Content="Winter Heat Demand Text"
+                        Margin="30,0,0,0"
+                        HorizontalAlignment="Left"
+                        Click="DisplayWinterHeatDemand_ClickText">
+                    <Button.Styles>
+                        <Style Selector="Button">
+                            <Setter Property="Background" Value="Purple"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="Padding" Value="10"/>
+                            <Setter Property="FontSize" Value="14"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Styles>
+                </Button> -->
             </StackPanel>
 
 

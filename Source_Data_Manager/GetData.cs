@@ -6,15 +6,17 @@ namespace SourceDataManager
 {
     public class GetData
     {
-        public static readonly string filePath = "C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Semester Project Code\\Semester-Project\\Source_Data_Manager\\data.csv";//Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "data.csv");
-        public static string WinterHeatDemand()
+        public static readonly string filePath =
+            @"C:\Users\admin\Desktop\SDU\S2\Semester Project 2\Semester Project Code\Semester-Project\Source_Data_Manager\data.csv";
+        public static List<double> WinterHeatDemand()
         {
-            StringBuilder text = new StringBuilder();
+            var heatDemands = new List<double>();
 
             if (File.Exists(filePath))
             {
                 using (var reader = new StreamReader(filePath))
                 {
+                    // Skip header lines
                     reader.ReadLine();
                     reader.ReadLine();
                     reader.ReadLine();
@@ -24,7 +26,10 @@ namespace SourceDataManager
                         var line = reader.ReadLine();
                         var values = line.Split(',');
 
-                        text.AppendLine(string.Join(", ", values));
+                        // Assuming the third column contains winter heat demand
+                        var winterHeatDemand = double.Parse(values[2]); // Index 2 for the third column
+
+                        heatDemands.Add(winterHeatDemand);
                     }
                 }
             }
@@ -33,8 +38,9 @@ namespace SourceDataManager
                 Console.WriteLine($"File not found: {filePath}");
             }
 
-            return text.ToString();
+            return heatDemands;
         }
+
 
         public static string SummerHeatDemand()
         {
