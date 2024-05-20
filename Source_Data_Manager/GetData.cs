@@ -130,7 +130,7 @@ namespace SourceDataManager
         }
         
         
-        public static List<DateTime> WinterHeatDemandTime()
+        public static List<DateTime> WinterTime()
         {
             List<DateTime> dates = new List<DateTime>();
 
@@ -164,7 +164,7 @@ namespace SourceDataManager
         }
 
 
-        public static void SummerHeatDemandTime()
+        public static void SummerTime()
         {
             if (File.Exists(filePath))
             {

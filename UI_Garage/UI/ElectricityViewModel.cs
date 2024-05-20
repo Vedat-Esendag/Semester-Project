@@ -1,4 +1,3 @@
-using LiveChartsCore.SkiaSharpView;
 using LiveCharts;
 using LiveCharts.Defaults;
 using System;
@@ -9,13 +8,14 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using LiveChartsCore;
+using LiveChartsCore.SkiaSharpView;
 using SourceDataManager;
 
-public class HeatDemandViewModel : INotifyPropertyChanged
+public class ElectricityViewModel : INotifyPropertyChanged
 {
     private DateTimeOffset? _fromDate;
     private DateTimeOffset? _toDate;
-    private ObservableCollection<ISeries> _winterHeatDemandSeries;
+    private ObservableCollection<ISeries> _winterElectricitySeries;
     private List<ObservablePoint> _originalData; // Add this line
 
     public event PropertyChangedEventHandler PropertyChanged;
@@ -42,49 +42,48 @@ public class HeatDemandViewModel : INotifyPropertyChanged
         }
     }
 
-    public ObservableCollection<ISeries> WinterHeatDemandSeries
+    public ObservableCollection<ISeries> WinterElectricitySeries
     {
-        get => _winterHeatDemandSeries;
+        get => _winterElectricitySeries;
         set
         {
-            _winterHeatDemandSeries = value;
+            _winterElectricitySeries = value;
             OnPropertyChanged();
         }
     }
 
-    public HeatDemandViewModel()
+    public ElectricityViewModel()
     {
-        WinterHeatDemandSeries = new ObservableCollection<ISeries>();
-        LoadData();
+        WinterElectricitySeries = new ObservableCollection<ISeries>();
     }
 
     public void LoadData()
     {
-        // Fetch winter heat demand data from your CSV file using source data manager
-        var winterHeatDemandData = GetData.WinterHeatDemand();
-        var winterHeatDemandTime = GetData.WinterTime();
+        // Fetch winter electricity data and time from your CSV file using source data manager
+        var winterElectricityData = GetData.WinterElectricityPrice();
+        var winterElectricityTime = GetData.WinterTime();
 
-        // Ensure the time data has pairs of start and end dates
-        if (winterHeatDemandData.Count != winterHeatDemandTime.Count)
+        // Ensure the electricity data and time data have the same length
+        if (winterElectricityData.Count() != winterElectricityTime.Count)
         {
-            throw new InvalidOperationException("The heat demand data and time data do not match in length.");
+            throw new InvalidOperationException("The electricity data and time data do not match in length.");
         }
     
         // Parse the data and populate the series
         var series = new LineSeries<ObservablePoint>();
         var chartValues = new ChartValues<ObservablePoint>();
 
-        for (int i = 0; i < winterHeatDemandData.Count; i++)
+        for (int i = 0; i < winterElectricityData.Count(); i++)
         {
-            var date = winterHeatDemandTime[i].ToOADate();
-            chartValues.Add(new ObservablePoint(date, winterHeatDemandData[i]));
+            var date = winterElectricityTime[i].ToOADate();
+            chartValues.Add(new ObservablePoint(date, winterElectricityData[i]));
         }
 
         series.Values = chartValues;
         _originalData = chartValues.ToList();
 
-        WinterHeatDemandSeries.Clear();
-        WinterHeatDemandSeries.Add(series);
+        WinterElectricitySeries.Clear();
+        WinterElectricitySeries.Add(series);
     }
 
     private void FilterData()
@@ -97,16 +96,16 @@ public class HeatDemandViewModel : INotifyPropertyChanged
 
         var filteredData = _originalData.Where(d => d.X >= fromDate && d.X <= toDate).ToList();
 
-        WinterHeatDemandSeries.Clear();
-        WinterHeatDemandSeries.Add(new LineSeries<ObservablePoint> { Values = new ObservableCollection<ObservablePoint>(filteredData) });
+        WinterElectricitySeries.Clear();
+        WinterElectricitySeries.Add(new LineSeries<ObservablePoint> { Values = new ObservableCollection<ObservablePoint>(filteredData) });
     }
 
-    public string GetHeatDemandDataAsText()
+    public string GetElectricityDataAsText()
     {
-        var heatDemandData = GetData.WinterHeatDemand();
+        var electricityData = GetData.WinterElectricityPrice();
         StringBuilder dataText = new StringBuilder();
 
-        foreach (var data in heatDemandData)
+        foreach (var data in electricityData)
         {
             dataText.AppendLine(data.ToString());
         }
@@ -119,3 +118,4 @@ public class HeatDemandViewModel : INotifyPropertyChanged
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }
+

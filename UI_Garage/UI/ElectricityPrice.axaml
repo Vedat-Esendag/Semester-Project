@@ -56,30 +56,34 @@
             </Grid> 
         </StackPanel>    
         
-        <!-- Main Section -->
-        <StackPanel Grid.Row="1" Background="White">
-            <Grid ShowGridLines="True" Margin="5"
-                  ColumnDefinitions="Auto" 
-                  RowDefinitions="Auto">
-                <Button Content="Winter period electricity price"
-                        Margin="10,0,0,0"
-                        Click="DisplayWinterElectricityPrice_Click"
-                ></Button>
-                <TextBlock x:Name="WinterElectricityPriceTextBlock" />            
-            </Grid>
-
-            <Grid ShowGridLines="True" Margin="5"
-                  ColumnDefinitions="Auto" 
-                  RowDefinitions="Auto">
-                <Button Content="Summer period electricity price"
-                        Margin="10,0,0,0"
-                        Click="DisplaySummerElectricityPrice_Click"
-                ></Button>
-                <TextBlock x:Name="SummerElectricityPriceTextBlock" />            
-            </Grid>
-
-
+        <!-- Main -->
+        <StackPanel Grid.Row="1" Background="Blue">
+            <Button x:Name="ShowGraphBtn" Content="Show Graph" Click="ShowGraphBtn_Click"/>
         </StackPanel>
+        
     </Grid>
     
 </UserControl>
+<!--
+<StackPanel Grid.Row="1" Background="White">
+    <Grid ShowGridLines="True" Margin="5"
+          ColumnDefinitions="Auto" 
+          RowDefinitions="Auto">
+        <Button Content="Winter period electricity price"
+                Margin="10,0,0,0"
+                Click="DisplayWinterElectricityPrice_Click"
+        ></Button>
+        <TextBlock x:Name="WinterElectricityPriceTextBlock" />            
+    </Grid>
+
+    <Grid ShowGridLines="True" Margin="5"
+          ColumnDefinitions="Auto" 
+          RowDefinitions="Auto">
+        <Button Content="Summer period electricity price"
+                Margin="10,0,0,0"
+                Click="DisplaySummerElectricityPrice_Click"
+        ></Button>
+        <TextBlock x:Name="SummerElectricityPriceTextBlock" />            
+    </Grid>
+</StackPanel>
+-->

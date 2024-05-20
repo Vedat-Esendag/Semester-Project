@@ -74,24 +74,6 @@
                         <RowDefinition Height="*"/>
                         <!-- Add additional RowDefinitions if needed -->
                     </Grid.RowDefinitions>
-
-                    <!--<Button Grid.Row="0" Content="Winter Heat Demand"
-                        Margin="10,0,0,0"
-                        HorizontalAlignment="Left"
-                        Click="DisplayWinterHeatDemand_Click">
-                        <Button.Styles>
-                            <Style Selector="Button">
-                                <Setter Property="Background" Value="#007ACC"/>
-                                <Setter Property="Foreground" Value="White"/>
-                                <Setter Property="BorderThickness" Value="0"/>
-                                <Setter Property="Padding" Value="10"/>
-                                <Setter Property="FontSize" Value="14"/>
-                                <Setter Property="FontWeight" Value="Bold"/>
-                                <Setter Property="CornerRadius" Value="5"/>
-                            </Style>
-                        </Button.Styles>
-                    </Button>
-                    -->
                 
                     <!-- Chart Section -->
                     <StackPanel Margin="5">
