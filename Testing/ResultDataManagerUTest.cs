@@ -1,65 +1,82 @@
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
 using CsvHelper;
 using CsvHelper.Configuration;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using NUnit.Framework;
+using System.Globalization;
+using System.IO;
+using System.Collections.Generic;
+using System.Linq; // Ensure this is included
+using Result_Data_Manager;
+using Optimizer;
+using SourceDataManager;
 
-namespace Result_Data_Manager.Tests
+namespace Result_Data_Manager_Tests
 {
-    [TestFixture]
+    [TestClass]
     public class ProgramTests
     {
-        [Test]
-        public void CsvWriterCreator_ShouldWriteRecordsToFile()
+        [TestMethod]
+        public void CsvWriterCreator_WritesRecordsSuccessfully()
         {
             // Arrange
-            var people = new List<Person>
-            {
-                new Person { Name = "John", Age = 25, City = "London" },
-                new Person { Name = "George", Age = 18, City = "Los angeles" },
-                new Person { Name = "Ödön", Age = 45, City = "Patapoklosi" }
-            };
-
-            var config = new CsvConfiguration(CultureInfo.InvariantCulture)
-            {
-                HasHeaderRecord = true,
-            };
-
-            var filePath = "test_data.csv";
-            var fileMock = new Mock<FileWrapper>();
-
-            fileMock.Setup(f => f.Exists(filePath)).Returns(false);
-            fileMock.Setup(f => f.Create(filePath)).Verifiable();
-            fileMock.Setup(f => f.WriteAllText(It.IsAny<string>(), It.IsAny<string>())).Verifiable();
+            var mockStreamWriter = new Mock<StreamWriter>("dummyFilePath", true);
+            var mockCsvWriter = new Mock<CsvWriter>(mockStreamWriter.Object, new CsvConfiguration(CultureInfo.InvariantCulture));
+            var optimizerMock = new Mock<Optimize>();
+            optimizerMock.Setup(o => o.resultDatas).Returns(GetDummyResultData().ToList());
 
             // Act
-            Program.CsvWriterCreator(filePath);
+            Program.CsvWriterCreator("dummyFilePath");
 
             // Assert
-            fileMock.Verify(f => f.Create(filePath), Times.Once);
-
-            using (var reader = new StreamReader(filePath))
-            using (var csv = new CsvReader(reader, config))
-            {
-                var records = csv.GetRecords<Person>();
-                CollectionAssert.AreEqual(people, records);
-            }
-
-            // Clean up
-            if (File.Exists(filePath))
-            {
-                File.Delete(filePath);
-            }
+            mockCsvWriter.Verify(w => w.WriteRecords(It.IsAny<IEnumerable<ResultData>>()), Times.Once);
         }
-    }
 
-    public class FileWrapper
-    {
-        public virtual bool Exists(string path) => File.Exists(path);
-        public virtual FileStream Create(string path) => File.Create(path);
-        public virtual void WriteAllText(string path, string contents) => File.WriteAllText(path, contents);
+        [TestMethod]
+        public void Main_CreatesFileAndWritesCsvWhenFileIsEmpty()
+        {
+            // Arrange
+            var path = "./";
+            var fileName = "result.csv";
+            var filePath = Path.Combine(path, fileName);
+
+            var csvReadMock = new Mock<CsvRead>();
+            var optimizerMock = new Mock<Optimize>();
+
+            csvReadMock.Setup(cr => cr.ReadCSV());
+            optimizerMock.Setup(o => o.OptimizeData(It.IsAny<List<PeriodData>>())); // Ensure the correct type here
+
+            var fileMock = new Mock<FileInfo>(filePath);
+            fileMock.Setup(f => f.Exists).Returns(false);
+            fileMock.Setup(f => f.Length).Returns(0);
+
+            // Act
+            Program.Main(new string[] { });
+
+            // Assert
+            csvReadMock.Verify(cr => cr.ReadCSV(), Times.Once);
+            optimizerMock.Verify(o => o.OptimizeData(It.IsAny<List<PeriodData>>()), Times.Once); // Ensure the correct type here
+            optimizerMock.Verify(o => o.OptimizeData(It.IsAny<List<PeriodData>>()), Times.Once); // Ensure the correct type here
+            Assert.IsTrue(File.Exists(filePath));
+            Assert.IsTrue(new FileInfo(filePath).Length > 0);
+        }
+
+        private List<ResultData> GetDummyResultData()
+        {
+            return new List<ResultData>
+            {
+                new ResultData(
+                    "Unit1", // string name
+                    DateTime.Now, // DateTime timeFrom
+                    DateTime.Now.AddHours(1), // DateTime timeTo
+                    100, // double heatDemand
+                    80, // double heatProduced
+                    50, // double electricityPrice
+                    30, // double electricity
+                    20, // double expenses
+                    10, // double primaryEnergyConsumed
+                    5 // double co2
+                )
+            };
+        }
     }
 }
