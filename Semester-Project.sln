@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI_Garage", "UI_Garage", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI_Garage\UI\UI.csproj", "{AE7110A6-43EC-49A4-930D-473274D60CF2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{284C5450-D2F6-4D3B-8ABC-5B6289A214A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{C5D8B31A-1A83-45E7-91D2-5F6F4247C707}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,10 @@ Global
 		{AE7110A6-43EC-49A4-930D-473274D60CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE7110A6-43EC-49A4-930D-473274D60CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE7110A6-43EC-49A4-930D-473274D60CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5D8B31A-1A83-45E7-91D2-5F6F4247C707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D8B31A-1A83-45E7-91D2-5F6F4247C707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D8B31A-1A83-45E7-91D2-5F6F4247C707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D8B31A-1A83-45E7-91D2-5F6F4247C707}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,5 +64,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AE7110A6-43EC-49A4-930D-473274D60CF2} = {A17D7181-0627-44AF-9E50-98E2B3855CA5}
+		{C5D8B31A-1A83-45E7-91D2-5F6F4247C707} = {284C5450-D2F6-4D3B-8ABC-5B6289A214A5}
 	EndGlobalSection
 EndGlobal

@@ -1,6 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
+using System.Globalization;
 
 namespace AM
 {
@@ -8,8 +9,8 @@ namespace AM
     {
         string Name { get; set; }
         double MaxHeat { get; set; }
-        decimal ProductionCost { get; set; }
-        decimal CO2Emissions { get; set; }
+        double ProductionCost { get; set; }
+        double CO2Emissions { get; set; }
         double GasConsumption { get; set; }
         string Image { get; set; }
     }
@@ -20,8 +21,8 @@ namespace AM
         OilBoiler oilBoiler = new OilBoiler();
         GasMotor gasMotor = new GasMotor();
         ElectricBoiler electricBoiler = new ElectricBoiler();
-        List<IProductionUnit> productionUnits1 = new List<IProductionUnit>();
-        List<IProductionUnit> productionUnits2 = new List<IProductionUnit>();
+        public List<ProductionUnit> productionUnits1 = new List<ProductionUnit>();
+        public List<ProductionUnit> productionUnits2 = new List<ProductionUnit>();
 
         public void AddBoilersAndSaveState(string filePath)
         {
@@ -55,18 +56,21 @@ namespace AM
             File.WriteAllText(filePath + "json1.json", json1);
             File.WriteAllText(filePath + "json2.json", json2);
         }
+    }
 
-        class ProductionUnit : IProductionUnit
+        public class ProductionUnit : IProductionUnit
         {
             public string Name { get; set; }
             public double MaxHeat { get; set; }
-            public decimal ProductionCost { get; set; }
-            public decimal CO2Emissions { get; set; }
+            public double ProductionCost { get; set; }
+            public double netCosts;
+            public double CO2Emissions { get; set; }
             public double GasConsumption { get; set; }
             public string Image { get; set; }
+            public double MaxElectricity { get; set; }
         }
 
-        class GasBoiler : ProductionUnit
+        public class GasBoiler : ProductionUnit
         {
             public GasBoiler()
             {
@@ -75,46 +79,44 @@ namespace AM
                 ProductionCost = 500;
                 CO2Emissions = 215;
                 GasConsumption = 1.1;
-
+                MaxElectricity = 0;
             }
         }
 
-        class OilBoiler : ProductionUnit
+        public class OilBoiler : ProductionUnit
         {
             public OilBoiler()
             {
                 Name = "OB";
-                MaxHeat = 5;
+                MaxHeat = 4;
                 ProductionCost = 700;
                 CO2Emissions = 265;
                 GasConsumption = 1.2;
+                MaxElectricity = 0;
             }
         }
 
-        class GasMotor : ProductionUnit
+        public class GasMotor : ProductionUnit
         {
-            public double MaxElectricity { get; set; }
             public GasMotor()
             {
                 Name = "GM";
                 MaxHeat = 3.6;
-                MaxElectricity = 2.7;
+                MaxElectricity = -2.7;
                 ProductionCost = 1100;
                 CO2Emissions = 640;
                 GasConsumption = 1.9;
             }
         }
 
-        class ElectricBoiler : ProductionUnit
+        public class ElectricBoiler : ProductionUnit
         {
-            public decimal MaxElectricity { get; set; }
             public ElectricBoiler()
             {
                 Name = "EK";
                 MaxHeat = 8;
-                MaxElectricity = -8;
+                MaxElectricity = 8;
                 ProductionCost = 50;
             }
         }
-    }
 }

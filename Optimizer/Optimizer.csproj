@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Asset_Manager\Asset_Manager.csproj" />
+    <ProjectReference Include="..\Source_Data_Manager\Source_Data_Manager.csproj" />
+  </ItemGroup>
+
 </Project>

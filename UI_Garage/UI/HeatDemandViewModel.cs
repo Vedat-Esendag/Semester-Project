@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Text;
 using LiveChartsCore;
 using SourceDataManager;
 
@@ -100,7 +101,18 @@ public class HeatDemandViewModel : INotifyPropertyChanged
         WinterHeatDemandSeries.Add(new LineSeries<ObservablePoint> { Values = new ObservableCollection<ObservablePoint>(filteredData) });
     }
 
+    public string GetHeatDemandDataAsText()
+    {
+        var heatDemandData = GetData.WinterHeatDemand();
+        StringBuilder dataText = new StringBuilder();
 
+        foreach (var data in heatDemandData)
+        {
+            dataText.AppendLine(data.ToString());
+        }
+
+        return dataText.ToString();
+    }
 
     protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
     {

@@ -65,6 +65,17 @@ namespace UI
             (this.Parent as Window)?.Close();
         }
         
+        private void PrintHeatDemandData_Click(object sender, RoutedEventArgs e)
+        {
+            var viewModel = DataContext as HeatDemandViewModel;
+            if (viewModel != null)
+            {
+                var heatDemandDataText = viewModel.GetHeatDemandDataAsText();
+                var heatDemandTextBlock = this.FindControl<TextBlock>("HeatDemandTextBlock");
+                heatDemandTextBlock.Text = heatDemandDataText;
+            }
+        }
+        
         private void DisplayWinterHeatDemand_Click(object sender, RoutedEventArgs e)
         {
             var viewModel = DataContext as HeatDemandViewModel;
