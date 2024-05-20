@@ -1,71 +1,109 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+using LiveChartsCore.SkiaSharpView;
 using LiveCharts;
 using LiveCharts.Defaults;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
 using LiveChartsCore;
-using LiveChartsCore.SkiaSharpView;
-using SourceDataManager; // Import your source data manager namespace
+using SourceDataManager;
 
-namespace UI
+public class HeatDemandViewModel : INotifyPropertyChanged
 {
-    public class HeatDemandViewModel : INotifyPropertyChanged
+    private DateTimeOffset? _fromDate;
+    private DateTimeOffset? _toDate;
+    private ObservableCollection<ISeries> _winterHeatDemandSeries;
+    private List<ObservablePoint> _originalData; // Add this line
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public DateTimeOffset? FromDate
     {
-        private IEnumerable<ISeries> _winterHeatDemandSeries;
-        private string _winterHeatDemandTime;
-
-        public IEnumerable<ISeries> WinterHeatDemandSeries
+        get => _fromDate;
+        set
         {
-            get => _winterHeatDemandSeries;
-            set
-            {
-                _winterHeatDemandSeries = value;
-                OnPropertyChanged(nameof(WinterHeatDemandSeries));
-            }
+            _fromDate = value;
+            OnPropertyChanged();
+            FilterData();
+        }
+    }
+
+    public DateTimeOffset? ToDate
+    {
+        get => _toDate;
+        set
+        {
+            _toDate = value;
+            OnPropertyChanged();
+            FilterData();
+        }
+    }
+
+    public ObservableCollection<ISeries> WinterHeatDemandSeries
+    {
+        get => _winterHeatDemandSeries;
+        set
+        {
+            _winterHeatDemandSeries = value;
+            OnPropertyChanged();
+        }
+    }
+
+    public HeatDemandViewModel()
+    {
+        WinterHeatDemandSeries = new ObservableCollection<ISeries>();
+        LoadData();
+    }
+
+    public void LoadData()
+    {
+        // Fetch winter heat demand data from your CSV file using source data manager
+        var winterHeatDemandData = GetData.WinterHeatDemand();
+        var winterHeatDemandTime = GetData.WinterHeatDemandTime();
+
+        // Ensure the time data has pairs of start and end dates
+        if (winterHeatDemandData.Count != winterHeatDemandTime.Count)
+        {
+            throw new InvalidOperationException("The heat demand data and time data do not match in length.");
+        }
+    
+        // Parse the data and populate the series
+        var series = new LineSeries<ObservablePoint>();
+        var chartValues = new ChartValues<ObservablePoint>();
+
+        for (int i = 0; i < winterHeatDemandData.Count; i++)
+        {
+            var date = winterHeatDemandTime[i].ToOADate();
+            chartValues.Add(new ObservablePoint(date, winterHeatDemandData[i]));
         }
 
-        public string WinterHeatDemandTime
-        {
-            get => _winterHeatDemandTime;
-            set
-            {
-                _winterHeatDemandTime = value;
-                OnPropertyChanged(nameof(WinterHeatDemandTime));
-            }
-        }
+        series.Values = chartValues;
+        _originalData = chartValues.ToList();
 
-        public HeatDemandViewModel()
-        {
-            LoadData();
-        }
+        WinterHeatDemandSeries.Clear();
+        WinterHeatDemandSeries.Add(series);
+    }
 
-        public void LoadData()
-        {
-            // Fetch winter heat demand data from your CSV file using source data manager
-            var winterHeatDemandData = GetData.WinterHeatDemand();
-            
-            // Parse the data and populate the series
-            var series = new LineSeries<ObservablePoint>();
-            var chartValues = new ChartValues<ObservablePoint>();
+    private void FilterData()
+    {
+        if (FromDate == null || ToDate == null)
+            return;
 
-            foreach (var heatDemand in winterHeatDemandData)
-            {
-                // Assuming your CSV has only heat demand values
-                chartValues.Add(new ObservablePoint(chartValues.Count, heatDemand));
-            }
+        var fromDate = FromDate.Value.Date.ToOADate();
+        var toDate = ToDate.Value.Date.ToOADate();
 
-            series.Values = chartValues;
-            WinterHeatDemandSeries = new List<ISeries> { series };
+        var filteredData = _originalData.Where(d => d.X >= fromDate && d.X <= toDate).ToList();
 
-            // Fetch and set winter heat demand time
-            WinterHeatDemandTime = GetData.WinterHeatDemandTime();
-        }
+        WinterHeatDemandSeries.Clear();
+        WinterHeatDemandSeries.Add(new LineSeries<ObservablePoint> { Values = new ObservableCollection<ObservablePoint>(filteredData) });
+    }
 
-        public event PropertyChangedEventHandler PropertyChanged;
 
-        protected void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+
+    protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }

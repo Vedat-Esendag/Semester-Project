@@ -4,9 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:avalonia="clr-namespace:LiveChartsCore.SkiaSharpView.Avalonia;assembly=LiveChartsCore.SkiaSharpView.Avalonia"
              xmlns:ui="clr-namespace:UI"
+             xmlns:global="clr-namespace:"
              mc:Ignorable="d" d:DesignWidth="960" d:DesignHeight="540"
              x:Class="UI.HeatPage"
-             x:DataType="ui:HeatDemandViewModel"
+             x:DataType="global:HeatDemandViewModel"
              Background="#DAEBF4">
     
     <Grid ShowGridLines="False" Margin="0">
@@ -90,50 +91,51 @@
                             </Style>
                         </Button.Styles>
                     </Button>
-                
-                    <TextBlock Name="WinterHeatDemandTime" Text="random" Grid.Row="1"></TextBlock> -->
+                    -->
                 
                     <!-- Chart Section -->
-                    <avalonia:CartesianChart x:Name="WinterHeatDemandChart"
-                                         Grid.Row="2"
-                                         Margin="10"
-                                         Series="{Binding WinterHeatDemandSeries}" 
-                                         Width="650"
-                                         Height="650"/>
+                    <StackPanel Margin="5">
+                        <TextBlock FontSize="16" FontWeight="Bold" Text="Select Date Range" />
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,5">
+                            <TextBlock VerticalAlignment="Center" Text="From: " />
+                            <DatePicker x:Name="FromDate" Margin="5" SelectedDate="{Binding FromDate}" />
+                            <TextBlock VerticalAlignment="Center" Text="To: " />
+                            <DatePicker x:Name="ToDate" Margin="5" SelectedDate="{Binding ToDate}" />
+                        </StackPanel>
+                        
+                        <Button Grid.Row="0" Content="Display Winter Heat Demand"
+                                Margin="10,0,0,0"
+                                HorizontalAlignment="Left"
+                                Click="DisplayWinterHeatDemand_Click">
+                            <Button.Styles>
+                                <Style Selector="Button">
+                                    <Setter Property="Background" Value="#007ACC"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="BorderThickness" Value="0"/>
+                                    <Setter Property="Padding" Value="10"/>
+                                    <Setter Property="FontSize" Value="14"/>
+                                    <Setter Property="FontWeight" Value="Bold"/>
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </Button.Styles>
+                        </Button>
+                        <!-- Chart Placeholder -->
+                        <ContentControl x:Name="ChartPlaceholder" Grid.Row="2" Margin="10"/>
+                 </StackPanel>
+                 <!--<avalonia:CartesianChart x:Name="WinterHeatDemandChart"
+                                      Grid.Row="2"
+                                      Margin="10"
+                                      Series="{Binding WinterHeatDemandSeries}" 
+                                      Width="650"
+                                             Height="650"/>
+                                             -->
                     
-                
+                    <ScrollViewer Grid.Row="2" Margin="10" VerticalScrollBarVisibility="Auto">
+                        <TextBlock x:Name="HeatDemandTextBlock" TextWrapping="Wrap"/>
+                    </ScrollViewer>
+                    
                 </Grid>
             </StackPanel>
-            <!-- Add DatePicker controls for selecting date range -->
-            <StackPanel Margin="5">
-                <TextBlock FontSize="16" FontWeight="Bold" Text="Select Date Range" />
-                <StackPanel Orientation="Horizontal" Margin="0,10,0,5">
-                    <TextBlock VerticalAlignment="Center" Text="From: " />
-                    <DatePicker x:Name="FromDate" Margin="5" />
-                    <TextBlock VerticalAlignment="Center" Text="To: " />
-                    <DatePicker x:Name="ToDate" Margin="5" />
-                </StackPanel>
-                
-                <!-- <Button Grid.Row="0" Content="Winter Heat Demand Text"
-                        Margin="30,0,0,0"
-                        HorizontalAlignment="Left"
-                        Click="DisplayWinterHeatDemand_ClickText">
-                    <Button.Styles>
-                        <Style Selector="Button">
-                            <Setter Property="Background" Value="Purple"/>
-                            <Setter Property="Foreground" Value="White"/>
-                            <Setter Property="BorderThickness" Value="0"/>
-                            <Setter Property="Padding" Value="10"/>
-                            <Setter Property="FontSize" Value="14"/>
-                            <Setter Property="FontWeight" Value="Bold"/>
-                            <Setter Property="CornerRadius" Value="5"/>
-                        </Style>
-                    </Button.Styles>
-                </Button> -->
-            </StackPanel>
-
-
-
         </StackPanel>
     </Grid>
 </UserControl>
