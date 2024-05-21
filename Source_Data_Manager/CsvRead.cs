@@ -11,10 +11,14 @@ namespace SourceDataManager
     {
         public List<PeriodData> winterPeriods = new List<PeriodData>();
         public List<PeriodData> summerPeriods = new List<PeriodData>();
+
+        // Static fields to hold the directory and file path
+        private static string currentDirectory = Directory.GetCurrentDirectory();
+        private static string relativePathToCsv = Path.Combine("..", "..", "..", "..", "Source_Data_Manager", "data.csv");
+        public static string filePath = Path.GetFullPath(Path.Combine(currentDirectory, relativePathToCsv));
+
         public void ReadCSV()
         {
-            string filePath = "data.csv";
-
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 HasHeaderRecord = true,
@@ -24,8 +28,7 @@ namespace SourceDataManager
 
             try
             {
-
-
+                // Use the dynamically determined file path
                 using (var reader = new StreamReader(filePath))
                 using (var csv = new CsvReader(reader, config))
                 {

@@ -12,7 +12,7 @@ namespace Optimizer
     public class Optimize : IOptimize
     {
         AssetManager assetManager = new AssetManager();
-        CsvRead csvRead= new CsvRead(); 
+        CsvRead csvRead = new CsvRead(); 
         public List<double> producedHeats = new List<double>();
 
         public List<ResultData> resultDatas= new List<ResultData>();
@@ -21,6 +21,7 @@ namespace Optimizer
         {
             List<double> costs = new List<double>();
             foreach(ProductionUnit unit in units)
+                 
             {
                 double efficiencyRate = dataPoint.HeatDemand / unit.MaxHeat;
                 double cost = (dataPoint.HeatDemand * unit.ProductionCost) + (dataPoint.ElectricityPrice * unit.MaxElectricity * efficiencyRate);
