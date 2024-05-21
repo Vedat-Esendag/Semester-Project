@@ -98,7 +98,7 @@
           }
         }
       },
-      "CsvHelper/32.0.3": {
+      "CsvHelper/31.0.4": {
         "type": "package",
         "compile": {
           "lib/net8.0/CsvHelper.dll": {
@@ -229,7 +229,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "CsvHelper": "32.0.3",
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
@@ -244,7 +243,6 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Asset_Manager": "1.0.0",
-          "CsvHelper": "32.0.3",
           "Source_Data_Manager": "1.0.0"
         },
         "compile": {
@@ -259,7 +257,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Avalonia": "11.0.10",
-          "CsvHelper": "32.0.3",
+          "CsvHelper": "31.0.4",
           "OxyPlot.Avalonia": "2.1.0",
           "OxyPlot.Core": "2014.1.546",
           "OxyPlot.WindowsForms": "2014.1.546",
@@ -501,15 +499,15 @@
         "lib/netstandard2.0/Avalonia.Remote.Protocol.xml"
       ]
     },
-    "CsvHelper/32.0.3": {
-      "sha512": "JNDkd4Wc2Tim5IuyL8Ai13RhzRvaHItseEvlJ2YRkx2SMBFrIsW8a5+/o4/O1jsb6mlviihR6Hfyn+nqY6CurA==",
+    "CsvHelper/31.0.4": {
+      "sha512": "m4ikjUAn4XOD1tShxxk4ui42sHxjHdX52P7fPQ9K7tzJkPTEwiCbvEz3k73mTGSSaPTUCOp9VziQC757IqKLew==",
       "type": "package",
-      "path": "csvhelper/32.0.3",
+      "path": "csvhelper/31.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "csvhelper.32.0.3.nupkg.sha512",
+        "csvhelper.31.0.4.nupkg.sha512",
         "csvhelper.nuspec",
         "lib/net462/CsvHelper.dll",
         "lib/net462/CsvHelper.xml",
@@ -802,37 +800,48 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "CsvHelper >= 32.0.3",
-      "Optimizer >= 1.0.0"
+      "CsvHelper >= 31.0.4",
+      "Optimizer >= 1.0.0",
+      "Source_Data_Manager >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "/Users/lajoskariko/.nuget/packages/": {}
+    "C:\\Users\\Fefe\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lajoskariko/RiderProjects/SemesterProject4/Result_Data_Manager/Result_Data_Manager.csproj",
+      "projectUniqueName": "C:\\Users\\Fefe\\Documents\\Semester-Project-05-07\\Result_Data_Manager\\Result_Data_Manager.csproj",
       "projectName": "Result_Data_Manager",
-      "projectPath": "/Users/lajoskariko/RiderProjects/SemesterProject4/Result_Data_Manager/Result_Data_Manager.csproj",
-      "packagesPath": "/Users/lajoskariko/.nuget/packages/",
-      "outputPath": "/Users/lajoskariko/RiderProjects/SemesterProject4/Result_Data_Manager/obj/",
+      "projectPath": "C:\\Users\\Fefe\\Documents\\Semester-Project-05-07\\Result_Data_Manager\\Result_Data_Manager.csproj",
+      "packagesPath": "C:\\Users\\Fefe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Fefe\\Documents\\Semester-Project-05-07\\Result_Data_Manager\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/lajoskariko/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Fefe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/lajoskariko/RiderProjects/SemesterProject4/Optimizer/Optimizer.csproj": {
-              "projectPath": "/Users/lajoskariko/RiderProjects/SemesterProject4/Optimizer/Optimizer.csproj"
+            "C:\\Users\\Fefe\\Documents\\Semester-Project-05-07\\Optimizer\\Optimizer.csproj": {
+              "projectPath": "C:\\Users\\Fefe\\Documents\\Semester-Project-05-07\\Optimizer\\Optimizer.csproj"
+            },
+            "C:\\Users\\Fefe\\Documents\\Semester-Project-05-07\\Source_Data_Manager\\Source_Data_Manager.csproj": {
+              "projectPath": "C:\\Users\\Fefe\\Documents\\Semester-Project-05-07\\Source_Data_Manager\\Source_Data_Manager.csproj"
             }
           }
         }
@@ -841,6 +850,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -849,7 +863,7 @@
         "dependencies": {
           "CsvHelper": {
             "target": "Package",
-            "version": "[32.0.3, )"
+            "version": "[31.0.4, )"
           }
         },
         "imports": [
@@ -868,7 +882,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

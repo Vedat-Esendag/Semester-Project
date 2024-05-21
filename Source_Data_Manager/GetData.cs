@@ -8,10 +8,8 @@ namespace SourceDataManager
     public class GetData
     {
         // Define static fields
-        private static string currentDirectory = Directory.GetCurrentDirectory();
-        private static string relativePathToCsv = Path.Combine("..", "..", "..", "..", "Source_Data_Manager", "data.csv");
-        public static string filePath = Path.GetFullPath(Path.Combine(currentDirectory, relativePathToCsv));
-
+        private static string currentDirectory = Path.GetDirectoryName(Path.GetFullPath("data.csv"));
+        public static string filePath = currentDirectory + "\\data.csv";
         public static List<double> WinterHeatDemand()
         {
             List<double> heatDemand = new List<double>();

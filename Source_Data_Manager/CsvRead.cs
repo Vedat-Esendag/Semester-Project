@@ -13,9 +13,8 @@ namespace SourceDataManager
         public List<PeriodData> summerPeriods = new List<PeriodData>();
 
         // Static fields to hold the directory and file path
-        private static string currentDirectory = Directory.GetCurrentDirectory();
-        private static string relativePathToCsv = Path.Combine("..", "..", "..", "..", "Source_Data_Manager", "data.csv");
-        public static string filePath = Path.GetFullPath(Path.Combine(currentDirectory, relativePathToCsv));
+        private static string currentDirectory = Path.GetDirectoryName(Path.GetFullPath("data.csv"));
+        public string filePath = currentDirectory + "\\data.csv";
 
         public void ReadCSV()
         {
@@ -45,9 +44,6 @@ namespace SourceDataManager
                         ReadPeriods(csv, summerPeriods, summerStartIndex, headers.Length);
                     }
                 }
-
-                PrintPeriodData("Winter Period Data:", winterPeriods);
-                PrintPeriodData("Summer Period Data:", summerPeriods);
             }
             catch (Exception ex)
             {
