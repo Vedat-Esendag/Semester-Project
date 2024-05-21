@@ -76,7 +76,7 @@ namespace SourceDataManager.Tests
             // Arrange
 
             // Act
-            var result = GetData.WinterHeatDemandTime();
+            var result = GetData.WinterTime();
 
             // Assert
             // Add your assertions here
@@ -95,7 +95,7 @@ namespace SourceDataManager.Tests
             using (StringWriter sw = new StringWriter())
             {
                 Console.SetOut(sw);
-                GetData.SummerHeatDemandTime();
+                GetData.SummerTime();
                 var result = sw.ToString().Trim();
 
                 // Assert

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
@@ -6,12 +7,15 @@ namespace SourceDataManager
 {
     public class GetData
     {
-        public static readonly string filePath =
-            @"C:\Users\admin\Desktop\SDU\S2\Semester Project 2\Semester Project Code\Semester-Project\Source_Data_Manager\data.csv";
+        // Define static fields
+        private static string currentDirectory = Directory.GetCurrentDirectory();
+        private static string relativePathToCsv = Path.Combine("..", "..", "..", "..", "Source_Data_Manager", "data.csv");
+        public static string filePath = Path.GetFullPath(Path.Combine(currentDirectory, relativePathToCsv));
+
         public static List<double> WinterHeatDemand()
         {
             List<double> heatDemand = new List<double>();
-    
+
             if (File.Exists(filePath))
             {
                 using (var reader = new StreamReader(filePath))
@@ -25,7 +29,7 @@ namespace SourceDataManager
                         var line = reader.ReadLine();
                         var columns = line.Split(',');
 
-                        if (double.TryParse(columns[3], out double demand)) // Assuming heat demand is in column 3
+                        if (double.TryParse(columns[3], out double demand))
                         {
                             heatDemand.Add(demand);
                         }
@@ -39,8 +43,6 @@ namespace SourceDataManager
 
             return heatDemand;
         }
-
-
 
         public static string SummerHeatDemand()
         {
@@ -70,7 +72,7 @@ namespace SourceDataManager
 
             return text.ToString();
         }
-        
+
         public static string WinterElectricityPrice()
         {
             StringBuilder text = new StringBuilder();
@@ -99,7 +101,7 @@ namespace SourceDataManager
 
             return text.ToString();
         }
-        
+
         public static string SummerElectricityPrice()
         {
             StringBuilder text = new StringBuilder();
@@ -128,8 +130,7 @@ namespace SourceDataManager
 
             return text.ToString();
         }
-        
-        
+
         public static List<DateTime> WinterTime()
         {
             List<DateTime> dates = new List<DateTime>();
@@ -162,7 +163,6 @@ namespace SourceDataManager
 
             return dates;
         }
-
 
         public static void SummerTime()
         {

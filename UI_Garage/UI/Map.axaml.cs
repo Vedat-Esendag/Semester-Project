@@ -1,20 +1,23 @@
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 using Avalonia.Interactivity;
+using Avalonia.Markup.Xaml;
 
-
-namespace UI;
-public partial class Map : UserControl
+namespace UI
 {
-    public Map()
+    public partial class Map : UserControl
     {
-        InitializeComponent();
-    }
+        public Map()
+        {
+            InitializeComponent();
+        }
 
-    private void InitializeComponent()
-    {
-        AvaloniaXamlLoader.Load(this);
+        private void Pup_Click(object sender, RoutedEventArgs e)
+        {
+            var PuPage = new UI.PuPage();
+                Content = PuPage;
+            
+            
+        }
     }
-
-   
+    
 }
