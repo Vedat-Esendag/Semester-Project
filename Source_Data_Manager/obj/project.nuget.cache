@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VQILaaI4rq3pNVKvl5DHXaypU/rEdCLueIMrzeLCxfyH9fRnHufsIFUa5TwTKS4kPrpIjr601RU5l+H2GV80AA==",
+  "dgSpecHash": "HygKqZKkA/QLhtBvktlk1qfrJaqUFCPD0vdJmkaL2tEdDgA+9W06GXER/ZEjex1I7DwTUU3uuwFvBD4tXt7RDg==",
   "success": true,
   "projectFilePath": "/Users/lajoskariko/RiderProjects/SemesterProject4/Source_Data_Manager/Source_Data_Manager.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "/Users/lajoskariko/.nuget/packages/csvhelper/32.0.3/csvhelper.32.0.3.nupkg.sha512",
     "/Users/lajoskariko/.nuget/packages/microcom.runtime/0.11.0/microcom.runtime.0.11.0.nupkg.sha512",
     "/Users/lajoskariko/.nuget/packages/microsoft.win32.systemevents/8.0.0/microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "/Users/lajoskariko/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/lajoskariko/.nuget/packages/oxyplot.avalonia/2.1.0/oxyplot.avalonia.2.1.0.nupkg.sha512",
     "/Users/lajoskariko/.nuget/packages/oxyplot.core/2014.1.546/oxyplot.core.2014.1.546.nupkg.sha512",
     "/Users/lajoskariko/.nuget/packages/oxyplot.windowsforms/2014.1.546/oxyplot.windowsforms.2014.1.546.nupkg.sha512",
