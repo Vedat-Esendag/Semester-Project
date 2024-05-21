@@ -1,15 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="32.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Source_Data_Manager\Source_Data_Manager.csproj" />
+    <ProjectReference Include="..\Asset_Manager\Asset_Manager.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Asset_Manager\Asset_Manager.csproj" />
-    <ProjectReference Include="..\Source_Data_Manager\Source_Data_Manager.csproj" />
-  </ItemGroup>
 
 </Project>

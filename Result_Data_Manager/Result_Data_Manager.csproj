@@ -8,12 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CsvHelper" Version="31.0.4" />
+    <PackageReference Include="CsvHelper" Version="32.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Source_Data_Manager\Source_Data_Manager.csproj" />
     <ProjectReference Include="..\Optimizer\Optimizer.csproj" />
   </ItemGroup>
-  
+
 </Project>
