@@ -1,42 +1,45 @@
 using CsvHelper.Configuration;
 using CsvHelper;
 using System.Globalization;
-
+using Optimizer;
+using SourceDataManager;
 namespace Result_Data_Manager
 {
-    public class Person
-    {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public string City { get; set; }
-    }
     public class Program
     {
+        static Optimize optimizer = new Optimize();
+        static CsvRead csvRead = new CsvRead();
+        public class ResultDataMap : ClassMap<ResultData>
+        {
+            public ResultDataMap()
+            {
+                Map(m => m.UnitName).Name("Unit name");
+                Map(m => m.TimeFrom).Name("Time From");
+                Map(m => m.TimeTo).Name("Time To");
+                Map(m => m.HeatDemand).Name("Heat Demand");
+                Map(m => m.HeatProduced).Name("Produced heat");
+                Map(m => m.ElectricityPrice).Name("Electricity Price");
+                Map(m => m.Electricity).Name("Electricity usage");
+                Map(m => m.Expenses).Name("Expenses");
+                Map(m => m.PrimaryEnergyConsumed).Name("Primary energy");
+                Map(m => m.CO2).Name("CO2");
+            }
+        }
+
         public static void CsvWriterCreator(string filePath)
         {
-            string resultData = null;    // This should be deleted when we have optimizer or calculations(could be dictionary)
-            List<Person> people = new List<Person>
-            {
-                new Person{Name = "John", Age = 25, City="London" },
-                new Person{Name = "George", Age = 18, City="Los angeles" },
-                new Person{Name = "Ödön", Age = 45, City="Patapoklosi" }
-            };
-            
             CsvConfiguration config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 HasHeaderRecord = true,
             };
             try
             {
-                if (!File.Exists(filePath))
-                {
-                    using (File.Create(filePath)) ;
-                }
-                
                 using (StreamWriter writer = new StreamWriter(filePath, true))
                 using (CsvWriter csvWriter = new CsvWriter(writer, config))
                 {
-                    csvWriter.WriteRecords(people); //resultdata comes from optimizer or calculation
+                    //Mapping Implement
+                    csvWriter.Context.RegisterClassMap<ResultDataMap>();
+                    csvWriter.WriteRecords(optimizer.resultDatas); 
                 }
             }
             catch (Exception e)
@@ -46,14 +49,23 @@ namespace Result_Data_Manager
         }
         public static void Main(string[] args)
         {
-            //What is the path of the file?
             string path = "./";
-            string fileName = "data.csv";
+            string fileName = "result.csv";
             string filePath = Path.Combine(path, fileName);
 
-            CsvWriterCreator(filePath);
-            Console.WriteLine("Successfully added!");
-            Console.ReadKey();
+            csvRead.ReadCSV();
+            optimizer.OptimizeData(csvRead.summerPeriods);
+            optimizer.OptimizeData(csvRead.winterPeriods);
+
+            if (!File.Exists(filePath))
+            {
+                using (File.Create(filePath)) ;
+            }
+            bool isEmpty = new FileInfo(fileName).Length == 0;
+            if(isEmpty)
+            {
+                CsvWriterCreator(filePath);
+            }
         }
     }
 }
