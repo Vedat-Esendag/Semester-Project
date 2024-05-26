@@ -17,4 +17,10 @@
     <PackageReference Include="System.Drawing.Common" Version="8.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="data.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

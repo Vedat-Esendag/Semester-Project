@@ -13,7 +13,6 @@ namespace UI
 {
     public partial class HeatPage : UserControl
     {
-        //public IEnumerable<ISeries> WinterHeatDemandSeries { get; } = GetWinterHeatDemandSeries();
 
         public HeatPage()
         {
@@ -27,7 +26,6 @@ namespace UI
             
             DataContext = new HeatDemandViewModel();
             
-            //(DataContext as HeatDemandViewModel)?.LoadData();
         }
 
         private void InitializeComponent()
