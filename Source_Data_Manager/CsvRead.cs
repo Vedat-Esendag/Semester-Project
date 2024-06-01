@@ -7,11 +7,17 @@ using CsvHelper.Configuration;
 
 namespace SourceDataManager
 {
-    class CsvRead
+    public class CsvRead
     {
+        public List<PeriodData> winterPeriods = new List<PeriodData>();
+        public List<PeriodData> summerPeriods = new List<PeriodData>();
+
+        // Static fields to hold the directory and file path
+        private static string currentDirectory = Path.GetDirectoryName(Path.GetFullPath("data.csv"));
+        public string filePath = currentDirectory + "\\data.csv";
+
         public void ReadCSV()
         {
-            string filePath = "data.csv";
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 HasHeaderRecord = true,
@@ -21,9 +27,7 @@ namespace SourceDataManager
 
             try
             {
-                List<PeriodData> winterPeriods = new List<PeriodData>();
-                List<PeriodData> summerPeriods = new List<PeriodData>();
-
+                // Use the dynamically determined file path
                 using (var reader = new StreamReader(filePath))
                 using (var csv = new CsvReader(reader, config))
                 {
@@ -40,9 +44,6 @@ namespace SourceDataManager
                         ReadPeriods(csv, summerPeriods, summerStartIndex, headers.Length);
                     }
                 }
-
-                PrintPeriodData("Winter Period Data:", winterPeriods);
-                PrintPeriodData("Summer Period Data:", summerPeriods);
             }
             catch (Exception ex)
             {

@@ -46,4 +46,10 @@ public partial class Consumption : UserControl
         var advancedDetails = new AdvancedDetails();
         Content = advancedDetails;
     }
+    private void BackBtn_Click(object sender, RoutedEventArgs e)
+    {
+        var mainWindow = new MainWindow();
+        mainWindow.Show();
+        (this.Parent as Window)?.Close();
+    }
 }

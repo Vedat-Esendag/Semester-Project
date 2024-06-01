@@ -8,9 +8,13 @@ namespace UI;
 
 public partial class ElectricityPrice : UserControl
 { 
+    private ElectricityViewModel _electricityViewModel;
+
     public ElectricityPrice()
     {
         InitializeComponent();
+        _electricityViewModel = new ElectricityViewModel();
+        DataContext = _electricityViewModel;
     }
     
     private void InitializeComponent()
@@ -18,31 +22,21 @@ public partial class ElectricityPrice : UserControl
         AvaloniaXamlLoader.Load(this);
     }
     
-    private void NavigateToPuPage_Click(object sender, RoutedEventArgs e)
+     private void BackBtn_Click(object sender, RoutedEventArgs e)
     {
-        var puPage = new PuPage();
-        Content = puPage;
+        var mainWindow = new MainWindow();
+        mainWindow.Show();
+        (this.Parent as Window)?.Close();
     }
+     
+    private void ShowGraphBtn_Click(object sender, RoutedEventArgs e)
+    {
+        _electricityViewModel.LoadData();
+    }
+}
 
-    private void NavigateToHeatDemand_Click(object sender, RoutedEventArgs e)
-    {
-        var heatPage = new HeatPage();
-        Content = heatPage;
-    }
-    
-    private void NavigateToConsumption_Click(object sender, RoutedEventArgs e)
-    {
-        var consumption = new Consumption();
-        Content = consumption;
-    }
-        
-    private void NavigateToAdvancedDetails_Click(object sender, RoutedEventArgs e)
-    {
-        var advancedDetails = new AdvancedDetails();
-        Content = advancedDetails;
-    }
-    
-    private void DisplayWinterElectricityPrice_Click(object sender, RoutedEventArgs e)
+/*
+private void DisplayWinterElectricityPrice_Click(object sender, RoutedEventArgs e)
     {
         DisplayWinterElectricityPrice();
     }
@@ -80,4 +74,4 @@ public partial class ElectricityPrice : UserControl
             Console.WriteLine("SummerElectricityPriceTextBlock is null.");
         }
     }
-}
+    */

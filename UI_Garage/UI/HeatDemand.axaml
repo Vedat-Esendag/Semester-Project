@@ -2,130 +2,140 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:avalonia="clr-namespace:LiveChartsCore.SkiaSharpView.Avalonia;assembly=LiveChartsCore.SkiaSharpView.Avalonia"
+             xmlns:ui="clr-namespace:UI"
+             xmlns:global="clr-namespace:"
              mc:Ignorable="d" d:DesignWidth="960" d:DesignHeight="540"
              x:Class="UI.HeatPage"
+             x:DataType="global:HeatDemandViewModel"
              Background="#DAEBF4">
     
     <Grid ShowGridLines="False" Margin="0">
-       <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="160"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions> 
-    
-        <StackPanel Grid.Column="0" Background="#1984C5">
-            <TextBlock Margin="10,15,10,0" FontSize="16" VerticalAlignment="Center" 
-                HorizontalAlignment="Center" Foreground="White" Text="Semester project">
-            </TextBlock>
-            <TextBlock Margin="0,0,0,0" FontSize="13" VerticalAlignment="Center" 
-                HorizontalAlignment="Center" Foreground="White" Text="Group 4">
-            </TextBlock>
-            <Button Content="Production Units" 
-                                Margin="0,30,0,0"
-                                Background="#1984C5"
-                                Foreground="White"
-                                BorderThickness="10"
-                                CornerRadius="12"
-                                Padding="5"
-                                VerticalContentAlignment="Center"
-                                HorizontalContentAlignment="Center"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                FontWeight="Bold"
-                                FontSize="15"
-                                Click="NavigateToPuPage_Click">   
-            </Button>
-            <Button Content="Electricity Price" 
-                                Background="#1984C5"
-                                Foreground="White"
-                                BorderThickness="10"
-                                CornerRadius="12"
-                                Padding="5"
-                                VerticalContentAlignment="Center"
-                                HorizontalContentAlignment="Center"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                FontWeight="Bold"
-                                FontSize="15"
-                                Click="NavigateToElectricityPrice_Click">   
-            </Button>
-            <Button Content="Consumption" 
-                                Background="#1984C5"
-                                Foreground="White"
-                                BorderThickness="10"
-                                CornerRadius="12"
-                                Padding="5"
-                                VerticalContentAlignment="Center"
-                                HorizontalContentAlignment="Center"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                FontWeight="Bold"
-                                FontSize="15"
-                                Click="NavigateToConsumption_Click">   
-            </Button>
-            <Button Content="Advanced Details" 
-                                Margin="0,0,0,0"
-                                Background="#1984C5"
-                                Foreground="White"
-                                BorderThickness="10"
-                                CornerRadius="12"
-                                Padding="5"
-                                VerticalContentAlignment="Center"
-                                HorizontalContentAlignment="Center"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                FontWeight="Bold"
-                                FontSize="15"
-                                Click="NavigateToAdvancedDetails_Click">   
-            </Button>
-            <Button Content="Settings" 
-                                Margin="10,55,10,0"
-                                Background="#1984C5"
-                                Foreground="White"
-                                BorderThickness="10"
-                                CornerRadius="12"
-                                Padding="5"
-                                VerticalContentAlignment="Center"
-                                HorizontalContentAlignment="Center"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                FontWeight="Bold"
-                                FontSize="15">   
-            </Button>
-            <Button Content="Log out" 
-                                Margin="0"
-                                Background="#1984C5"
-                                Foreground="White"
-                                BorderThickness="10"
-                                CornerRadius="12"
-                                Padding="5"
-                                VerticalContentAlignment="Center"
-                                HorizontalContentAlignment="Center"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                FontWeight="Bold"
-                                FontSize="15">   
-            </Button>
-        </StackPanel>
+       <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions> 
 
-        <StackPanel Grid.Column="1" Background="#DAEBF4">
-            <Border Margin="0" CornerRadius="0" Background="White">
-            <TextBlock Margin="15"
-            FontSize="26" 
-            FontWeight="Bold"
-            HorizontalAlignment="Center"
-            Text="Heat Demand"
-            Foreground="Black">
-            </TextBlock>
+        <!-- Title Bar -->
+        <StackPanel Grid.Row="0" Background="#E5180E">
+            
+            <Grid ColumnDefinitions="Auto,*,Auto" Background="#E5180E">
+                
+            <Image Grid.Column="0"
+                Source="danfoss image.png" VerticalAlignment="Top" HorizontalAlignment="Left"
+                Width="60" Height="60"
+                >
+            </Image>
+            <Border Grid.Column="1" Margin="0" CornerRadius="0" Background="#E5180E">
+                <TextBlock Margin="15"
+                FontSize="28" 
+                FontWeight="Bold"
+                HorizontalAlignment="Center"
+                Text="Heat Demand"
+                Foreground="White">
+                </TextBlock>
             </Border>
-            <Grid ShowGridLines="True" Margin="5"
-                ColumnDefinitions="Auto" 
-                RowDefinitions="Auto">
-                <Button Content="Winter Heat Demand"
-                        Margin="10,0,0,0"
-                        Click="DisplayWinterHeatDemand_Click"></Button>
-                <TextBlock x:Name="WinterHeatDemandTextBlock" />            
-            </Grid>
+            <Button Grid.Column="2" Content="Back" 
+                        Width="60" 
+                        Height="40"
+                        Background="#E5180E"
+                        Foreground="White"
+                        BorderThickness="2"
+                        CornerRadius="12"
+                        Padding="4,2,0,0"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        FontWeight="Bold"
+                        Margin="10,0,10,0"
+                        Click="BackBtn_Click">
+                    <Button.Effect>
+                        <DropShadowEffect BlurRadius="30"
+                                          Color="Black"
+                                          Opacity="0.8"/>
+                    </Button.Effect>
+                </Button>
+            </Grid> 
         </StackPanel>    
-    </Grid> 
+        
+        <!-- Main Section -->
+        <StackPanel Grid.Row="1" Background="White">
+            <StackPanel Margin="5">
+                <Grid ShowGridLines="False" Margin="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <!-- Add additional ColumnDefinitions if needed -->
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <!-- Add additional RowDefinitions if needed -->
+                    </Grid.RowDefinitions>
+                
+                    <!-- Chart Section -->
+                    <StackPanel Margin="5">
+                        <TextBlock FontSize="16" FontWeight="Bold" Text="Select Date Range" />
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,5">
+                            <TextBlock VerticalAlignment="Center" Text="From: " />
+                            <DatePicker x:Name="FromDate" Margin="5" SelectedDate="{Binding FromDate}" />
+                            <TextBlock VerticalAlignment="Center" Text="To: " />
+                            <DatePicker x:Name="ToDate" Margin="5" SelectedDate="{Binding ToDate}" />
+                        </StackPanel>
+                        
+                        <Button Grid.Row="0" Content="Display Winter Heat Demand"
+                                Margin="10,0,0,0"
+                                HorizontalAlignment="Left"
+                                Click="DisplayWinterHeatDemand_Click">
+                            <Button.Styles>
+                                <Style Selector="Button">
+                                    <Setter Property="Background" Value="#E5180E"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="BorderThickness" Value="0"/>
+                                    <Setter Property="Padding" Value="10"/>
+                                    <Setter Property="FontSize" Value="14"/>
+                                    <Setter Property="FontWeight" Value="Bold"/>
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </Button.Styles>
+                        </Button>
+                        
+                        <Button Grid.Row="0" Content="Print Heat Demand Data"
+                                Margin="10,50,0,0"
+                                HorizontalAlignment="Left"
+                                Click="PrintHeatDemandData_Click">
+                            <Button.Styles>
+                                <Style Selector="Button">
+                                    <Setter Property="Background" Value="#E5180E"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="BorderThickness" Value="0"/>
+                                    <Setter Property="Padding" Value="10"/>
+                                    <Setter Property="FontSize" Value="14"/>
+                                    <Setter Property="FontWeight" Value="Bold"/>
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </Button.Styles>
+                        </Button>
+                        
+                        <!-- Chart Placeholder -->
+                        <ContentControl x:Name="ChartPlaceholder" Grid.Row="2" Margin="10"/>
+                 </StackPanel>
+                 <!--<avalonia:CartesianChart x:Name="WinterHeatDemandChart"
+                                      Grid.Row="2"
+                                      Margin="10"
+                                      Series="{Binding WinterHeatDemandSeries}" 
+                                      Width="650"
+                                             Height="650"/>
+                                             -->
+                    
+                    <ScrollViewer Grid.Row="2" Margin="10" VerticalScrollBarVisibility="Auto">
+                        <TextBlock x:Name="HeatDemandTextBlock" TextWrapping="Wrap"/>
+                    </ScrollViewer>
+                    
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
 </UserControl>

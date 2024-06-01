@@ -14,16 +14,16 @@
         </Grid.RowDefinitions> 
 
         <!-- Title Bar -->
-        <StackPanel Grid.Row="0" Background="Red">
+        <StackPanel Grid.Row="0" Background="#E5180E">
             
-            <Grid ColumnDefinitions="Auto,*,Auto" Background="Red">
+            <Grid ColumnDefinitions="Auto,*,Auto" Background="#E5180E">
                 
             <Image Grid.Column="0"
                 Source="danfoss image.png" VerticalAlignment="Top" HorizontalAlignment="Left"
                 Width="60" Height="60"
                 >
             </Image>
-            <Border Grid.Column="1" Margin="0" CornerRadius="0" Background="Red">
+            <Border Grid.Column="1" Margin="0" CornerRadius="0" Background="#E5180E">
                 <TextBlock Margin="15"
                 FontSize="28" 
                 FontWeight="Bold"
@@ -35,7 +35,7 @@
             <Button Grid.Column="2" Content="Back" 
                         Width="60" 
                         Height="40"
-                        Background="Red"
+                        Background="#E5180E"
                         Foreground="White"
                         BorderThickness="2"
                         CornerRadius="12"
@@ -53,63 +53,84 @@
                                           Opacity="0.8"/>
                     </Button.Effect>
                 </Button>
+                <Button Grid.Column="1" Content="Map" 
+                        Width="60" 
+                        Height="40"
+                        Background="#E5180E"
+                        Foreground="White"
+                        BorderThickness="2"
+                        CornerRadius="12"
+                        Padding="4,2,0,0"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        FontWeight="Bold"
+                        Margin="10,0,10,0"
+                        Click="NavigateToMap_Click">
+                    <Button.Effect>
+                        <DropShadowEffect BlurRadius="30"
+                                          Color="Black"
+                                          Opacity="0.8"/>
+                    </Button.Effect>
+                </Button>
 
             </Grid> 
         </StackPanel>    
         
         <!-- Main Section -->
-        <StackPanel Grid.Row="1" Background="White">
-            <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
+        <Border Grid.Row="1" Background="White">
+            <ScrollViewer>
+                <StackPanel  Background="White">
+                    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
 
-                <!-- First Part (Gas Boiler Image) -->
-                <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Image Source="Gas Boiler.jpg" Width="300" Height="120" Margin="0,50,0,0"/>
-                    <TextBlock Foreground="Black" FontWeight="Bold" Text="Gas Boiler" HorizontalAlignment="Center" Margin="0,25,0,10"/>
-                    <TextBlock Foreground="Black" Text="Name: GB" />
-                    <TextBlock Foreground="Black" Text="Max heat:   5,0 MW" />
-                    <TextBlock Foreground="Black" Text="Production costs:   500 DKK / MWh(th)" />
-                    <TextBlock Foreground="Black" Text="CO2 emissions:  215 kg / MWh(th)" />
-                    <TextBlock Foreground="Black" Text="Gas consumption:    1,1 MWh(gas) / MWh(th)"/>
-                </StackPanel>
+                        <!-- First Part (Gas Boiler Image) -->
+                        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="Gas Boiler.jpg" Width="300" Height="120" Margin="0,50,0,0"/>
+                            <TextBlock Foreground="Black" FontWeight="Bold" Text="Gas Boiler" HorizontalAlignment="Center" Margin="0,25,0,10"/>
+                            <TextBlock Foreground="Black" Text="Name: GB" />
+                            <TextBlock Foreground="Black" Text="Max heat:   5,0 MW" />
+                            <TextBlock Foreground="Black" Text="Production costs:   500 DKK / MWh(th)" />
+                            <TextBlock Foreground="Black" Text="CO2 emissions:  215 kg / MWh(th)" />
+                            <TextBlock Foreground="Black" Text="Gas consumption:    1,1 MWh(gas) / MWh(th)"/>
+                        </StackPanel>
 
-                <!-- Second Part (Oil Boiler Image) -->
-                <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Image Source="Oil Boiler.jpg" Width="300" Height="120" Margin="0,50,0,0"/>
-                    <TextBlock Text="Oil Boiler" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,25,0,0" Foreground="Black"/>
-                    <TextBlock Text="Name: OB" Foreground="Black"/>
-                    <TextBlock Text="Max heat: 4,0 MW" Foreground="Black"/>
-                    <TextBlock Text="Production costs:  700 DKK / MWh(th)" Foreground="Black"/>
-                    <TextBlock Text="CO2 emissions: 265 kg / MWh(th)" Foreground="Black"/>
-                    <TextBlock Text="Gas consumption: 1,2 MWh(oil) / MWh(th)" Foreground="Black"/>
+                        <!-- Second Part (Oil Boiler Image) -->
+                        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="Oil Boiler.jpg" Width="300" Height="120" Margin="0,50,0,0"/>
+                            <TextBlock Text="Oil Boiler" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,25,0,0" Foreground="Black"/>
+                            <TextBlock Text="Name: OB" Foreground="Black"/>
+                            <TextBlock Text="Max heat: 4,0 MW" Foreground="Black"/>
+                            <TextBlock Text="Production costs:  700 DKK / MWh(th)" Foreground="Black"/>
+                            <TextBlock Text="CO2 emissions: 265 kg / MWh(th)" Foreground="Black"/>
+                            <TextBlock Text="Gas consumption: 1,2 MWh(oil) / MWh(th)" Foreground="Black"/>
+                        </StackPanel>
 
-                </StackPanel>
+                        <!-- Third Part (Gas Motor Image) -->
+                        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="Gas Motor.jpg" Width="300" Height="120" Margin="0,50,0,0"/>
+                            <TextBlock Text="Gas Motor" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="0,25,0,0"/>
+                            <TextBlock Text="Name: GM" Foreground="Black"/>
+                            <TextBlock Text="Max heat: 3,6 MW" Foreground="Black"/>
+                            <TextBlock Text="Max electricity: 2,7 MW" Foreground="Black"/>
+                            <TextBlock Text="Production costs: 1100 DKK / MWh(th)" Foreground="Black"/>
+                            <TextBlock Text="CO2 emissions:  640 kg / MWh(th)" Foreground="Black"/>
+                            <TextBlock Text="Gas consumption: 1,9 MWh(gas) / MWh(th)" Foreground="Black"/>
+                        </StackPanel>
 
-                <!-- Third Part (Gas Motor Image) -->
-                <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Image Source="Gas Motor.jpg" Width="300" Height="120" Margin="0,50,0,0"/>
-                    <TextBlock Text="Gas Motor" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="0,25,0,0"/>
-                    <TextBlock Text="Name: GM" Foreground="Black"/>
-                    <TextBlock Text="Max heat: 3,6 MW" Foreground="Black"/>
-                    <TextBlock Text="Max electricity: 2,7 MW" Foreground="Black"/>
-                    <TextBlock Text="Production costs: 1100 DKK / MWh(th)" Foreground="Black"/>
-                    <TextBlock Text="CO2 emissions:  640 kg / MWh(th)" Foreground="Black"/>
-                    <TextBlock Text="Gas consumption: 1,9 MWh(gas) / MWh(th)" Foreground="Black"/>
-
-                </StackPanel>
-
-                <!-- Fourth Part (Electric Boiler Image) -->
-                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Image Source="Electric Boiler.jpg" Width="300" Height="120" Margin="0,50,0,0"/>
-                    <TextBlock Text="Electric Boiler" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="0,25,0,0"/>
-                    <TextBlock Text="Name: EK" Foreground="Black"/>
-                    <TextBlock Text="Max heat: 8,0 MW" Foreground="Black"/>
-                    <TextBlock Text="Max electricity: -8,0 MW" Foreground="Black"/>
-                    <TextBlock Text="Production costs:  50  DKK / MWh(th)" Foreground="Black"/>
-
-                </StackPanel>
+                        <!-- Fourth Part (Electric Boiler Image) -->
+                        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="Electric Boiler.jpg" Width="300" Height="120" Margin="0,50,0,0"/>
+                            <TextBlock Text="Electric Boiler" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="0,25,0,0"/>
+                            <TextBlock Text="Name: EK" Foreground="Black"/>
+                            <TextBlock Text="Max heat: 8,0 MW" Foreground="Black"/>
+                            <TextBlock Text="Max electricity: -8,0 MW" Foreground="Black"/>
+                            <TextBlock Text="Production costs:  50  DKK / MWh(th)" Foreground="Black"/>
+                        </StackPanel>
            
-            </Grid>
-
-        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
     </Grid>
 </UserControl>
