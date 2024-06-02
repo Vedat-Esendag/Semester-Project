@@ -28,7 +28,6 @@ namespace SourceDataManager
             {
                 Console.WriteLine(a);
             }
-            GetData.SummerTime();
         }
     }
 }

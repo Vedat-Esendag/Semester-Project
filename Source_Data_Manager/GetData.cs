@@ -141,14 +141,10 @@ namespace SourceDataManager
 
             return data;
         }
-        
+
         public static List<DateTime> WinterTime()
         {
             List<DateTime> dates = new List<DateTime>();
-        public static List<DateTime> SummerTime()
-        {
-            List<DateTime> dates = new List<DateTime>();
-            string filePath = "path_to_your_summer_data.csv";
 
             if (File.Exists(filePath))
             {
@@ -162,8 +158,8 @@ namespace SourceDataManager
                     {
                         var line = reader.ReadLine();
                         var columns = line.Split(',');
+
                         // Extract winter period start time from column 1
-                        // Extract summer period start time from column 1, like in WinterTime()
                         if (DateTime.TryParse(columns[1], out DateTime dateFrom))
                         {
                             dates.Add(dateFrom);
@@ -178,12 +174,8 @@ namespace SourceDataManager
 
             return dates;
         }
-
-
-        public static void SummerTime()
-
-        public static List<DateTime> WinterTime()
-
+        
+        public static List<DateTime> SummerTime()
         {
             List<DateTime> dates = new List<DateTime>();
 
@@ -201,7 +193,7 @@ namespace SourceDataManager
                         var columns = line.Split(',');
 
                         // Extract winter period start time from column 1
-                        if (DateTime.TryParse(columns[1], out DateTime dateFrom))
+                        if (DateTime.TryParse(columns[6], out DateTime dateFrom))
                         {
                             dates.Add(dateFrom);
                         }
