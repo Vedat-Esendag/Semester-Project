@@ -40,11 +40,5 @@ namespace UI
             var consumption = new Consumption();
             Content = consumption;
         }
-        
-        private void NavigateToAdvancedDetails_Click(object sender, RoutedEventArgs e)
-        {
-            var advancedDetails = new AdvancedDetails();
-            Content = advancedDetails;
-        }
     }
 }

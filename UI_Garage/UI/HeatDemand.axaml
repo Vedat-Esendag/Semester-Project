@@ -7,7 +7,7 @@
              xmlns:global="clr-namespace:"
              mc:Ignorable="d" d:DesignWidth="960" d:DesignHeight="540"
              x:Class="UI.HeatPage"
-             x:DataType="global:HeatDemandViewModel"
+             x:DataType="ui:HeatDemandViewModel"
              Background="#DAEBF4">
     
     <Grid ShowGridLines="False" Margin="0">
@@ -121,19 +121,10 @@
                         
                         <!-- Chart Placeholder -->
                         <ContentControl x:Name="ChartPlaceholder" Grid.Row="2" Margin="10"/>
-                 </StackPanel>
-                 <!--<avalonia:CartesianChart x:Name="WinterHeatDemandChart"
-                                      Grid.Row="2"
-                                      Margin="10"
-                                      Series="{Binding WinterHeatDemandSeries}" 
-                                      Width="650"
-                                             Height="650"/>
-                                             -->
-                    
+                    </StackPanel>
                     <ScrollViewer Grid.Row="2" Margin="10" VerticalScrollBarVisibility="Auto">
                         <TextBlock x:Name="HeatDemandTextBlock" TextWrapping="Wrap"/>
                     </ScrollViewer>
-                    
                 </Grid>
             </StackPanel>
         </StackPanel>

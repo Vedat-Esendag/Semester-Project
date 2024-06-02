@@ -22,6 +22,7 @@
     <PackageReference Include="LiveChartsCore.SkiaSharpView" Version="2.0.0-rc2" />
     <PackageReference Include="LiveChartsCore.SkiaSharpView.Avalonia" Version="2.0.0-rc2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="ReactiveUI" Version="20.1.1" />
   </ItemGroup>
 
   <ItemGroup>

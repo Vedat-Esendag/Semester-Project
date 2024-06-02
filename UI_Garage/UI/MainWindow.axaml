@@ -186,41 +186,5 @@
                        TextAlignment="Center"/>
         </Grid>
         <Border Grid.Row="8" Height="1" Background="Black" Margin="0,5"/>
-
-        <!-- Section 5 -->
-        <Grid Grid.Row="9" Background="White" Margin="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Button Content="Advanced Details" 
-                    Width="170" 
-                    Height="50"
-                    Background="#E5180E"
-                    Foreground="White"
-                    BorderThickness="2"
-                    CornerRadius="12"
-                    Padding="10"
-                    VerticalContentAlignment="Center"
-                    HorizontalContentAlignment="Center"
-                    FontWeight="Bold"
-                    Margin="5"
-                    Click="NavigateToAdvancedDetails_Click">
-                <Button.Effect>
-                    <DropShadowEffect BlurRadius="5"
-                                      Color="#808080"
-                                      Opacity="0.8"/>
-                </Button.Effect>
-            </Button>
-            <TextBlock Grid.Column="1" Text="Click button to see and compare advanced details supported by graphs and charts with values." 
-                       HorizontalAlignment="Right" 
-                       VerticalAlignment="Center"
-                       FontSize="14"
-                       FontWeight="Bold"
-                       Foreground="Black"
-                       TextWrapping="Wrap"
-                       Margin="5"
-                       TextAlignment="Center"/>
-        </Grid>
     </Grid>
 </Window>

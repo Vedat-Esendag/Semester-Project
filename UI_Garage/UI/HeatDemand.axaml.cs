@@ -3,29 +3,17 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Interactivity;
 using SourceDataManager;
-using LiveCharts;
-using LiveCharts.Defaults;
-using System;
 using LiveChartsCore.SkiaSharpView.Avalonia;
-
+using System;
 
 namespace UI
 {
     public partial class HeatPage : UserControl
     {
-
         public HeatPage()
         {
             InitializeComponent();
-            
-            // Configure LiveCharts to map ObservablePoint
-            LiveChartsCore.LiveCharts.Configure(settings =>
-            {
-                settings.HasMap<ObservablePoint>((point, index) => new LiveChartsCore.Kernel.Coordinate(point.X, point.Y));
-            });
-            
             DataContext = new HeatDemandViewModel();
-            
         }
 
         private void InitializeComponent()
@@ -33,36 +21,13 @@ namespace UI
             AvaloniaXamlLoader.Load(this);
         }
 
-        private void NavigateToPuPage_Click(object sender, RoutedEventArgs e)
-        {
-            var puPage = new PuPage();
-            Content = puPage;
-        }
-
-        private void NavigateToElectricityPrice_Click(object sender, RoutedEventArgs e)
-        {
-            var electricityPage = new ElectricityPrice();
-            Content = electricityPage;
-        }
-
-        private void NavigateToConsumption_Click(object sender, RoutedEventArgs e)
-        {
-            var consumption = new Consumption();
-            Content = consumption;
-        }
-
-        private void NavigateToAdvancedDetails_Click(object sender, RoutedEventArgs e)
-        {
-            var advancedDetails = new AdvancedDetails();
-            Content = advancedDetails;
-        }
         private void BackBtn_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = new MainWindow();
             mainWindow.Show();
             (this.Parent as Window)?.Close();
         }
-        
+
         private void PrintHeatDemandData_Click(object sender, RoutedEventArgs e)
         {
             var viewModel = DataContext as HeatDemandViewModel;
@@ -73,14 +38,12 @@ namespace UI
                 heatDemandTextBlock.Text = heatDemandDataText;
             }
         }
-        
+
         private void DisplayWinterHeatDemand_Click(object sender, RoutedEventArgs e)
         {
             var viewModel = DataContext as HeatDemandViewModel;
             if (viewModel != null)
             {
-                viewModel.LoadData();
-
                 var chart = new CartesianChart
                 {
                     Series = viewModel.WinterHeatDemandSeries,
@@ -92,6 +55,5 @@ namespace UI
                 chartPlaceholder.Content = chart;
             }
         }
-
     }
 }

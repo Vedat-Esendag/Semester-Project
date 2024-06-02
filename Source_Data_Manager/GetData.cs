@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Text;
 
@@ -207,5 +208,38 @@ namespace SourceDataManager
 
             return dates;
         }
+        
+        public static List<HeatDemandData> ReadCsvFile(string filePath)
+        {
+            var data = File.ReadAllLines(filePath)
+                .Skip(1) // Skip the header row
+                .Select(line => line.Split(','))
+                .Select(parts => 
+                {
+                    try
+                    {
+                        return new HeatDemandData
+                        {
+                            Date = DateTime.Parse(parts[0], CultureInfo.InvariantCulture),
+                            HeatDemand = double.Parse(parts[1], CultureInfo.InvariantCulture)
+                        };
+                    }
+                    catch (FormatException)
+                    {
+                        return null; // Handle parsing errors
+                    }
+                })
+                .Where(d => d != null)
+                .ToList();
+
+            return data;
+        }
+
+    }
+    
+    public class HeatDemandData
+    {
+        public DateTime Date { get; set; }
+        public double HeatDemand { get; set; }
     }
 }
