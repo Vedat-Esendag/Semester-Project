@@ -7,9 +7,9 @@ namespace SourceDataManager
 {
     public class GetData
     {
-        // Define static fields
-        private static string currentDirectory = Path.GetDirectoryName(Path.GetFullPath("data.csv"));
-        public static string filePath = currentDirectory + "\\data.csv";
+        private static string currentDirectory = "../../Source_Data_Manager/data.csv";
+        public static string filePath = "../../Source_Data_Manager/data.csv";
+
         public static List<double> WinterHeatDemand()
         {
             List<double> heatDemand = new List<double>();
@@ -71,9 +71,13 @@ namespace SourceDataManager
             return text.ToString();
         }
 
-        public static string WinterElectricityPrice()
+
+        
+
+        public static List<double> WinterElectricityPrice()
+
         {
-            StringBuilder text = new StringBuilder();
+            List<double> data = new List<double>();
 
             if (File.Exists(filePath))
             {
@@ -88,7 +92,11 @@ namespace SourceDataManager
                         var line = reader.ReadLine();
                         var values = line.Split(',');
 
-                        text.AppendLine(string.Join(", ", values));
+                        // Assuming the electricity price is in the first column
+                        if (double.TryParse(values[0], out double price))
+                        {
+                            data.Add(price);
+                        }
                     }
                 }
             }
@@ -97,12 +105,13 @@ namespace SourceDataManager
                 Console.WriteLine($"File not found: {filePath}");
             }
 
-            return text.ToString();
+            return data;
         }
-
-        public static string SummerElectricityPrice()
+        
+        public static List<double> SummerElectricityPrice()
         {
-            StringBuilder text = new StringBuilder();
+            List<double> data = new List<double>();
+            string filePath = "path_to_your_summer_data.csv";
 
             if (File.Exists(filePath))
             {
@@ -117,7 +126,11 @@ namespace SourceDataManager
                         var line = reader.ReadLine();
                         var values = line.Split(',');
 
-                        text.AppendLine(string.Join(", ", values));
+                        // Assuming the electricity price is in the first column
+                        if (double.TryParse(values[0], out double price))
+                        {
+                            data.Add(price);
+                        }
                     }
                 }
             }
@@ -126,10 +139,51 @@ namespace SourceDataManager
                 Console.WriteLine($"File not found: {filePath}");
             }
 
-            return text.ToString();
+            return data;
         }
+        
+        public static List<DateTime> WinterTime()
+        {
+            List<DateTime> dates = new List<DateTime>();
+        public static List<DateTime> SummerTime()
+        {
+            List<DateTime> dates = new List<DateTime>();
+            string filePath = "path_to_your_summer_data.csv";
+
+            if (File.Exists(filePath))
+            {
+                using (var reader = new StreamReader(filePath))
+                {
+                    reader.ReadLine(); // Skip headers
+                    reader.ReadLine(); // Skip additional lines
+                    reader.ReadLine(); // Skip additional lines
+
+                    while (!reader.EndOfStream)
+                    {
+                        var line = reader.ReadLine();
+                        var columns = line.Split(',');
+                        // Extract winter period start time from column 1
+                        // Extract summer period start time from column 1, like in WinterTime()
+                        if (DateTime.TryParse(columns[1], out DateTime dateFrom))
+                        {
+                            dates.Add(dateFrom);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine($"File not found: {filePath}");
+            }
+
+            return dates;
+        }
+
+
+        public static void SummerTime()
 
         public static List<DateTime> WinterTime()
+
         {
             List<DateTime> dates = new List<DateTime>();
 
@@ -160,32 +214,6 @@ namespace SourceDataManager
             }
 
             return dates;
-        }
-
-        public static void SummerTime()
-        {
-            if (File.Exists(filePath))
-            {
-                using (var reader = new StreamReader(filePath))
-                {
-                    reader.ReadLine();
-                    reader.ReadLine();
-                    reader.ReadLine();
-
-                    while (!reader.EndOfStream)
-                    {
-                        var line = reader.ReadLine();
-                        var values = line.Split(',');
-
-                        // Extract summer period time from and to from columns 6 and 7
-                        Console.WriteLine($"Summer Heat Demand Time: From {values[6]} To {values[7]}");
-                    }
-                }
-            }
-            else
-            {
-                Console.WriteLine($"File not found: {filePath}");
-            }
         }
     }
 }

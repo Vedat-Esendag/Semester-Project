@@ -70,11 +70,15 @@ public class HeatDemandViewModel : INotifyPropertyChanged
             throw new InvalidOperationException("The heat demand data and time data do not match in length.");
         }
     
+        // Ensure the heat demand data and time data have the same length
+        int minCount = Math.Min(winterHeatDemandData.Count, winterHeatDemandTime.Count);
+
         // Parse the data and populate the series
         var series = new LineSeries<ObservablePoint>();
         var chartValues = new ChartValues<ObservablePoint>();
 
-        for (int i = 0; i < winterHeatDemandData.Count; i++)
+        
+        for (int i = 0; i < minCount; i++)
         {
             var date = winterHeatDemandTime[i].ToOADate();
             chartValues.Add(new ObservablePoint(date, winterHeatDemandData[i]));

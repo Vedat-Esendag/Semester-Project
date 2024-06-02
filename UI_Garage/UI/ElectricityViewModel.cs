@@ -68,12 +68,18 @@ public class ElectricityViewModel : INotifyPropertyChanged
         {
             throw new InvalidOperationException("The electricity data and time data do not match in length.");
         }
-    
+        
+        // Fetch winter heat demand data from your CSV file using source data manager
+        
+
+        // Ensure the heat demand data and time data have the same length
+        int minCount = Math.Min(winterElectricityData.Count, winterElectricityTime.Count);
+
         // Parse the data and populate the series
         var series = new LineSeries<ObservablePoint>();
         var chartValues = new ChartValues<ObservablePoint>();
 
-        for (int i = 0; i < winterElectricityData.Count(); i++)
+        for (int i = 0; i < minCount; i++)
         {
             var date = winterElectricityTime[i].ToOADate();
             chartValues.Add(new ObservablePoint(date, winterElectricityData[i]));
