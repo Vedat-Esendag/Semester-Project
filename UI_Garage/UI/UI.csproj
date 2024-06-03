@@ -50,4 +50,11 @@
   <ItemGroup>
     <Folder Include="bin\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Source_Data_Manager\data.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

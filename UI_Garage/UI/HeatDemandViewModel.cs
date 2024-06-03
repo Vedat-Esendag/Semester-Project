@@ -1,15 +1,14 @@
-using LiveChartsCore;
-using LiveChartsCore.SkiaSharpView;
-using LiveChartsCore.Defaults;
 using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
-using Avalonia.Controls;
-using SkiaSharp;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using LiveCharts;
+using LiveChartsCore;
+using LiveChartsCore.Defaults;
+using LiveChartsCore.SkiaSharpView;
 using SourceDataManager;
 
 namespace UI
@@ -63,20 +62,33 @@ namespace UI
 
         public void LoadData()
         {
-            // Fetch winter heat demand data from your CSV file using source data manager
-            var data = GetData.ReadCsvFile("C:\\Users\\admin\\Desktop\\SDU\\S2\\Semester Project 2\\Code Demo\\Semester-Project\\Source_Data_Manager\\data.csv");
+            var winterHeatDemandData = GetData.WinterHeatDemand();
+            var winterHeatDemandTime = GetData.WinterTime();
 
-            _originalData = data
-                .Where(d => d.Date.Month == 12 || d.Date.Month == 1 || d.Date.Month == 2)
-                .Select(d => new ObservablePoint(d.Date.ToOADate(), d.HeatDemand)) // Removed .GetValueOrDefault(0.0)
-                .ToList();
+            if (winterHeatDemandData.Count != winterHeatDemandTime.Count)
+            {
+                throw new InvalidOperationException("The heat demand data and time data do not match in length.");
+            }
 
-            FilterData();
+            var series = new LineSeries<ObservablePoint>();
+            var chartValues = new ChartValues<ObservablePoint>();
+
+            for (int i = 0; i < winterHeatDemandData.Count; i++)
+            {
+                var date = winterHeatDemandTime[i].ToOADate();
+                chartValues.Add(new ObservablePoint(date, winterHeatDemandData[i]));
+            }
+
+            series.Values = chartValues;
+            _originalData = chartValues.ToList();
+
+            WinterHeatDemandSeries.Clear();
+            WinterHeatDemandSeries.Add(series);
         }
 
         private void FilterData()
         {
-            if (_originalData == null || FromDate == null || ToDate == null)
+            if (FromDate == null || ToDate == null)
                 return;
 
             var fromDate = FromDate.Value.Date.ToOADate();
@@ -90,7 +102,15 @@ namespace UI
 
         public string GetHeatDemandDataAsText()
         {
-            return string.Join(Environment.NewLine, _originalData.Select(d => $"{DateTime.FromOADate(d.X ?? 0):yyyy-MM-dd}: {d.Y.GetValueOrDefault(0.0)}"));
+            var heatDemandData = GetData.WinterHeatDemand();
+            StringBuilder dataText = new StringBuilder();
+
+            foreach (var data in heatDemandData)
+            {
+                dataText.AppendLine(data.ToString());
+            }
+
+            return dataText.ToString();
         }
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)

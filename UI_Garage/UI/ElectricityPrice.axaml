@@ -55,16 +55,5 @@
 
             </Grid> 
         </StackPanel>    
-        
-        <!-- Main -->
-        <StackPanel Grid.Row="1" Background="White">
-            <Button x:Name="ShowGraphBtn" Content="Show Graph" Click="ShowGraphBtn_Click" Background="Gray">
-                <Button.Styles>
-                    <Style Selector="Button">
-                        <Setter Property="Foreground" Value="Black"/>
-                    </Style>
-                </Button.Styles>
-            </Button>
-        </StackPanel>
     </Grid>
 </UserControl>

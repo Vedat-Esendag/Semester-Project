@@ -75,15 +75,6 @@ namespace SourceDataManager
                 }
             }
         }
-
-        private void PrintPeriodData(string title, List<PeriodData> periods)
-        {
-            Console.WriteLine(title);
-            foreach (var data in periods)
-            {
-                Console.WriteLine($"Time: {data.TimeFrom} - {data.TimeTo}, Heat Demand: {data.HeatDemand}, Electricity Price: {data.ElectricityPrice}");
-            }
-        }
     }
 
     public class PeriodData

@@ -16,7 +16,7 @@ public class ElectricityViewModel : INotifyPropertyChanged
     private DateTimeOffset? _fromDate;
     private DateTimeOffset? _toDate;
     private ObservableCollection<ISeries> _winterElectricitySeries;
-    private List<ObservablePoint> _originalData; // Add this line
+    private List<ObservablePoint> _originalData;
 
     public event PropertyChangedEventHandler PropertyChanged;
 
@@ -59,23 +59,18 @@ public class ElectricityViewModel : INotifyPropertyChanged
 
     public void LoadData()
     {
-        // Fetch winter electricity data and time from your CSV file using source data manager
         var winterElectricityData = GetData.WinterElectricityPrice();
         var winterElectricityTime = GetData.WinterTime();
 
-        // Ensure the electricity data and time data have the same length
         if (winterElectricityData.Count() != winterElectricityTime.Count)
         {
             throw new InvalidOperationException("The electricity data and time data do not match in length.");
         }
         
-        // Fetch winter heat demand data from your CSV file using source data manager
         
 
-        // Ensure the heat demand data and time data have the same length
         int minCount = Math.Min(winterElectricityData.Count, winterElectricityTime.Count);
 
-        // Parse the data and populate the series
         var series = new LineSeries<ObservablePoint>();
         var chartValues = new ChartValues<ObservablePoint>();
 

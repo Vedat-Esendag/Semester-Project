@@ -3,8 +3,10 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Interactivity;
 using SourceDataManager;
-using LiveChartsCore.SkiaSharpView.Avalonia;
+using LiveCharts;
+using LiveCharts.Defaults;
 using System;
+using LiveChartsCore.SkiaSharpView.Avalonia;
 
 namespace UI
 {
@@ -13,6 +15,13 @@ namespace UI
         public HeatPage()
         {
             InitializeComponent();
+
+            // Configure LiveCharts to map ObservablePoint
+            LiveChartsCore.LiveCharts.Configure(settings =>
+            {
+                settings.HasMap<ObservablePoint>((point, index) => new LiveChartsCore.Kernel.Coordinate(point.X, point.Y));
+            });
+
             DataContext = new HeatDemandViewModel();
         }
 
@@ -44,6 +53,8 @@ namespace UI
             var viewModel = DataContext as HeatDemandViewModel;
             if (viewModel != null)
             {
+                viewModel.LoadData();
+
                 var chart = new CartesianChart
                 {
                     Series = viewModel.WinterHeatDemandSeries,

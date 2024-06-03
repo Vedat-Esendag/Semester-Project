@@ -8,9 +8,9 @@ namespace SourceDataManager
 {
     public class GetData
     {
-        private static string currentDirectory = "../../Source_Data_Manager/data.csv";
-        public static string filePath = "../../Source_Data_Manager/data.csv";
-
+        private static string currentDirectory = Path.GetDirectoryName(Path.GetFullPath("data.csv"));
+        public static string filePath = currentDirectory + "\\data.csv";
+        
         public static List<double> WinterHeatDemand()
         {
             List<double> heatDemand = new List<double>();
@@ -31,20 +31,25 @@ namespace SourceDataManager
                         if (double.TryParse(columns[3], out double demand))
                         {
                             heatDemand.Add(demand);
+                            Console.WriteLine($"Read demand: {demand}");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Failed to parse demand from line: {line}");
                         }
                     }
-                }
-            }
-            else
-            {
-                Console.WriteLine($"File not found: {filePath}");
-            }
+               }
+           }
+           else
+           {
+               Console.WriteLine($"File not found: {filePath}");
+           }
 
-            return heatDemand;
-        }
+           return heatDemand;
+       }
 
-        public static string SummerHeatDemand()
-        {
+       public static string SummerHeatDemand()
+       {
             StringBuilder text = new StringBuilder();
 
             if (File.Exists(filePath))
@@ -193,7 +198,6 @@ namespace SourceDataManager
                         var line = reader.ReadLine();
                         var columns = line.Split(',');
 
-                        // Extract winter period start time from column 1
                         if (DateTime.TryParse(columns[6], out DateTime dateFrom))
                         {
                             dates.Add(dateFrom);
@@ -226,7 +230,7 @@ namespace SourceDataManager
                     }
                     catch (FormatException)
                     {
-                        return null; // Handle parsing errors
+                        return null;
                     }
                 })
                 .Where(d => d != null)
