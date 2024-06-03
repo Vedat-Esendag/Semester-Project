@@ -1,0 +1,92 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             d:DesignWidth="720"
+             d:DesignHeight="700"
+             x:Class="UI.Map"
+             Background="White">
+    <StackPanel VerticalAlignment="Stretch">
+        <!-- Header Section with Image, Title, and Back Button -->
+        <Grid Background="#E5180E" 
+              ColumnDefinitions="Auto,*,Auto" 
+              Margin="0">
+            <Image Source="danfoss image.png"
+                  Width="60"
+                  Height="60"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Center"
+                  Grid.Column="0"/>
+
+            <Border Grid.Column="1"
+                    Background="#E5180E"
+                    CornerRadius="0"
+                    Margin="0">
+                <TextBlock Text="Map"
+                           Foreground="White"
+                           FontSize="28"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Margin="50,0,15,0"/>
+            </Border>
+            <Button Grid.Column="2" Content="Back" 
+                        Width="60" 
+                        Height="40"
+                        Background="#E5180E"
+                        Foreground="White"
+                        BorderThickness="2"
+                        CornerRadius="12"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Margin="10"
+                        Click="Pup_Click">
+                    <Button.Effect>
+                        <DropShadowEffect BlurRadius="5"
+                                          Color="Black"
+                                          Opacity="0.8"/>
+                    </Button.Effect>
+                </Button>
+        </Grid>
+
+        <!-- Main Content Section -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="10">
+                <TextBlock Text="Case"
+                           FontWeight="Bold"
+                           FontSize="20"
+                           Foreground="Black"
+                           Margin="0,10"/>
+
+                <TextBlock Text="HeatItOn is the utility in the city of Heatington which has to secure the heat delivery to approx. 1600 buildings through a single district heating network. They produce heat with a number of traditional heat-only boilers as well as units that combine the production of heat with the production/consumption of electricity (CHPs). They are planning the heat schedules manually but now they want to cost optimize their production. The goal of the project is to define heat schedules for all available production units with the lowest possible expenses and the highest profit on the electricity market."
+                           TextWrapping="Wrap"
+                           FontSize="16"
+                           Foreground="Black"
+                           Margin="0,0,0,10"/>
+
+                <TextBlock Text="About district heating"
+                           FontWeight="Bold"
+                           FontSize="20"
+                           Foreground="Black"
+                           Margin="0,10"/>
+
+                <TextBlock Text="District heating is hot water from a power plant which is distributed to the buildings in a city through highly insulated pipes. In the buildings, the hot water is used for heating and for domestic hot water. The cooled water is then sent back to the plant, where it is reheated again. Figure 1 shows a small district heating grid with two heat producers."
+                           TextWrapping="Wrap"
+                           FontSize="16"
+                           Foreground="Black"
+                           Margin="0,0,0,10"/>
+
+                <!-- Image under the texts -->
+                <Image Source="map.jpg"
+                       Stretch="Uniform"
+                       MaxWidth="680"
+                       MaxHeight="400"
+                       Margin="0,10"
+                       HorizontalAlignment="Center"/>
+            </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
+</UserControl>

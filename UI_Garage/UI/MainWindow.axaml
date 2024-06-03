@@ -1,0 +1,190 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="400"
+        MinWidth="450" MinHeight="300"
+        x:Class="UI.MainWindow"
+        Title="UI"
+        Background="White">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <!-- Title Bar -->
+        <Grid Grid.Row="0" Background="#E5180E" Height="60" ColumnDefinitions="Auto, *, Auto">
+            <Image Grid.Column="0"
+                Source="danfoss image.png" VerticalAlignment="Top" HorizontalAlignment="Left"
+                Width="60" Height="60"
+                >
+            </Image>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1">
+                <Label FontWeight="Black" FontSize="28" Foreground="White">Navigation</Label>
+            </StackPanel>
+            <Grid Grid.Column="2" Background="#E5180E" Width="80">
+                <Label Content="Group 4"
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center" 
+                       Foreground="White"/>
+            </Grid>
+        </Grid>
+        
+        <!-- Section 1 -->
+        <Grid Grid.Row="1" Background="White" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Content="Production Units" 
+                    Width="170" 
+                    Height="50"
+                    Background="#E5180E"
+                    Foreground="White"
+                    BorderThickness="2"
+                    CornerRadius="12"
+                    Padding="10"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    FontWeight="Bold"
+                    Margin="5"
+                    Click="NavigateToPuPage_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5"
+                                      Color="#808080"
+                                      Opacity="0.8"/>
+                </Button.Effect>
+            </Button>
+            <TextBlock Grid.Column="1" Text="Click button to see details of production units such as maximum heat and electricity production and image" 
+                       HorizontalAlignment="Right" 
+                       VerticalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       Foreground="Black"
+                       TextWrapping="Wrap"
+                       Margin="5"
+                       TextAlignment="Center"/>
+        </Grid>
+        <Border Grid.Row="2" Height="1" Background="Black" Margin="0,5"/>
+
+        <!-- Section 2 -->
+        <Grid Grid.Row="3" Background="White" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Content="Heat demand" 
+                    Width="170" 
+                    Height="50"
+                    Background="#E5180E"
+                    Foreground="White"
+                    BorderThickness="2"
+                    CornerRadius="12"
+                    Padding="10"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    FontWeight="Bold"
+                    Margin="5"
+                    Click="NavigateToHeatDemand_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5"
+                                      Color="#808080"
+                                      Opacity="0.8"/>
+                </Button.Effect>
+            </Button>
+            <TextBlock Grid.Column="1" Text="Click button to see the datas about heat demand needed in winter and summer period respectively." 
+                       HorizontalAlignment="Right" 
+                       VerticalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       Foreground="Black"
+                       TextWrapping="Wrap"
+                       Margin="5"
+                       TextAlignment="Center"/>
+        </Grid>
+        <Border Grid.Row="4" Height="1" Background="Black" Margin="0,5"/>
+
+        <!-- Section 3 -->
+        <Grid Grid.Row="5" Background="White" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Content="Electricity Price" 
+                    Width="170" 
+                    Height="50"
+                    Background="#E5180E"
+                    Foreground="White"
+                    BorderThickness="2"
+                    CornerRadius="12"
+                    Padding="10"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    FontWeight="Bold"
+                    Margin="5"
+                    Click="NavigateToElectricityPrice_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5"
+                                      Color="#808080"
+                                      Opacity="0.8"/>
+                </Button.Effect>
+            </Button>
+            <TextBlock Grid.Column="1" Text="Click button to see datas about electricity price in winter and summer period respectively." 
+                       HorizontalAlignment="Right" 
+                       VerticalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       Foreground="Black"
+                       TextWrapping="Wrap"
+                       Margin="5"
+                       TextAlignment="Center"/>
+        </Grid>
+        <Border Grid.Row="6" Height="1" Background="Black" Margin="0,5"/>
+
+        <!-- Section 4 -->
+        <Grid Grid.Row="7" Background="White" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Content="Optimizer" 
+                    Width="170" 
+                    Height="50"
+                    Background="#E5180E"
+                    Foreground="White"
+                    BorderThickness="2"
+                    CornerRadius="12"
+                    Padding="10"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    FontWeight="Bold"
+                    Margin="5"
+                    Click="NavigateToConsumption_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5"
+                                      Color="#808080"
+                                      Opacity="0.8"/>
+                </Button.Effect>
+            </Button>
+            <TextBlock Grid.Column="1" Text="Click button to see datas about consumption of electricity as a console column format." 
+                       HorizontalAlignment="Right" 
+                       VerticalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       Foreground="Black"
+                       TextWrapping="Wrap"
+                       Margin="5"
+                       TextAlignment="Center"/>
+        </Grid>
+        <Border Grid.Row="8" Height="1" Background="Black" Margin="0,5"/>
+    </Grid>
+</Window>
